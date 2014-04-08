@@ -22,8 +22,8 @@
         NSMutableArray *tempArray=[NSMutableArray arrayWithArray:imgArr];
         [tempArray insertObject:[imgArr objectAtIndex:([imgArr count]-1)] atIndex:0];
         [tempArray addObject:[imgArr objectAtIndex:0]];
-		imageArray=[NSArray arrayWithArray:tempArray];
-		viewSize=rect;
+		 imageArray=[NSArray arrayWithArray:tempArray];
+		 viewSize=rect;
         NSUInteger pageCount=[imageArray count];
         scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, viewSize.size.width, viewSize.size.height)];
         scrollView.pagingEnabled = YES;
@@ -75,6 +75,7 @@
         [noteTitle setText:[titleArray objectAtIndex:0]];
         [noteTitle setBackgroundColor:[UIColor clearColor]];
         [noteTitle setFont:[UIFont systemFontOfSize:13]];
+        noteTitle.textColor = [UIColor grayColor];
         [noteView addSubview:noteTitle];
         
         [self addSubview:noteView];

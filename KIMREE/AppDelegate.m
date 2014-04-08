@@ -15,7 +15,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    //设置状态栏样式 dfg
+    //设置状态栏样式
     [UIApplication sharedApplication].statusBarHidden = NO;
     if ([SystemHelper systemVersion] >= 7.0f){
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
