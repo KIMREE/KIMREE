@@ -12,7 +12,7 @@
 @interface MainViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *funcScroller;
 @property (strong, nonatomic) IBOutlet EScrollerView *newsView;
-
+- (IBAction)nearby:(id)sender;
 
 @end
 @implementation MainViewController
@@ -58,7 +58,9 @@
     _funcScroller.scrollEnabled = NO;
     [self.funcScroller setContentOffset:newOffset animated:NO];
     
-
+    
+    
+   
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"Nearby" forState:UIControlStateNormal];
     [button setFrame:CGRectMake(60, 242, 74, 74)];
@@ -107,6 +109,7 @@
 #pragma Methods you must add
 // You need a method like this to setup your menu
 
-
-
+- (IBAction)nearby:(id)sender {
+    
+}
 @end
