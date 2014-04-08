@@ -29,42 +29,45 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-dk-hHM">
                             <rect key="frame" x="59" y="33" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="产品" backgroundImage="button.png">
+                            <state key="normal" title="产品" backgroundImage="green_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-Yt-BUO">
                             <rect key="frame" x="187" y="33" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="酷玩" backgroundImage="button.png">
+                            <state key="normal" title="酷玩" backgroundImage="grey_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egV-Ec-oro">
                             <rect key="frame" x="59" y="135" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="贴吧" backgroundImage="button.png">
+                            <state key="normal" title="贴吧" backgroundImage="purple_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT2-AN-GdK">
                             <rect key="frame" x="187" y="135" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="KIMREE" backgroundImage="button.png">
+                            <state key="normal" title="KIMREE" backgroundImage="setting_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVA-4J-TVl">
                             <rect key="frame" x="59" y="241" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="附近" backgroundImage="button.png">
+                            <state key="normal" backgroundImage="white_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="nearby:" destination="-1" eventType="touchUpInside" id="86e-ke-4SA"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiR-Rl-YsG">
                             <rect key="frame" x="187" y="241" width="74" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="积分" backgroundImage="button.png">
+                            <state key="normal" title="积分" backgroundImage="blue_74.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
@@ -77,6 +80,11 @@
         </view>
     </objects>
     <resources>
-        <image name="button.png" width="74" height="74"/>
+        <image name="blue_74.png" width="74" height="74"/>
+        <image name="green_74.png" width="74" height="74"/>
+        <image name="grey_74.png" width="74" height="74"/>
+        <image name="purple_74.png" width="74" height="74"/>
+        <image name="setting_74.png" width="74" height="74"/>
+        <image name="white_74.png" width="74" height="74"/>
     </resources>
 </document>
