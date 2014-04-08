@@ -9,12 +9,33 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+@synthesize navController = _navController;
+@synthesize rootController = _rootController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    //设置状态栏样式
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    if ([SystemHelper systemVersion] >= 7.0f){
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    }
+    
+    //设置状态栏通知样式
+    [JDStatusBarNotification setDefaultStyle:^JDStatusBarStyle *(JDStatusBarStyle *style){
+        style.barColor = [UIColor blackColor];          
+        style.textColor = [UIColor whiteColor];
+        style.animationType = JDStatusBarAnimationTypeMove;
+        style.font = [UIFont systemFontOfSize:12];
+        return style;
+    }];
+
+    //初始化主视图
+    self.rootController = [[MainViewController alloc]init];
+    self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
+    self.navController.navigationBar.hidden = YES;
+    self.window.rootViewController = _navController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
