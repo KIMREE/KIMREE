@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BF3187718F3F2D6003D7B61 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF3187618F3F2D6003D7B61 /* button.png */; };
 		C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985218F234F500CCF79C /* Foundation.framework */; };
 		C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985418F234F500CCF79C /* CoreGraphics.framework */; };
 		C6AC985718F234F500CCF79C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985618F234F500CCF79C /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BF3187618F3F2D6003D7B61 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		C6AC984F18F234F500CCF79C /* KIMREE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMREE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC985218F234F500CCF79C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6AC985418F234F500CCF79C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -225,6 +227,7 @@
 		C6AC98D118F2A3CB00CCF79C /* NewsPicture */ = {
 			isa = PBXGroup;
 			children = (
+				6BF3187618F3F2D6003D7B61 /* button.png */,
 				C6AC988F18F280D000CCF79C /* 1.jpg */,
 				C6AC989018F280D000CCF79C /* 2.jpg */,
 				C6AC989118F280D000CCF79C /* 3.jpg */,
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
+				6BF3187718F3F2D6003D7B61 /* button.png in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				C6AC989218F280D000CCF79C /* 1.jpg in Resources */,
 				C6AC989318F280D000CCF79C /* 2.jpg in Resources */,
