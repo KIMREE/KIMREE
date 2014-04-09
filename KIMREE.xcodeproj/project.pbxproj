@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B77D0DC18F4D9C200D49E9F /* white_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D0DE18F4D9C200D49E9F /* white_74.png */; };
 		7E4478AC18F4370E009EF02D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A218F4370E009EF02D /* 01.jpg */; };
 		7E4478AD18F4370E009EF02D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A318F4370E009EF02D /* 02.jpg */; };
 		7E4478AE18F4370E009EF02D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A418F4370E009EF02D /* 03.jpg */; };
@@ -16,7 +17,6 @@
 		7E4478B218F4370E009EF02D /* grey_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A818F4370E009EF02D /* grey_74.png */; };
 		7E4478B318F4370E009EF02D /* purple_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A918F4370E009EF02D /* purple_74.png */; };
 		7E4478B418F4370E009EF02D /* setting_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478AA18F4370E009EF02D /* setting_74.png */; };
-		7E4478B518F4370E009EF02D /* white_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478AB18F4370E009EF02D /* white_74.png */; };
 		7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4478B718F43AA3009EF02D /* NearbyViewController.m */; };
 		7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478B818F43AA3009EF02D /* NearbyViewController.xib */; };
 		7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478BE18F43B5A009EF02D /* MainViewController.xib */; };
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B77D0DD18F4D9C200D49E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/white_74.png; sourceTree = "<group>"; };
 		7E4478A218F4370E009EF02D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		7E4478A318F4370E009EF02D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		7E4478A418F4370E009EF02D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		7E4478A818F4370E009EF02D /* grey_74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_74.png; sourceTree = "<group>"; };
 		7E4478A918F4370E009EF02D /* purple_74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_74.png; sourceTree = "<group>"; };
 		7E4478AA18F4370E009EF02D /* setting_74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_74.png; sourceTree = "<group>"; };
-		7E4478AB18F4370E009EF02D /* white_74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_74.png; sourceTree = "<group>"; };
 		7E4478B618F43AA3009EF02D /* NearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyViewController.h; sourceTree = "<group>"; };
 		7E4478B718F43AA3009EF02D /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
 		7E4478B818F43AA3009EF02D /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				7E4478A818F4370E009EF02D /* grey_74.png */,
 				7E4478A918F4370E009EF02D /* purple_74.png */,
 				7E4478AA18F4370E009EF02D /* setting_74.png */,
-				7E4478AB18F4370E009EF02D /* white_74.png */,
+				6B77D0DE18F4D9C200D49E9F /* white_74.png */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
 				7E4478AD18F4370E009EF02D /* 02.jpg in Resources */,
-				7E4478B518F4370E009EF02D /* white_74.png in Resources */,
+				6B77D0DC18F4D9C200D49E9F /* white_74.png in Resources */,
 				7E4478B218F4370E009EF02D /* grey_74.png in Resources */,
 				7E4478B018F4370E009EF02D /* brown_74.png in Resources */,
 				7E4478B318F4370E009EF02D /* purple_74.png in Resources */,
@@ -497,6 +497,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6B77D0DE18F4D9C200D49E9F /* white_74.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B77D0DD18F4D9C200D49E9F /* en */,
+			);
+			name = white_74.png;
+			sourceTree = "<group>";
+		};
 		7E4478BE18F43B5A009EF02D /* MainViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
