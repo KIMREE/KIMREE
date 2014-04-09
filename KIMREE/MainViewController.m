@@ -8,11 +8,13 @@
 
 #import "MainViewController.h"
 #import "NearbyViewController.h"
+#import "ProductViewController.h"
+#import "KIMREEViewController.h"
 
 @interface MainViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *funcScroller;
 @property (strong, nonatomic) IBOutlet EScrollerView *newsView;
-- (IBAction)nearby:(id)sender;
+
 
 @end
 @implementation MainViewController
@@ -103,4 +105,21 @@
     NearbyViewController *secondVC = [[NearbyViewController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
 }
+
+- (IBAction)game:(id)sender {
+}
+
+- (IBAction)KIMREE:(id)sender {
+    
+    KIMREEViewController   *KIMREEView = [[KIMREEViewController alloc] init];
+    [self.navigationController pushViewController:KIMREEView animated:YES];
+}
+
+- (IBAction)member:(id)sender {
+}
+
+- (IBAction)product:(id)sender {
+    
+    ProductViewController  *secondVC = [[ProductViewController  alloc] init];
+    [self.navigationController pushViewController:secondVC animated:YES];}
 @end

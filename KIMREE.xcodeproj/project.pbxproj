@@ -35,6 +35,8 @@
 		7E8104FD18F5A2F000C7882E /* ye90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F718F5A2F000C7882E /* ye90.png */; };
 		7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F818F5A2F000C7882E /* yellow_90.png */; };
 		7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E81050118F5A78C00C7882E /* bg-body.jpg */; };
+		7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE318F60A570040145C /* ProductViewController.m */; };
+		7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE718F60D180040145C /* KIMREEViewController.m */; };
 		C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985218F234F500CCF79C /* Foundation.framework */; };
 		C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985418F234F500CCF79C /* CoreGraphics.framework */; };
 		C6AC985718F234F500CCF79C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985618F234F500CCF79C /* UIKit.framework */; };
@@ -107,6 +109,10 @@
 		7E8104F718F5A2F000C7882E /* ye90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ye90.png; sourceTree = "<group>"; };
 		7E8104F818F5A2F000C7882E /* yellow_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_90.png; sourceTree = "<group>"; };
 		7E81050118F5A78C00C7882E /* bg-body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-body.jpg"; sourceTree = "<group>"; };
+		7ECB0FE218F60A570040145C /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		7ECB0FE318F60A570040145C /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		7ECB0FE618F60D180040145C /* KIMREEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIMREEViewController.h; sourceTree = "<group>"; };
+		7ECB0FE718F60D180040145C /* KIMREEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIMREEViewController.m; sourceTree = "<group>"; };
 		C6AC984F18F234F500CCF79C /* KIMREE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMREE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC985218F234F500CCF79C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6AC985418F234F500CCF79C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -215,6 +221,8 @@
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7ECB0FE518F60D030040145C /* KIMREE */,
+				7ECB0FE118F60A380040145C /* product */,
 				7E4478BB18F43AAE009EF02D /* Nearby */,
 				C6AC988118F25A4A00CCF79C /* EScrollerView */,
 				C6AC98D018F2A2B900CCF79C /* RootViewController */,
@@ -275,6 +283,24 @@
 				6B77D0EC18F4E65200D49E9F /* MapView */,
 			);
 			name = Nearby;
+			sourceTree = "<group>";
+		};
+		7ECB0FE118F60A380040145C /* product */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB0FE218F60A570040145C /* ProductViewController.h */,
+				7ECB0FE318F60A570040145C /* ProductViewController.m */,
+			);
+			name = product;
+			sourceTree = "<group>";
+		};
+		7ECB0FE518F60D030040145C /* KIMREE */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB0FE618F60D180040145C /* KIMREEViewController.h */,
+				7ECB0FE718F60D180040145C /* KIMREEViewController.m */,
+			);
+			name = KIMREE;
 			sourceTree = "<group>";
 		};
 		C6AC984618F234F500CCF79C = {
@@ -548,11 +574,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
+				7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */,
 				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
+				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
