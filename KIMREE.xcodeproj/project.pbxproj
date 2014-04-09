@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6B77D0DC18F4D9C200D49E9F /* white_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D0DE18F4D9C200D49E9F /* white_74.png */; };
+		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
+		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
+		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
+		6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */; };
+		6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */; };
+		6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */; };
+		6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */; };
+		6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */; };
+		6B77D10118F4E6F300D49E9F /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FE18F4E6F300D49E9F /* Item.m */; };
+		6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */; };
+		6B77D10518F4EAF000D49E9F /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10318F4EAF000D49E9F /* pin.png */; };
 		7E4478AC18F4370E009EF02D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A218F4370E009EF02D /* 01.jpg */; };
 		7E4478AD18F4370E009EF02D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A318F4370E009EF02D /* 02.jpg */; };
 		7E4478AE18F4370E009EF02D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A418F4370E009EF02D /* 03.jpg */; };
@@ -56,6 +67,23 @@
 
 /* Begin PBXFileReference section */
 		6B77D0DD18F4D9C200D49E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/white_74.png; sourceTree = "<group>"; };
+		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		6B77D0EE18F4E67200D49E9F /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		6B77D0F118F4E6D200D49E9F /* BasicMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMapAnnotation.h; sourceTree = "<group>"; };
+		6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapAnnotation.m; sourceTree = "<group>"; };
+		6B77D0F318F4E6D200D49E9F /* CallOutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutAnnotationView.h; sourceTree = "<group>"; };
+		6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutAnnotationView.m; sourceTree = "<group>"; };
+		6B77D0F518F4E6D200D49E9F /* CalloutMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotation.h; sourceTree = "<group>"; };
+		6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
+		6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMapCell.h; sourceTree = "<group>"; };
+		6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMapCell.m; sourceTree = "<group>"; };
+		6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestMapCell.xib; sourceTree = "<group>"; };
+		6B77D0FD18F4E6F300D49E9F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		6B77D0FE18F4E6F300D49E9F /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MuddDetail.jpeg; sourceTree = "<group>"; };
+		6B77D10318F4EAF000D49E9F /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		7E4478A218F4370E009EF02D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		7E4478A318F4370E009EF02D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		7E4478A418F4370E009EF02D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
@@ -124,6 +152,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */,
+				6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */,
 				C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */,
 				C6AC985718F234F500CCF79C /* UIKit.framework in Frameworks */,
 				C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */,
@@ -143,6 +173,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B77D0EC18F4E65200D49E9F /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D0F018F4E6A400D49E9F /* MapCalloutView */,
+				6B77D0ED18F4E67200D49E9F /* MapView.h */,
+				6B77D0EE18F4E67200D49E9F /* MapView.m */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
+		6B77D0F018F4E6A400D49E9F /* MapCalloutView */ = {
+			isa = PBXGroup;
+			children = (
+				6B77D0F118F4E6D200D49E9F /* BasicMapAnnotation.h */,
+				6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */,
+				6B77D0F318F4E6D200D49E9F /* CallOutAnnotationView.h */,
+				6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */,
+				6B77D0F518F4E6D200D49E9F /* CalloutMapAnnotation.h */,
+				6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */,
+			);
+			name = MapCalloutView;
+			sourceTree = "<group>";
+		};
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				7E4478A218F4370E009EF02D /* 01.jpg */,
+				6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */,
+				6B77D10318F4EAF000D49E9F /* pin.png */,
 				7E4478A318F4370E009EF02D /* 02.jpg */,
 				7E4478A418F4370E009EF02D /* 03.jpg */,
 				7E4478A518F4370E009EF02D /* blue_74.png */,
@@ -193,6 +248,12 @@
 		7E4478BB18F43AAE009EF02D /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */,
+				6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */,
+				6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */,
+				6B77D0FD18F4E6F300D49E9F /* Item.h */,
+				6B77D0FE18F4E6F300D49E9F /* Item.m */,
+				6B77D0EC18F4E65200D49E9F /* MapView */,
 				7E4478B618F43AA3009EF02D /* NearbyViewController.h */,
 				7E4478B718F43AA3009EF02D /* NearbyViewController.m */,
 				7E4478B818F43AA3009EF02D /* NearbyViewController.xib */,
@@ -222,6 +283,8 @@
 		C6AC985118F234F500CCF79C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */,
+				6B77D0E718F4E60200D49E9F /* MapKit.framework */,
 				C6AC985218F234F500CCF79C /* Foundation.framework */,
 				C6AC985418F234F500CCF79C /* CoreGraphics.framework */,
 				C6AC985618F234F500CCF79C /* UIKit.framework */,
@@ -433,6 +496,7 @@
 				7E4478AF18F4370E009EF02D /* blue_74.png in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
+				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
 				7E4478AD18F4370E009EF02D /* 02.jpg in Resources */,
 				6B77D0DC18F4D9C200D49E9F /* white_74.png in Resources */,
@@ -444,6 +508,8 @@
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				7E4478B418F4370E009EF02D /* setting_74.png in Resources */,
+				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
+				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,17 +529,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
+				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
+				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
+				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
+				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
+				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
 				C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

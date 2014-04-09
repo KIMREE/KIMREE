@@ -59,26 +59,10 @@
         newOffset.y = -20;
     }
     _funcScroller.scrollEnabled = NO;
-    [self.funcScroller setContentOffset:newOffset animated:NO];
+    [self.funcScroller setContentOffset:newOffset animated:YES];
     
     
-   //单独按钮，暂时保留
-  
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [button setTitle:@"Nearby" forState:UIControlStateNormal];
-//    [button setFrame:CGRectMake(60, 242, 74, 74)];
-//    [button addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
-//    [self.funcScroller addSubview:button];
 }
-
-
-//- (void)pushVC
-//{
-//    NearbyViewController *secondVC = [[NearbyViewController alloc] init];
-//    [self.navigationController pushViewController:secondVC animated:YES];
-//   
-//}
-
 
 
 - (void)didReceiveMemoryWarning
