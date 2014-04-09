@@ -21,6 +21,8 @@
 		6B77D10518F4EAF000D49E9F /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10318F4EAF000D49E9F /* pin.png */; };
 		6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D10718F535F200D49E9F /* SearchViewController.m */; };
 		6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10818F535F200D49E9F /* SearchViewController.xib */; };
+		6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB93AA918F552D900EA1F65 /* MyshopViewController.m */; };
+		6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */; };
 		7E4478AC18F4370E009EF02D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A218F4370E009EF02D /* 01.jpg */; };
 		7E4478AD18F4370E009EF02D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A318F4370E009EF02D /* 02.jpg */; };
 		7E4478AE18F4370E009EF02D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A418F4370E009EF02D /* 03.jpg */; };
@@ -89,6 +91,9 @@
 		6B77D10618F535F200D49E9F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		6B77D10718F535F200D49E9F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6B77D10818F535F200D49E9F /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		6BB93AA818F552D900EA1F65 /* MyshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyshopViewController.h; sourceTree = "<group>"; };
+		6BB93AA918F552D900EA1F65 /* MyshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyshopViewController.m; sourceTree = "<group>"; };
+		6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyshopViewController.xib; sourceTree = "<group>"; };
 		7E4478A218F4370E009EF02D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		7E4478A318F4370E009EF02D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		7E4478A418F4370E009EF02D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
@@ -181,12 +186,15 @@
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
-				6B77D0F018F4E6A400D49E9F /* MapCalloutView */,
 				6B77D0ED18F4E67200D49E9F /* MapView.h */,
 				6B77D0EE18F4E67200D49E9F /* MapView.m */,
+				6BB93AA818F552D900EA1F65 /* MyshopViewController.h */,
+				6BB93AA918F552D900EA1F65 /* MyshopViewController.m */,
+				6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */,
 				6B77D10618F535F200D49E9F /* SearchViewController.h */,
 				6B77D10718F535F200D49E9F /* SearchViewController.m */,
 				6B77D10818F535F200D49E9F /* SearchViewController.xib */,
+				6B77D0F018F4E6A400D49E9F /* MapCalloutView */,
 			);
 			name = MapView;
 			sourceTree = "<group>";
@@ -261,10 +269,10 @@
 				6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */,
 				6B77D0FD18F4E6F300D49E9F /* Item.h */,
 				6B77D0FE18F4E6F300D49E9F /* Item.m */,
-				6B77D0EC18F4E65200D49E9F /* MapView */,
 				7E4478B618F43AA3009EF02D /* NearbyViewController.h */,
 				7E4478B718F43AA3009EF02D /* NearbyViewController.m */,
 				7E4478B818F43AA3009EF02D /* NearbyViewController.xib */,
+				6B77D0EC18F4E65200D49E9F /* MapView */,
 			);
 			name = Nearby;
 			sourceTree = "<group>";
@@ -501,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
 				7E4478AF18F4370E009EF02D /* blue_74.png in Resources */,
 				6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
@@ -538,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
 				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,

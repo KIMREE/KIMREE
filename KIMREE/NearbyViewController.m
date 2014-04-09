@@ -10,6 +10,8 @@
 #import "MapView.h"
 #import "Item.h"
 #import "TestMapCell.h"
+#import "SearchViewController.h"
+#import "MyshopViewController.h"
 
 @interface NearbyViewController ()
 
@@ -107,14 +109,17 @@ locManager.delegate = self;
 //商家搜索
 - (void)search
 {
-
+    SearchViewController *searchView=[[SearchViewController alloc] init];
+   [self.navigationController pushViewController:searchView animated:YES];
+    
 }
 
 //我的店面
 
 -(void)myshop
 {
-
+    MyshopViewController *searchView=[[MyshopViewController alloc] init];
+    [self.navigationController pushViewController:searchView animated:YES];
 }
 
 

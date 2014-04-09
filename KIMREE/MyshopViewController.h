@@ -1,5 +1,5 @@
 //
-//  SearchViewController.h
+//  MyshopViewController.h
 //  KIMREE
 //
 //  Created by renchunyu on 14-4-9.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
-
-{
-    UIToolbar *toolBar;
-}
+@interface MyshopViewController : UIViewController
 
 @end
