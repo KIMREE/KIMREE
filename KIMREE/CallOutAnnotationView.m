@@ -89,7 +89,7 @@
     self.layer.shadowOpacity = 1;
     
     //insert
+    
     self.layer.shadowPath = path;
-
 }
 @end

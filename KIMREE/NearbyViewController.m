@@ -53,21 +53,30 @@
                          ];
     
 
-	self.mapView = [[MapView alloc] initWithDelegate:self];
+	self.mapView = [[MapView alloc] init];
+    
+
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
     [_mapView beginLoad];
     
     
+    
+    
+    
     //增加工具栏按钮
     [self.navigationController  setToolbarHidden:YES animated:YES];
     
-    //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:nil];
+    //为导航栏添加右侧按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"about" style:UIBarButtonItemStylePlain target:self action:nil];
     
-    UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
-    UIBarButtonItem *two = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:nil action:nil];
-    UIBarButtonItem *three = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
-    UIBarButtonItem *four = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:nil action:nil];
+    //为工具栏添加按钮
+    UIBarButtonItem *location = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:@selector(location)];
+    
+    
+    UIBarButtonItem *search = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:nil action:@selector(search)];
+    UIBarButtonItem *myshop = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:nil action:@selector(myshop)];
+
     UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
     
@@ -75,21 +84,46 @@
     [toolBar setBarStyle:UIBarStyleDefault];
     toolBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     
-    [toolBar setItems:[NSArray arrayWithObjects:flexItem, one, flexItem, two, flexItem, three, flexItem, four, flexItem, nil] animated:YES];
+    [toolBar setItems:[NSArray arrayWithObjects:flexItem, location, flexItem, search, flexItem, myshop, flexItem, nil] animated:YES];
     
     [self.view addSubview:toolBar];
     
-    
-    
- 
 }
+
+
+//定位
+
+- (void)location
+{
+    
+CLLocationManager *locManager = [[CLLocationManager alloc] init];
+locManager.delegate = self;
+
+[locManager startUpdatingLocation];
+
+}
+
+
+//商家搜索
+- (void)search
+{
+
+}
+
+//我的店面
+
+-(void)myshop
+{
+
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 #pragma mark -
