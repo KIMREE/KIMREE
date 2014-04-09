@@ -33,24 +33,25 @@
      */
     //设置新闻
     [self creatNews];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
-
 {
     [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     //设置功能按钮偏移动画
-    CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
-    _funcScroller.contentSize=CGSizeMake(_funcScroller.frame.size.width, S_SCREEN_SIZE.height-_newsView.frame.size.height-24);
-    [self.funcScroller setContentOffset:bottomOffset animated:NO];
-    CGPoint newOffset = self.funcScroller.contentOffset;
-    newOffset.y = 20;
-    if (S_SCREEN_SIZE.height > 480) {
-        newOffset.y = -20;
+    if (_funcScroller.scrollEnabled) {
+        CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
+        _funcScroller.contentSize=CGSizeMake(_funcScroller.frame.size.width, S_SCREEN_SIZE.height-_newsView.frame.size.height-24);
+        [self.funcScroller setContentOffset:bottomOffset animated:NO];
+        CGPoint newOffset = self.funcScroller.contentOffset;
+        newOffset.y = 20;
+        if (S_SCREEN_SIZE.height > 480){
+            newOffset.y = -20;
+        }
+        _funcScroller.scrollEnabled = NO;
+        [self.funcScroller setContentOffset:newOffset animated:YES];
     }
-    _funcScroller.scrollEnabled = NO;
-    [self.funcScroller setContentOffset:newOffset animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,15 +73,26 @@
     [self.view addSubview:_newsView];
 
 }
-
 //点击新闻图片触发的事件
 #pragma EScrollerViewDelegate--
 -(void)EScrollerViewDidClicked:(NSUInteger)index
 {
-    NSLog(@"你好，我是新闻 ：%d",index);
+    NSLog(@"你好，我是新闻 ：%i",index);
 }
+
+
 //功能菜单项
 #pragma Methods you must add
+//贴吧
+- (IBAction)PostBar:(id)sender
+{
+    UIViewController *PostBar = [[UIViewController alloc]init];
+    [self.navigationController pushViewController:PostBar animated:NO];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    
+}
+
 // You need a method like this to setup your menu
 
 @end
