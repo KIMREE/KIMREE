@@ -23,9 +23,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.view.backgroundColor=[UIColor orangeColor];
         
-   }
+        UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
+        self.view.backgroundColor=[UIColor colorWithPatternImage:img];
+    
+    
+    }
     return self;
 }
 
