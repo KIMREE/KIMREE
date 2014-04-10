@@ -41,6 +41,9 @@
     /*
     NSLog(@"%f, %f, %f, %f ",_newsView.frame.origin.x, _newsView.frame.origin.y, _newsView.bounds.size.width, _newsView.bounds.size.height);
      */
+    CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
+    [self.funcScroller setContentOffset:bottomOffset animated:NO];
+
     //设置新闻
     [self creatNews];
     
@@ -62,9 +65,7 @@
 
     //设置功能按钮偏移动画
     if (_funcScroller.scrollEnabled) {
-        CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
-        [self.funcScroller setContentOffset:bottomOffset animated:NO];
-        CGPoint newOffset = self.funcScroller.contentOffset;
+                CGPoint newOffset = self.funcScroller.contentOffset;
         newOffset.y = 0;
         [self.funcScroller setContentOffset:newOffset animated:YES];
         _funcScroller.scrollEnabled = NO;

@@ -25,14 +25,13 @@
     
     //设置状态栏通知样式
     [JDStatusBarNotification setDefaultStyle:^JDStatusBarStyle *(JDStatusBarStyle *style){
-        style.barColor = [UIColor blackColor];          
+        style.barColor = [UIColor blackColor];
         style.textColor = [UIColor whiteColor];
         style.animationType = JDStatusBarAnimationTypeMove;
         style.font = [UIFont systemFontOfSize:12];
         return style;
     }];
 
-    //初始化主视图
     
    
     //初始化主视图

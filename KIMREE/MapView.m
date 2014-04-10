@@ -45,18 +45,13 @@
 
 
 
-//// 打开定位
-//CLLocationManager *locManager = [[CLLocationManager alloc] init];
-//locManager.delegate = self;
-//
-//[locManager startUpdatingLocation];
+
 
 
 //获得位置信息
 
 
--(void)locationManager:(CLLocationManager *)manager
-   didUpdateToLocation:(CLLocation *)newLocation fromLocation: (CLLocation *)oldLocation
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation: (CLLocation *)oldLocation
 {
     NSTimeInterval howRecent = [newLocation.timestamp timeIntervalSinceNow];
     if(howRecent < -10) return ; //离上次更新的时间少于10秒
@@ -137,6 +132,7 @@
         
         [mapView setCenterCoordinate:_calloutAnnotation.coordinate animated:YES];
 	}
+    
 }
 
 - (void)didSelectAnnotationView:(CallOutAnnotationView *)view

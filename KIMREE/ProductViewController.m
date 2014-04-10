@@ -27,8 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://map.baidu.com/"]];
     [self.view addSubview: webView];
     [webView loadRequest:request];
 }

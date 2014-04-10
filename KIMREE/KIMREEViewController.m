@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.qq.com"]];
     [self.view addSubview: webView];
     [webView loadRequest:request];
@@ -46,7 +46,7 @@
 {
     
     //创建UIActivityIndicatorView背底半透明View
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     [view setTag:108];
     [view setBackgroundColor:[UIColor blackColor]];
     [view setAlpha:0.5];
