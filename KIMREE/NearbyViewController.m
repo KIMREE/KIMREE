@@ -36,6 +36,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+
+    
     self.annotations = @[@{@"latitude":@"30.281843",
                            @"longitude":@"120.102193",
                            @"title":@"test-title-1",

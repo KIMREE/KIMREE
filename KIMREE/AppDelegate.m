@@ -33,7 +33,7 @@
     //初始化主视图
     self.rootController = [[MainViewController alloc] init];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
-    self.navController.navigationBar.hidden = NO;
+    self.navController.navigationBar.hidden = YES;
     [self.navController  setToolbarHidden:YES animated:YES];
     self.window.rootViewController = _navController;
     

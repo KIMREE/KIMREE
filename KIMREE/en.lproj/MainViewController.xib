@@ -62,7 +62,6 @@
                             </state>
                             <connections>
                                 <action selector="KIMREE:" destination="-1" eventType="touchUpInside" id="NaI-Vt-62P"/>
-                                <action selector="KKIM:" destination="-1" eventType="touchUpInside" id="TXa-81-JYP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVA-4J-TVl">

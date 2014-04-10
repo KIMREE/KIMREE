@@ -17,3 +17,5 @@
     #import "JRTool.h"
     #import "JDStatusBarNotification.h"
 #endif
+
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)

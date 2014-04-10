@@ -102,6 +102,7 @@
 
 - (IBAction)nearby:(id)sender {
     
+   
     NearbyViewController *secondVC = [[NearbyViewController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
 }

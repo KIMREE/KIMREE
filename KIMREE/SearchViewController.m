@@ -14,12 +14,15 @@
 @end
 
 @implementation SearchViewController
+@synthesize pickerView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -52,7 +55,9 @@
     [toolBar setItems:[NSArray arrayWithObjects:flexItem, location, flexItem, search, flexItem, myshop, flexItem, nil] animated:YES];
     
     [self.view addSubview:toolBar];
-}
+   
+    //先隐藏,未起作用，待解决
+    self.pickerView.frame = CGRectMake(0, 480, 320, 260);}
 
 
 //跳转地图
@@ -71,5 +76,44 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)area:(id)sender {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.6];//动画时间长度，单位秒，浮点数
+    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+    self.pickerView.frame = CGRectMake(0, 245, 320, 260);
+    
+    [UIView setAnimationDelegate:self];
+    // 动画完毕后调用animationFinished
+    [UIView setAnimationDidStopSelector:@selector(animationFinished)];
+    [UIView commitAnimations];
+    //    [self ViewAnimation:self.pickerView willHidden:NO];
+}
+
+- (IBAction)state:(id)sender {
+    //    [self ViewAnimation:self.pickerView willHidden:YES];
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.6];//动画时间长度，单位秒，浮点数
+    self.pickerView.frame = CGRectMake(0, 480, 320, 260);
+    
+    [UIView setAnimationDelegate:self];
+    // 动画完毕后调用animationFinished
+    [UIView setAnimationDidStopSelector:@selector(animationFinished)];
+    [UIView commitAnimations];
+}
+
+
+- (IBAction)country:(id)sender {
+}
+
+-(void)animationFinished{
+    NSLog(@"动画结束!");
+}
+
 
 @end
