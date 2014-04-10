@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "MainViewController.h"
 #import "NearbyViewController.h"
 #import "ProductViewController.h"
@@ -15,8 +16,9 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *funcScroller;
 @property (strong, nonatomic) IBOutlet EScrollerView *newsView;
 
-
 @end
+
+
 @implementation MainViewController
 @synthesize newsView = _newsView;
 @synthesize funcScroller = _funcScroller;
@@ -102,9 +104,17 @@
 
 - (IBAction)nearby:(id)sender {
     
+    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
+    
+    delegate.isRootView=NO;
+    
+    if (delegate.isRootView==NO) {
+        self.navigationController.navigationBar.hidden = NO;
+    }
    
     NearbyViewController *secondVC = [[NearbyViewController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
+    
 }
 
 - (IBAction)game:(id)sender {
