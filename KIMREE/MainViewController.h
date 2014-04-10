@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "EScrollerView.h"
-#import "Header.h"
+//#import "Header.h"
+#import "NearbyViewController.h"
+#import "ProductViewController.h"
+#import "KIMREEViewController.h"
+#import "PostBarViewController.h"
 
 @interface MainViewController : UIViewController <EScrollerViewDelegate>
 
@@ -17,6 +21,7 @@
 - (IBAction)game:(id)sender;
 - (IBAction)KIMREE:(id)sender;
 - (IBAction)member:(id)sender;
+- (IBAction)PostBar:(id)sender;
 
 
 @end

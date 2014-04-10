@@ -53,6 +53,9 @@
                             <state key="normal" backgroundImage="ye90.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="PostBar:" destination="-1" eventType="touchUpInside" id="BGP-ah-WHc"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT2-AN-GdK">
                             <rect key="frame" x="189" y="126" width="80" height="80"/>

@@ -6,11 +6,9 @@
 //  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
-#import "AppDelegate.h"
+
 #import "MainViewController.h"
-#import "NearbyViewController.h"
-#import "ProductViewController.h"
-#import "KIMREEViewController.h"
+
 
 @interface MainViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *funcScroller;
@@ -22,6 +20,7 @@
 @implementation MainViewController
 @synthesize newsView = _newsView;
 @synthesize funcScroller = _funcScroller;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -45,10 +44,14 @@
     //设置新闻
     [self creatNews];
     
+}
 
-    
-   
-    
+- (void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -56,21 +59,18 @@
 {
     [super viewDidAppear:animated];
     
+
     //设置功能按钮偏移动画
-    CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
-    _funcScroller.contentSize=CGSizeMake(_funcScroller.frame.size.width, S_SCREEN_SIZE.height-_newsView.frame.size.height-24);
-    [self.funcScroller setContentOffset:bottomOffset animated:NO];
-    CGPoint newOffset = self.funcScroller.contentOffset;
-    newOffset.y = 20;
-    if (S_SCREEN_SIZE.height > 480) {
-        newOffset.y = -20;
-    }
-    _funcScroller.scrollEnabled = NO;
-    [self.funcScroller setContentOffset:newOffset animated:YES];
-    
+    if (_funcScroller.scrollEnabled) {
+        CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
+        [self.funcScroller setContentOffset:bottomOffset animated:NO];
+        CGPoint newOffset = self.funcScroller.contentOffset;
+        newOffset.y = 0;
+        [self.funcScroller setContentOffset:newOffset animated:YES];
+        _funcScroller.scrollEnabled = NO;
     
 }
-
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -104,14 +104,7 @@
 
 - (IBAction)nearby:(id)sender {
     
-    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
-    
-    delegate.isRootView=NO;
-    
-    if (delegate.isRootView==NO) {
-        self.navigationController.navigationBar.hidden = NO;
-    }
-   
+    self.navigationController.navigationBar.hidden = NO;
     NearbyViewController *secondVC = [[NearbyViewController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
     
@@ -122,6 +115,7 @@
 
 - (IBAction)KIMREE:(id)sender {
     
+    self.navigationController.navigationBar.hidden = NO;
     KIMREEViewController   *KIMREEView = [[KIMREEViewController alloc] init];
     [self.navigationController pushViewController:KIMREEView animated:YES];
 }
@@ -129,8 +123,15 @@
 - (IBAction)member:(id)sender {
 }
 
-- (IBAction)product:(id)sender {
+- (IBAction)PostBar:(id)sender {
+    PostBarViewController *postBar = [[PostBarViewController alloc]init];
+    postBar.view.backgroundColor = [UIColor grayColor];
+    [self.navigationController pushViewController:postBar animated:YES];
     
+}
+
+- (IBAction)product:(id)sender {
+    self.navigationController.navigationBar.hidden = NO;
     ProductViewController  *secondVC = [[ProductViewController  alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];}
 @end

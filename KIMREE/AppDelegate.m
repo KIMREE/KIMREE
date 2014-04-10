@@ -11,7 +11,7 @@
 @implementation AppDelegate
 @synthesize navController = _navController;
 @synthesize rootController = _rootController;
-@synthesize isRootView;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -34,15 +34,11 @@
 
     //初始化主视图
     
-    isRootView=YES;
-    self.rootController = [[MainViewController alloc] init];
+   
+    //初始化主视图
+    self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
-    
-    if (isRootView) {
-        self.navController.navigationBar.hidden = YES;
-    }
-    
-   [self.navController  setToolbarHidden:YES animated:YES];
+    self.navController.navigationBar.hidden = YES;
     self.window.rootViewController = _navController;
     
     

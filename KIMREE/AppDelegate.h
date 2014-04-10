@@ -13,5 +13,5 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainViewController *rootController;
 @property (strong, nonatomic) UINavigationController *navController;
-@property BOOL isRootView;
+
 @end
