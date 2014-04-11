@@ -30,19 +30,22 @@
 		6BADFCB618F6850800249ED8 /* PostBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BADFCB118F6850800249ED8 /* PostBarViewController.xib */; };
 		6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB93AA918F552D900EA1F65 /* MyshopViewController.m */; };
 		6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */; };
+		7E2BDD8218F840900002ADF3 /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E2BDD8118F840900002ADF3 /* bg-body.jpg */; };
 		7E4478AC18F4370E009EF02D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A218F4370E009EF02D /* 01.jpg */; };
 		7E4478AD18F4370E009EF02D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A318F4370E009EF02D /* 02.jpg */; };
 		7E4478AE18F4370E009EF02D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A418F4370E009EF02D /* 03.jpg */; };
 		7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4478B718F43AA3009EF02D /* NearbyViewController.m */; };
 		7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478B818F43AA3009EF02D /* NearbyViewController.xib */; };
 		7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478BE18F43B5A009EF02D /* MainViewController.xib */; };
+		7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C218F84B9F000155B7 /* checkbox_in.png */; };
+		7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C318F84B9F000155B7 /* checkbox_out.png */; };
+		7E77A8C918F84D77000155B7 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C818F84D77000155B7 /* login.png */; };
 		7E8104F918F5A2F000C7882E /* blue_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F318F5A2F000C7882E /* blue_90.png */; };
 		7E8104FA18F5A2F000C7882E /* green_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F418F5A2F000C7882E /* green_90.png */; };
 		7E8104FB18F5A2F000C7882E /* grey_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F518F5A2F000C7882E /* grey_90.png */; };
 		7E8104FC18F5A2F000C7882E /* red_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F618F5A2F000C7882E /* red_90.png */; };
 		7E8104FD18F5A2F000C7882E /* ye90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F718F5A2F000C7882E /* ye90.png */; };
 		7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F818F5A2F000C7882E /* yellow_90.png */; };
-		7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E81050118F5A78C00C7882E /* bg-body.jpg */; };
 		7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE318F60A570040145C /* ProductViewController.m */; };
 		7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE718F60D180040145C /* KIMREEViewController.m */; };
 		C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985218F234F500CCF79C /* Foundation.framework */; };
@@ -117,6 +120,7 @@
 		6BB93AA818F552D900EA1F65 /* MyshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyshopViewController.h; sourceTree = "<group>"; };
 		6BB93AA918F552D900EA1F65 /* MyshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyshopViewController.m; sourceTree = "<group>"; };
 		6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyshopViewController.xib; sourceTree = "<group>"; };
+		7E2BDD8118F840900002ADF3 /* bg-body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-body.jpg"; sourceTree = "<group>"; };
 		7E4478A218F4370E009EF02D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		7E4478A318F4370E009EF02D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		7E4478A418F4370E009EF02D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
@@ -124,13 +128,15 @@
 		7E4478B718F43AA3009EF02D /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
 		7E4478B818F43AA3009EF02D /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
 		7E4478BD18F43B5A009EF02D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		7E77A8C218F84B9F000155B7 /* checkbox_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_in.png; sourceTree = "<group>"; };
+		7E77A8C318F84B9F000155B7 /* checkbox_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_out.png; sourceTree = "<group>"; };
+		7E77A8C818F84D77000155B7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		7E8104F318F5A2F000C7882E /* blue_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_90.png; sourceTree = "<group>"; };
 		7E8104F418F5A2F000C7882E /* green_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_90.png; sourceTree = "<group>"; };
 		7E8104F518F5A2F000C7882E /* grey_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_90.png; sourceTree = "<group>"; };
 		7E8104F618F5A2F000C7882E /* red_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_90.png; sourceTree = "<group>"; };
 		7E8104F718F5A2F000C7882E /* ye90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ye90.png; sourceTree = "<group>"; };
 		7E8104F818F5A2F000C7882E /* yellow_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_90.png; sourceTree = "<group>"; };
-		7E81050118F5A78C00C7882E /* bg-body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-body.jpg"; sourceTree = "<group>"; };
 		7ECB0FE218F60A570040145C /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		7ECB0FE318F60A570040145C /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		7ECB0FE618F60D180040145C /* KIMREEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIMREEViewController.h; sourceTree = "<group>"; };
@@ -291,7 +297,10 @@
 		7E4478A018F4360A009EF02D /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				7E81050118F5A78C00C7882E /* bg-body.jpg */,
+				7E77A8C818F84D77000155B7 /* login.png */,
+				7E77A8C218F84B9F000155B7 /* checkbox_in.png */,
+				7E77A8C318F84B9F000155B7 /* checkbox_out.png */,
+				7E2BDD8118F840900002ADF3 /* bg-body.jpg */,
 				7E8104F318F5A2F000C7882E /* blue_90.png */,
 				7E8104F418F5A2F000C7882E /* green_90.png */,
 				7E8104F518F5A2F000C7882E /* grey_90.png */,
@@ -588,20 +597,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8104F918F5A2F000C7882E /* blue_90.png in Resources */,
+				7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */,
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
+				7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */,
 				7E8104FC18F5A2F000C7882E /* red_90.png in Resources */,
 				6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				6BADFCB618F6850800249ED8 /* PostBarViewController.xib in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
 				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
+				7E77A8C918F84D77000155B7 /* login.png in Resources */,
 				7E8104FA18F5A2F000C7882E /* green_90.png in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
-				7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */,
 				7E4478AD18F4370E009EF02D /* 02.jpg in Resources */,
 				7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */,
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
+				7E2BDD8218F840900002ADF3 /* bg-body.jpg in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
