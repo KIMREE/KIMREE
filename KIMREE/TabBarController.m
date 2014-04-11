@@ -42,11 +42,10 @@
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setTitle:@"我的商户"];
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"pin.png"]];
     UIViewController* activeController = self.selectedViewController;
-    if(activeController == searchVC){
-        //
+    if(activeController == myshopVC){
     }
+ }
 
-}
 
 - (void)didReceiveMemoryWarning
 {
