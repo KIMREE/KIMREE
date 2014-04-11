@@ -7,7 +7,6 @@
 //
 
 #import "PostBarViewController.h"
-#import "SWTableViewCell.h"
 
 @interface PostBarViewController () {
     NSMutableArray *_testArray;
@@ -19,16 +18,13 @@
 
 @implementation PostBarViewController
 @synthesize tableView = _tableView;
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.rowHeight = 90;
     self.tableView.allowsSelection = NO; // We essentially implement our own selection
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0); // Makes the horizontal row seperator stretch the entire length of the table view
-    
     _testArray = [[NSMutableArray alloc] init];
     
     // Add test data to our test array
@@ -38,8 +34,11 @@
     [_testArray addObject:S_POSTBAR_MORE];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)viewWillAppear:(BOOL)animated{
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -52,7 +51,27 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cell selected at index path %d", indexPath.row);
-}
+    HZWebViewController *webViewController = [HZWebViewController new];
+    //    webViewController.mode = HZWebBrowserModeNavigation;
+    webViewController.mode = HZWebBrowserModeModal;
+    webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=forumdisplay&fid=39"];
+    [self presentViewController:webViewController animated:YES completion:^{}];
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+        default:
+            break;
+    }
+  }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
@@ -64,10 +83,11 @@
         NSMutableArray *rightUtilityButtons = [NSMutableArray new];
         
         [leftUtilityButtons addUtilityButtonWithColor:
-         [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]                                                 icon:[UIImage imageNamed:@"check.png"]];
+         [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
+                                                 title:@"发帖"];
         [leftUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                 icon:[UIImage imageNamed:@"cross.png"]];
+                                                 title:@"消息"];
         /*
         [leftUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
@@ -79,10 +99,10 @@
          */
         [rightUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                 title:@"More"];
+                                                 title:@"消息"];
         [rightUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                 title:@"Delete"];
+                                                 title:@"发帖"];
      /*
         [rightUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
@@ -101,8 +121,9 @@
     
 //    NSDate *dateObject = _testArray[indexPath.row];
 //    cell.textLabel.text = [dateObject description];
+    //显示关注度和帖子数
+//    cell.notePost.text = @"关注 999999  帖子 999999";
     cell.textLabel.text = _testArray[indexPath.row];
-    cell.notePost.text = @"123412341234";
     switch (indexPath.row) {
         case 0:
             cell.detailTextLabel.text = @"指将企业经营所需的资源提供给企业中需要资源的部门的企业经营活动";
@@ -130,45 +151,76 @@
 }
 
 #pragma mark - SWTableViewDelegate
-
+//从左往右滑
 - (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
-    switch (index) {
+    
+    NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+    switch (cellIndexPath.row) {
         case 0:
-            NSLog(@"left button 0 was pressed");
+            if (index) {
+                
+             } else {
+                 
+            }
             break;
         case 1:
-            NSLog(@"left button 1 was pressed");
+            if (index) {
+                
+             } else {
+                 
+            }
             break;
         case 2:
-            NSLog(@"left button 2 was pressed");
+            if (index) {
+                
+             } else {
+                
+            }
             break;
         case 3:
-            NSLog(@"left btton 3 was pressed");
+            if (index) {
+                
+            } else {
+
+            }
+            break;
         default:
             break;
     }
 }
 
+//从右往左滑
 - (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
-    switch (index) {
+    NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+    switch (cellIndexPath.row) {
         case 0:
-        {
-            NSLog(@"More button was pressed");
-            UIAlertView *alertTest = [[UIAlertView alloc] initWithTitle:@"Hello" message:@"More more more" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles: nil];
-            [alertTest show];
-            
-            [cell hideUtilityButtonsAnimated:YES];
+            if (index) {
+                
+            } else {
+                
+            }
             break;
-        }
         case 1:
-        {
-            // Delete button was pressed
-            NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
-            
-            [_testArray removeObjectAtIndex:cellIndexPath.row];
-            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            if (index) {
+                
+            } else {
+                
+            }
             break;
-        }
+        case 2:
+            if (index) {
+                
+            } else {
+                
+            }
+            break;
+        case 3:
+            if (index) {
+                
+            } else {
+
+            }
+            break;
         default:
             break;
     }

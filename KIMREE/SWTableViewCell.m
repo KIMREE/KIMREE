@@ -158,11 +158,12 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 }
 
 - (void)initializer {
+    self.detailTextLabel.numberOfLines = 2;
+    self.textLabel.textColor = [UIColor brownColor];
     //Set up the note numbers
-    CGRect frame = CGRectMake(CGRectGetWidth(self.bounds)/3.0, _height*3.8/5, CGRectGetWidth(self.bounds)/2, _height/6.0);
-    self.notePost = [UILabel LabelForGlowRect:frame Font:16];
+    CGRect frame = CGRectMake(CGRectGetWidth(self.bounds)/2.5, _height*3.9/5, CGRectGetWidth(self.bounds)/2, _height/6.0);
+    self.notePost = [UILabel LabelForGlowRect:frame Font:12];
     [self addSubview:self.notePost];
-
     // Set up scroll view that will host our cell content
     UIScrollView *cellScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), _height)];
     cellScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.bounds) + [self utilityButtonsPadding], _height);

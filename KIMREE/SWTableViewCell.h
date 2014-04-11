@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <UIKit/UIGestureRecognizerSubclass.h>
-#import "FBGlowLabel.h"
 #import "UILabel+JIRUI.h"
 @class SWTableViewCell;
 
