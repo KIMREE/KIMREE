@@ -208,12 +208,6 @@
 			children = (
 				6B77D0ED18F4E67200D49E9F /* MapView.h */,
 				6B77D0EE18F4E67200D49E9F /* MapView.m */,
-				6BB93AA818F552D900EA1F65 /* MyshopViewController.h */,
-				6BB93AA918F552D900EA1F65 /* MyshopViewController.m */,
-				6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */,
-				6B77D10618F535F200D49E9F /* SearchViewController.h */,
-				6B77D10718F535F200D49E9F /* SearchViewController.m */,
-				6B77D10818F535F200D49E9F /* SearchViewController.xib */,
 				6B77D0F018F4E6A400D49E9F /* MapCalloutView */,
 			);
 			name = MapView;
@@ -311,6 +305,12 @@
 				7E4478B618F43AA3009EF02D /* NearbyViewController.h */,
 				7E4478B718F43AA3009EF02D /* NearbyViewController.m */,
 				7E4478B818F43AA3009EF02D /* NearbyViewController.xib */,
+				6BB93AA818F552D900EA1F65 /* MyshopViewController.h */,
+				6BB93AA918F552D900EA1F65 /* MyshopViewController.m */,
+				6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */,
+				6B77D10618F535F200D49E9F /* SearchViewController.h */,
+				6B77D10718F535F200D49E9F /* SearchViewController.m */,
+				6B77D10818F535F200D49E9F /* SearchViewController.xib */,
 				6B77D0EC18F4E65200D49E9F /* MapView */,
 			);
 			name = Nearby;
