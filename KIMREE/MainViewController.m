@@ -55,16 +55,11 @@
 - (void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
-<<<<<<< HEAD
-=======
-
-- (void)viewDidAppear:(BOOL)animated
->>>>>>> renchunyu
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-<<<<<<< HEAD
+
 
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     //设置功能按钮偏移动画
@@ -83,18 +78,7 @@
 
 
 
-=======
-    
 
-    //设置功能按钮偏移动画
-    if (_funcScroller.scrollEnabled) {
-                CGPoint newOffset = self.funcScroller.contentOffset;
-        newOffset.y = 0;
-        [self.funcScroller setContentOffset:newOffset animated:YES];
-        _funcScroller.scrollEnabled = NO;
-    
-}
->>>>>>> renchunyu
 }
 
 - (void)didReceiveMemoryWarning
@@ -162,12 +146,6 @@
 - (IBAction)member:(id)sender {
 }
 
-- (IBAction)PostBar:(id)sender {
-    PostBarViewController *postBar = [[PostBarViewController alloc]init];
-    postBar.view.backgroundColor = [UIColor grayColor];
-    [self.navigationController pushViewController:postBar animated:YES];
-    
-}
 
 - (IBAction)product:(id)sender {
     self.navigationController.navigationBar.hidden = NO;
