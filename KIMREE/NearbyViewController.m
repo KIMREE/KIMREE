@@ -68,10 +68,7 @@
     [_mapView beginLoad];
     
 
-    
 }
-
-
 
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B38B8D418F7FCED005480DC /* GameViewController.m */; };
+		6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B38B8D518F7FCED005480DC /* GameViewController.xib */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
@@ -78,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B38B8D318F7FCED005480DC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		6B38B8D418F7FCED005480DC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		6B38B8D518F7FCED005480DC /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -206,6 +211,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B38B8D218F7FBBD005480DC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				6B38B8D318F7FCED005480DC /* GameViewController.h */,
+				6B38B8D418F7FCED005480DC /* GameViewController.m */,
+				6B38B8D518F7FCED005480DC /* GameViewController.xib */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,9 +268,10 @@
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B38B8D218F7FBBD005480DC /* Game */,
 				6BADFCA818F684F500249ED8 /* PostBar */,
 				7ECB0FE518F60D030040145C /* KIMREE */,
-				7ECB0FE118F60A380040145C /* product */,
+				7ECB0FE118F60A380040145C /* Product */,
 				7E4478BB18F43AAE009EF02D /* Nearby */,
 				C6AC988118F25A4A00CCF79C /* EScrollerView */,
 				C6AC98D018F2A2B900CCF79C /* RootViewController */,
@@ -321,13 +337,13 @@
 			name = Nearby;
 			sourceTree = "<group>";
 		};
-		7ECB0FE118F60A380040145C /* product */ = {
+		7ECB0FE118F60A380040145C /* Product */ = {
 			isa = PBXGroup;
 			children = (
 				7ECB0FE218F60A570040145C /* ProductViewController.h */,
 				7ECB0FE318F60A570040145C /* ProductViewController.m */,
 			);
-			name = product;
+			name = Product;
 			sourceTree = "<group>";
 		};
 		7ECB0FE518F60D030040145C /* KIMREE */ = {
@@ -587,6 +603,7 @@
 				7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */,
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
+				6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* grey_90.png in Resources */,
@@ -626,6 +643,7 @@
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				6BADFCB218F6850800249ED8 /* FBGlowLabel.m in Sources */,
+				6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6BADFCB318F6850800249ED8 /* SWTableViewCell.m in Sources */,

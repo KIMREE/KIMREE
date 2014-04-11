@@ -111,6 +111,10 @@
 }
 
 - (IBAction)game:(id)sender {
+    self.navigationController.navigationBar.hidden = NO;
+    GameViewController *gameView = [[GameViewController alloc] init];
+    [self.navigationController pushViewController:gameView animated:YES];
+    
 }
 
 - (IBAction)KIMREE:(id)sender {
@@ -133,5 +137,6 @@
 - (IBAction)product:(id)sender {
     self.navigationController.navigationBar.hidden = NO;
     ProductViewController  *secondVC = [[ProductViewController  alloc] init];
-    [self.navigationController pushViewController:secondVC animated:YES];}
+    [self.navigationController pushViewController:secondVC animated:YES];
+}
 @end
