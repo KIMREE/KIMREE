@@ -8,6 +8,11 @@
 
 #ifndef haitaotong_ConstantDef_h
 #define haitaotong_ConstantDef_h
+//贴吧菜单
+#define S_POSTBAR_SELL @"供应"
+#define S_POSTBAR_BUY @"求购"
+#define S_POSTBAR_INVITE @"招商"
+#define S_POSTBAR_MORE @"其它"
 
 //用户登录平台
 #define C_PLATFORM_QQ @"qqdenglu"
