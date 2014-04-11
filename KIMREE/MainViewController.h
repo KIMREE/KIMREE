@@ -9,12 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "EScrollerView.h"
 //#import "Header.h"
-#import "NearbyViewController.h"
 #import "ProductViewController.h"
 #import "KIMREEViewController.h"
 #import "PostBarViewController.h"
+#import "TabBarController.h"
+
 
 @interface MainViewController : UIViewController <EScrollerViewDelegate>
+
+{
+  UITabBarController *tabBarController;
+}
+
 
 - (IBAction)product:(id)sender;
 - (IBAction)nearby:(id)sender;

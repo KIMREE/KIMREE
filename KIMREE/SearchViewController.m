@@ -93,22 +93,22 @@
 
 
 
-/*搜索按钮*/
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
-    [self doSearch:searchBar];
-}
-
-/*键盘搜索按钮*/
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    [searchBar resignFirstResponder];
-    [self doSearch:searchBar];
-}
-
-/*搜索*/
-- (void)doSearch:(UISearchBar *)searchBar{
-    NSString *email = searchBar.text;
-   
-}
+///*搜索按钮*/
+//- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+//    [self doSearch:searchBar];
+//}
+//
+///*键盘搜索按钮*/
+//- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+//    [searchBar resignFirstResponder];
+//    [self doSearch:searchBar];
+//}
+//
+///*搜索*/
+//- (void)doSearch:(UISearchBar *)searchBar{
+//    NSString *email = searchBar.text;
+//   
+//}
 
 
 @end

@@ -106,9 +106,8 @@
 - (IBAction)nearby:(id)sender {
     
     self.navigationController.navigationBar.hidden = NO;
-    NearbyViewController *secondVC = [[NearbyViewController alloc] init];
-    [self.navigationController pushViewController:secondVC animated:YES];
-    
+    tabBarController = [[TabBarController alloc]init];
+    [self.navigationController pushViewController:tabBarController animated:YES];
 }
 
 - (IBAction)game:(id)sender {

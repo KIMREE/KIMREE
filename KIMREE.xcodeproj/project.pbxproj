@@ -20,6 +20,7 @@
 		6B77D10518F4EAF000D49E9F /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10318F4EAF000D49E9F /* pin.png */; };
 		6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D10718F535F200D49E9F /* SearchViewController.m */; };
 		6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10818F535F200D49E9F /* SearchViewController.xib */; };
+		6B909F1C18F7E17C002CDB30 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B909F1B18F7E17C002CDB30 /* TabBarController.m */; };
 		6BADFCB218F6850800249ED8 /* FBGlowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADFCAA18F6850800249ED8 /* FBGlowLabel.m */; };
 		6BADFCB318F6850800249ED8 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADFCAC18F6850800249ED8 /* SWTableViewCell.m */; };
 		6BADFCB418F6850800249ED8 /* UILabel+JIRUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADFCAE18F6850800249ED8 /* UILabel+JIRUI.m */; };
@@ -97,6 +98,8 @@
 		6B77D10618F535F200D49E9F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		6B77D10718F535F200D49E9F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6B77D10818F535F200D49E9F /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		6B909F1A18F7E17C002CDB30 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		6B909F1B18F7E17C002CDB30 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		6BADFCA918F6850800249ED8 /* FBGlowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGlowLabel.h; sourceTree = "<group>"; };
 		6BADFCAA18F6850800249ED8 /* FBGlowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGlowLabel.m; sourceTree = "<group>"; };
 		6BADFCAB18F6850800249ED8 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
@@ -206,6 +209,11 @@
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */,
+				6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */,
+				6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */,
+				6B77D0FE18F4E6F300D49E9F /* Item.m */,
+				6B77D0FD18F4E6F300D49E9F /* Item.h */,
 				6B77D0ED18F4E67200D49E9F /* MapView.h */,
 				6B77D0EE18F4E67200D49E9F /* MapView.m */,
 				6B77D0F018F4E6A400D49E9F /* MapCalloutView */,
@@ -297,11 +305,8 @@
 		7E4478BB18F43AAE009EF02D /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
-				6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */,
-				6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */,
-				6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */,
-				6B77D0FD18F4E6F300D49E9F /* Item.h */,
-				6B77D0FE18F4E6F300D49E9F /* Item.m */,
+				6B909F1A18F7E17C002CDB30 /* TabBarController.h */,
+				6B909F1B18F7E17C002CDB30 /* TabBarController.m */,
 				7E4478B618F43AA3009EF02D /* NearbyViewController.h */,
 				7E4478B718F43AA3009EF02D /* NearbyViewController.m */,
 				7E4478B818F43AA3009EF02D /* NearbyViewController.xib */,
@@ -608,6 +613,7 @@
 				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
 				7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */,
 				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
+				6B909F1C18F7E17C002CDB30 /* TabBarController.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
