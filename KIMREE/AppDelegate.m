@@ -31,19 +31,12 @@
         style.font = [UIFont systemFontOfSize:12];
         return style;
     }];
-
-    
    
     //初始化主视图
     self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
     self.navController.navigationBar.hidden = YES;
     self.window.rootViewController = _navController;
-    
-    
-
-    
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,8 +1,9 @@
 //
 //  NJKWebViewProgress.h
+//  KIMREE
 //
-//  Created by Satoshi Aasano on 4/20/13.
-//  Copyright (c) 2013 Satoshi Asano. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,7 +17,7 @@
 
 typedef void (^NJKWebViewProgressBlock)(float progress);
 @protocol NJKWebViewProgressDelegate;
-@interface NJKWebViewProgress : NSObject<UIWebViewDelegate>
+@interface JRWebViewProgress : NSObject<UIWebViewDelegate>
 @property (nonatomic, njk_weak) id<NJKWebViewProgressDelegate>progressDelegate;
 @property (nonatomic, njk_weak) id<UIWebViewDelegate>webViewProxyDelegate;
 @property (nonatomic, copy) NJKWebViewProgressBlock progressBlock;
@@ -26,6 +27,6 @@ typedef void (^NJKWebViewProgressBlock)(float progress);
 @end
 
 @protocol NJKWebViewProgressDelegate <NSObject>
-- (void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress;
+- (void)webViewProgress:(JRWebViewProgress *)webViewProgress updateProgress:(float)progress;
 @end
 

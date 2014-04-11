@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SWTableViewCell.h"
+#import "JRTableViewCell.h"
 #import "Header.h"
 #import "HZWebViewController.h"
 @interface PostBarViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, SWTableViewCellDelegate>

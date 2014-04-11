@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
-#import "SWTableViewCell.h"
+#import "JRTableViewCell.h"
 
 #define kUtilityButtonsWidthMax 260
 #define kUtilityButtonWidthDefault 90
@@ -20,12 +20,12 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 
 @property (nonatomic, strong) NSArray *utilityButtons;
 @property (nonatomic) CGFloat utilityButtonWidth;
-@property (nonatomic, weak) SWTableViewCell *parentCell;
+@property (nonatomic, weak) JRTableViewCell *parentCell;
 @property (nonatomic) SEL utilityButtonSelector;
 
-- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
+- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(JRTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
 
-- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
+- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(JRTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector;
 
 @end
 
@@ -33,7 +33,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 
 #pragma mark - SWUtilityButonView initializers
 
-- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector {
+- (id)initWithUtilityButtons:(NSArray *)utilityButtons parentCell:(JRTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector {
     self = [super init];
     
     if (self) {
@@ -46,7 +46,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(SWTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector {
+- (id)initWithFrame:(CGRect)frame utilityButtons:(NSArray *)utilityButtons parentCell:(JRTableViewCell *)parentCell utilityButtonSelector:(SEL)utilityButtonSelector {
     self = [super initWithFrame:frame];
     
     if (self) {
@@ -89,7 +89,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 
 @end
 
-@interface SWTableViewCell () <UIScrollViewDelegate> {
+@interface JRTableViewCell () <UIScrollViewDelegate> {
     SWCellState _cellState; // The state of the cell within the scroll view, can be left, right or middle
 }
 
@@ -109,7 +109,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 
 @end
 
-@implementation SWTableViewCell
+@implementation JRTableViewCell
 #pragma mark Initializers
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier containingTableView:(UITableView *)containingTableView leftUtilityButtons:(NSArray *)leftUtilityButtons rightUtilityButtons:(NSArray *)rightUtilityButtons {

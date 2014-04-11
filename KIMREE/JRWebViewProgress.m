@@ -1,11 +1,12 @@
 //
 //  NJKWebViewProgress.m
+//  KIMREE
 //
-//  Created by Satoshi Aasano on 4/20/13.
-//  Copyright (c) 2013 Satoshi Asano. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#import "NJKWebViewProgress.h"
+#import "JRWebViewProgress.h"
 
 NSString *completeRPCURL = @"webviewprogressproxy:///complete";
 
@@ -13,7 +14,7 @@ static const float initialProgressValue = 0.1;
 static const float beforeInteractiveMaxProgressValue = 0.5;
 static const float afterInteractiveMaxProgressValue = 0.9;
 
-@implementation NJKWebViewProgress
+@implementation JRWebViewProgress
 {
     NSUInteger _loadingCount;
     NSUInteger _maxLoadCount;

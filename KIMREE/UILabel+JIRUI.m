@@ -7,10 +7,10 @@
 //
 
 #import "UILabel+JIRUI.h"
-#import "FBGlowLabel.h"
+#import "JRGlowLabel.h"
 @implementation UILabel (JIRUI)
 + (UILabel *)LabelForGlowRect:(CGRect)frame Font:(CGFloat)size{
-    FBGlowLabel *v = [[FBGlowLabel alloc] initWithFrame:frame];
+    JRGlowLabel *v = [[JRGlowLabel alloc] initWithFrame:frame];
     v.textAlignment = NSTextAlignmentCenter;
     v.clipsToBounds = YES;
     v.backgroundColor = [UIColor clearColor];

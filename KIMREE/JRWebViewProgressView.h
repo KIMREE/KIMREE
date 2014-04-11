@@ -1,14 +1,14 @@
 //
 //  NJKWebViewProgressView.h
-// iOS 7 Style WebView Progress Bar
+//  KIMREE
 //
-//  Created by Satoshi Aasano on 11/16/13.
-//  Copyright (c) 2013 Satoshi Asano. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface NJKWebViewProgressView : UIView
+@interface JRWebViewProgressView : UIView
 @property (nonatomic) float progress;
 
 @property (nonatomic) UIView *progressBarView;

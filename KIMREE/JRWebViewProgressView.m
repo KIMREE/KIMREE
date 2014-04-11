@@ -1,13 +1,13 @@
 //
 //  NJKWebViewProgressView.m
+//  KIMREE
 //
-//  Created by Satoshi Aasanoon 11/16/13.
-//  Copyright (c) 2013 Satoshi Asano. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
+#import "JRWebViewProgressView.h"
 
-#import "NJKWebViewProgressView.h"
-
-@implementation NJKWebViewProgressView
+@implementation JRWebViewProgressView
 
 - (id)initWithFrame:(CGRect)frame
 {

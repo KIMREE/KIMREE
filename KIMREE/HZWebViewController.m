@@ -9,8 +9,8 @@
 #import "HZWebViewController.h"
 #import "UIView+Screenshot.h"
 #import "UIImage+Blur.h"
-#import "NJKWebViewProgress.h"
-#import "NJKWebViewProgressView.h"
+#import "JRWebViewProgress.h"
+#import "JRWebViewProgressView.h"
 
 #define HZFSystemVersion          ([[[UIDevice currentDevice] systemVersion] floatValue])
 #define HZUIColorFromRGB(colorRed,colorGreen,colorBlue)  [UIColor colorWithRed:(colorRed)/255.0 green:(colorGreen)/255.0 blue:(colorBlue)/255.0 alpha:1.0]
@@ -57,7 +57,7 @@ NSInteger const HZProgresstagId = 222122323;
 
 @property (strong, nonatomic) UIPopoverController *activitiyPopoverController;
 
-@property (nonatomic,strong) NJKWebViewProgress *progressProxy;
+@property (nonatomic,strong) JRWebViewProgress *progressProxy;
 
 @property (nonatomic,strong) UILabel *titleLb;
 @property (nonatomic,strong) XToolBar *toolBar;
@@ -139,7 +139,7 @@ NSInteger const HZProgresstagId = 222122323;
   
   
   //progress
-  _progressProxy = [[NJKWebViewProgress alloc] init];
+  _progressProxy = [[JRWebViewProgress alloc] init];
   
   
   [self setupToolBarItems];
@@ -350,20 +350,20 @@ NSInteger const HZProgresstagId = 222122323;
 }
 
 //显示加载进度view
-- (NJKWebViewProgressView *)setupHZProgressSubviewWithTintColor:(UIColor *)tintColor{
+- (JRWebViewProgressView *)setupHZProgressSubviewWithTintColor:(UIColor *)tintColor{
   
-  NJKWebViewProgressView *progressView;
+  JRWebViewProgressView *progressView;
 	for (UIView *subview in [self.view subviews])
 	{
 		if (subview.tag == HZProgresstagId)
 		{
-			progressView = (NJKWebViewProgressView *)subview;
+			progressView = (JRWebViewProgressView *)subview;
 		}
 	}
 	
 	if(!progressView)
 	{
-    progressView =  [[NJKWebViewProgressView alloc] initWithFrame:CGRectMake(0, self.webView.frame.origin.y, self.webView.frame.size.width, HZProgressBarHeight)];
+    progressView =  [[JRWebViewProgressView alloc] initWithFrame:CGRectMake(0, self.webView.frame.origin.y, self.webView.frame.size.width, HZProgressBarHeight)];
 		progressView.tag = HZProgresstagId;
     //		progressView.backgroundColor = tintColor;
 		[self.view addSubview:progressView];
@@ -380,7 +380,7 @@ NSInteger const HZProgresstagId = 222122323;
 }
 - (void)viewUpdatesForPercentage:(float)percentage andTintColor:(UIColor *)tintColor
 {
-	NJKWebViewProgressView *progressView = [self setupHZProgressSubviewWithTintColor:tintColor];
+	JRWebViewProgressView *progressView = [self setupHZProgressSubviewWithTintColor:tintColor];
   [progressView setProgress:percentage animated:YES];
   return;
 }
@@ -445,7 +445,7 @@ NSInteger const HZProgresstagId = 222122323;
 
 #pragma mark
 #pragma mark NJKWebViewProgressDelegate
-- (void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
+- (void)webViewProgress:(JRWebViewProgress *)webViewProgress updateProgress:(float)progress
 {
   
   if(progress >= 1.0000f)

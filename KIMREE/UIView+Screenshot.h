@@ -1,9 +1,9 @@
 //
 //  UIView+Screenshot.h
-//  BFServiceStation
+///  KIMREE
 //
-//  Created by x on 14-3-21.
-//  Copyright (c) 2014年 Baofeng. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

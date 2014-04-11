@@ -76,7 +76,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     
-    SWTableViewCell *cell = (SWTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    JRTableViewCell *cell = (JRTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
         NSMutableArray *leftUtilityButtons = [NSMutableArray new];
@@ -111,7 +111,7 @@
          [UIColor colorWithRed:0.07 green:0.75f blue:0.16f alpha:1.0]
                                                   icon:[UIImage imageNamed:@"check.png"]];
       */
-        cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+        cell = [[JRTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:cellIdentifier
                                   containingTableView:_tableView // Used for row height and selection
                                    leftUtilityButtons:leftUtilityButtons
@@ -152,15 +152,22 @@
 
 #pragma mark - SWTableViewDelegate
 //从左往右滑
-- (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
-    
+- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:
             if (index) {
-                
+                HZWebViewController *webViewController = [HZWebViewController new];
+                //    webViewController.mode = HZWebBrowserModeNavigation;
+                webViewController.mode = HZWebBrowserModeModal;
+                webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=post&action=newthread&fid=39"];
+                [self presentViewController:webViewController animated:YES completion:^{}];
              } else {
-                 
+                 HZWebViewController *webViewController = [HZWebViewController new];
+                 //    webViewController.mode = HZWebBrowserModeNavigation;
+                 webViewController.mode = HZWebBrowserModeModal;
+                 webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/home.php?mod=space&do=pm"];
+                 [self presentViewController:webViewController animated:YES completion:^{}];
             }
             break;
         case 1:
@@ -187,10 +194,11 @@
         default:
             break;
     }
+    [cell hideUtilityButtonsAnimated:YES];
 }
 
 //从右往左滑
-- (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
+- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:
@@ -224,6 +232,7 @@
         default:
             break;
     }
+    [cell hideUtilityButtonsAnimated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
