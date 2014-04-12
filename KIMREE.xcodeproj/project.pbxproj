@@ -42,7 +42,7 @@
 		7E77A8C918F84D77000155B7 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C818F84D77000155B7 /* login.png */; };
 		7E8104F918F5A2F000C7882E /* blue_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F318F5A2F000C7882E /* blue_90.png */; };
 		7E8104FA18F5A2F000C7882E /* green_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F418F5A2F000C7882E /* green_90.png */; };
-		7E8104FB18F5A2F000C7882E /* grey_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F518F5A2F000C7882E /* grey_90.png */; };
+		7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F518F5A2F000C7882E /* gray_90.png */; };
 		7E8104FC18F5A2F000C7882E /* red_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F618F5A2F000C7882E /* red_90.png */; };
 		7E8104FD18F5A2F000C7882E /* ye90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F718F5A2F000C7882E /* ye90.png */; };
 		7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F818F5A2F000C7882E /* yellow_90.png */; };
@@ -133,7 +133,7 @@
 		7E77A8C818F84D77000155B7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		7E8104F318F5A2F000C7882E /* blue_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_90.png; sourceTree = "<group>"; };
 		7E8104F418F5A2F000C7882E /* green_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_90.png; sourceTree = "<group>"; };
-		7E8104F518F5A2F000C7882E /* grey_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_90.png; sourceTree = "<group>"; };
+		7E8104F518F5A2F000C7882E /* gray_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_90.png; sourceTree = "<group>"; };
 		7E8104F618F5A2F000C7882E /* red_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_90.png; sourceTree = "<group>"; };
 		7E8104F718F5A2F000C7882E /* ye90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ye90.png; sourceTree = "<group>"; };
 		7E8104F818F5A2F000C7882E /* yellow_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_90.png; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 				7E2BDD8118F840900002ADF3 /* bg-body.jpg */,
 				7E8104F318F5A2F000C7882E /* blue_90.png */,
 				7E8104F418F5A2F000C7882E /* green_90.png */,
-				7E8104F518F5A2F000C7882E /* grey_90.png */,
+				7E8104F518F5A2F000C7882E /* gray_90.png */,
 				7E8104F618F5A2F000C7882E /* red_90.png */,
 				7E8104F718F5A2F000C7882E /* ye90.png */,
 				7E8104F818F5A2F000C7882E /* yellow_90.png */,
@@ -618,7 +618,7 @@
 				6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
-				7E8104FB18F5A2F000C7882E /* grey_90.png in Resources */,
+				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,
 				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
 			);

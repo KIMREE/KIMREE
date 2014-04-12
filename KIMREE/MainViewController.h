@@ -22,13 +22,4 @@
   UITabBarController *tabBarController;
 }
 
-
-- (IBAction)product:(id)sender;
-- (IBAction)nearby:(id)sender;
-- (IBAction)game:(id)sender;
-- (IBAction)KIMREE:(id)sender;
-- (IBAction)member:(id)sender;
-- (IBAction)PostBar:(id)sender;
-
-
 @end
