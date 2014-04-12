@@ -128,6 +128,7 @@
 		7E4478B718F43AA3009EF02D /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
 		7E4478B818F43AA3009EF02D /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
 		7E4478BD18F43B5A009EF02D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		7E705CE318F95DBC008B9C15 /* sizeconstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sizeconstant.h; sourceTree = "<group>"; };
 		7E77A8C218F84B9F000155B7 /* checkbox_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_in.png; sourceTree = "<group>"; };
 		7E77A8C318F84B9F000155B7 /* checkbox_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_out.png; sourceTree = "<group>"; };
 		7E77A8C818F84D77000155B7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
@@ -517,6 +518,7 @@
 				C6E5741118F3AB89008DFA54 /* UserDefaultsKeyDef.h */,
 				C6E5741218F3AB89008DFA54 /* NotificationNameDef.h */,
 				C6E5741318F3AB89008DFA54 /* ErrorCodeDef.h */,
+				7E705CE318F95DBC008B9C15 /* sizeconstant.h */,
 			);
 			name = headers;
 			sourceTree = "<group>";
