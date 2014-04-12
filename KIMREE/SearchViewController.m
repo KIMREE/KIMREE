@@ -31,13 +31,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    //增加工具栏按钮
+
     [self.navigationController  setToolbarHidden:YES animated:YES];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"about" style:UIBarButtonItemStylePlain target:self action:nil];
     
-    //为导航栏添加右侧按钮
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"about" style:UIBarButtonItemStylePlain target:self action:nil];
-    
+    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 60, self.view.bounds.size.width, 50)];
+    [self.view addSubview:searchBar];
 
 }
 
@@ -62,26 +61,6 @@
     
 }
 
-
-
-
-
-///*搜索按钮*/
-//- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
-//    [self doSearch:searchBar];
-//}
-//
-///*键盘搜索按钮*/
-//- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-//    [searchBar resignFirstResponder];
-//    [self doSearch:searchBar];
-//}
-//
-///*搜索*/
-//- (void)doSearch:(UISearchBar *)searchBar{
-//    NSString *email = searchBar.text;
-//   
-//}
 
 
 @end

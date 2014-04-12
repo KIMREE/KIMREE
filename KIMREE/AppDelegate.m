@@ -18,8 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     //设置状态栏样式
-    [UIApplication sharedApplication].statusBarHidden = NO;
-    if ([SystemHelper systemVersion] >= 7.0f){
+      [UIApplication sharedApplication].statusBarHidden = NO;
+     if ([SystemHelper systemVersion] >= 7.0f){
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     }
     
@@ -32,9 +32,7 @@
         return style;
     }];
 
-    
-   
-    //初始化主视图
+  //初始化主视图
     self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
     self.navController.navigationBar.hidden = YES;
