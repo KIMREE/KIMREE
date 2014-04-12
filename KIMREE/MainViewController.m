@@ -27,8 +27,8 @@
     if (self) {
         // Custom initialization
         
-        UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
-        self.view.backgroundColor=[UIColor colorWithPatternImage:img];
+      UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
+      self.view.backgroundColor=[UIColor colorWithPatternImage:img];
         
         
     }
@@ -38,6 +38,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //设置新闻
+    [self creatNews];
+
     /*
      NSLog(@"%f, %f, %f, %f ",_newsView.frame.origin.x, _newsView.frame.origin.y, _newsView.bounds.size.width, _newsView.bounds.size.height);
      */
@@ -45,8 +49,7 @@
     
     [self.funcScroller setContentOffset:bottomOffset animated:NO];
     
-    //设置新闻
-    [self creatNews];
+  
     
     if (IS_IPHONE5) {
         
@@ -133,6 +136,7 @@
         UILabel *productlabel=[[UILabel alloc] initWithFrame:CGRectMake(60.0, 262.0, 70.0, 15.0)];
         productlabel.text=@"产品";
         productlabel.font = [UIFont systemFontOfSize:16];
+        productlabel.backgroundColor=[UIColor clearColor];
         productlabel.textColor=[UIColor whiteColor];
         productlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:productlabel];
@@ -146,6 +150,7 @@
         UILabel *gamelabel=[[UILabel alloc] initWithFrame:CGRectMake(195.0, 262.0, 70.0, 15.0)];
         gamelabel.text=@"酷玩";
         gamelabel.font = [UIFont systemFontOfSize:16];
+        gamelabel.backgroundColor=[UIColor clearColor];
         gamelabel.textColor=[UIColor whiteColor];
         gamelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:gamelabel];
@@ -159,6 +164,7 @@
         UILabel *postbarlabel=[[UILabel alloc] initWithFrame:CGRectMake(60.0, 361.0, 70.0, 15.0)];
         postbarlabel.text=@"贴吧";
         postbarlabel.font = [UIFont systemFontOfSize:16];
+        postbarlabel.backgroundColor=[UIColor clearColor];
         postbarlabel.textColor=[UIColor whiteColor];
         postbarlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:postbarlabel];
@@ -172,6 +178,7 @@
         UILabel *kimreelabel=[[UILabel alloc] initWithFrame:CGRectMake(195.0, 361.0, 70.0, 15.0)];
         kimreelabel.text=@"KIMREE";
         kimreelabel.font = [UIFont systemFontOfSize:16];
+        kimreelabel.backgroundColor=[UIColor clearColor];
         kimreelabel.textColor=[UIColor whiteColor];
         kimreelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:kimreelabel];
@@ -185,6 +192,7 @@
         UILabel *nearbylabel=[[UILabel alloc] initWithFrame:CGRectMake(60.0, 458.0, 70.0, 15.0)];
         nearbylabel.text=@"附近";
         nearbylabel.font = [UIFont systemFontOfSize:16];
+        nearbylabel.backgroundColor=[UIColor clearColor];
         nearbylabel.textColor=[UIColor whiteColor];
         nearbylabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:nearbylabel];
@@ -197,6 +205,7 @@
         UILabel *memberlabel=[[UILabel alloc] initWithFrame:CGRectMake(195.0, 458.0, 70.0, 15.0)];
         memberlabel.text=@"会员";
         memberlabel.font = [UIFont systemFontOfSize:16];
+        memberlabel.backgroundColor=[UIColor clearColor];
         memberlabel.textColor=[UIColor whiteColor];
         memberlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         [self.view addSubview:memberlabel];
