@@ -48,11 +48,11 @@
     CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
     
     [self.funcScroller setContentOffset:bottomOffset animated:NO];
-<<<<<<< HEAD
+
 
     //设置新闻
     [self creatNews];
-=======
+
     
     
     if (IS_IPHONE5) {
@@ -317,7 +317,7 @@
     [self.view addSubview:memberBtn];
    }
 
->>>>>>> renchunyu
+
 }
 
 
@@ -332,7 +332,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-<<<<<<< HEAD
+
 
 
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -352,10 +352,7 @@
 
 
 
-
-=======
-    
-    
+   
     //设置功能按钮偏移动画
     if (_funcScroller.scrollEnabled) {
         CGPoint newOffset = self.funcScroller.contentOffset;
@@ -364,7 +361,7 @@
         _funcScroller.scrollEnabled = NO;
         
     }
->>>>>>> renchunyu
+
 }
 
 - (void)didReceiveMemoryWarning
