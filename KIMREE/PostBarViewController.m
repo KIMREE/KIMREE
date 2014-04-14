@@ -51,7 +51,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cell selected at index path %d", indexPath.row);
-    HZWebViewController *webViewController = [HZWebViewController new];
+    JRWebViewController *webViewController = [JRWebViewController new];
     //    webViewController.mode = HZWebBrowserModeNavigation;
     webViewController.mode = HZWebBrowserModeModal;
     webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=forumdisplay&fid=39"];
@@ -157,13 +157,13 @@
     switch (cellIndexPath.row) {
         case 0:
             if (index) {
-                HZWebViewController *webViewController = [HZWebViewController new];
+                JRWebViewController *webViewController = [JRWebViewController new];
                 //    webViewController.mode = HZWebBrowserModeNavigation;
                 webViewController.mode = HZWebBrowserModeModal;
                 webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=post&action=newthread&fid=39"];
                 [self presentViewController:webViewController animated:YES completion:^{}];
              } else {
-                 HZWebViewController *webViewController = [HZWebViewController new];
+                 JRWebViewController *webViewController = [JRWebViewController new];
                  //    webViewController.mode = HZWebBrowserModeNavigation;
                  webViewController.mode = HZWebBrowserModeModal;
                  webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/home.php?mod=space&do=pm"];

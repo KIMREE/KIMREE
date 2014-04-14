@@ -17,7 +17,7 @@ typedef enum {
 
 @interface XToolBar : UIToolbar {}@end
 
-@interface HZWebViewController : UIViewController <UIWebViewDelegate>
+@interface JRWebViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic) NSURL *URL;
 @property (nonatomic, assign) HZWebBrowserMode mode;

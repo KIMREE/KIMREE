@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 x. All rights reserved.
 //
 
-#import "HZWebViewController.h"
+#import "JRWebViewController.h"
 #import "UIView+Screenshot.h"
 #import "UIImage+Blur.h"
 #import "JRWebViewProgress.h"
@@ -47,7 +47,7 @@ NSInteger const HZProgresstagId = 222122323;
 }
 @end
 
-@interface HZWebViewController () <UIPopoverControllerDelegate ,UIActionSheetDelegate,NJKWebViewProgressDelegate>
+@interface JRWebViewController () <UIPopoverControllerDelegate ,UIActionSheetDelegate,NJKWebViewProgressDelegate>
 
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIBarButtonItem *stopLoadingButton;
@@ -64,7 +64,7 @@ NSInteger const HZProgresstagId = 222122323;
 
 @end
 
-@implementation HZWebViewController
+@implementation JRWebViewController
 
 
 - (void)load

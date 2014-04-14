@@ -43,7 +43,7 @@
 		7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E81050118F5A78C00C7882E /* bg-body.jpg */; };
 		7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE318F60A570040145C /* ProductViewController.m */; };
 		7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE718F60D180040145C /* KIMREEViewController.m */; };
-		C681014218F7EDC4008599BB /* HZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681013318F7EDC4008599BB /* HZWebViewController.m */; };
+		C681014218F7EDC4008599BB /* JRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681013318F7EDC4008599BB /* JRWebViewController.m */; };
 		C681014318F7EDC4008599BB /* navigationbar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C681013418F7EDC4008599BB /* navigationbar_back.png */; };
 		C681014418F7EDC4008599BB /* navigationbar_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C681013518F7EDC4008599BB /* navigationbar_back@2x.png */; };
 		C681014518F7EDC4008599BB /* JRWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C681013718F7EDC4008599BB /* JRWebViewProgress.m */; };
@@ -172,8 +172,8 @@
 		7ECB0FE318F60A570040145C /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		7ECB0FE618F60D180040145C /* KIMREEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIMREEViewController.h; sourceTree = "<group>"; };
 		7ECB0FE718F60D180040145C /* KIMREEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIMREEViewController.m; sourceTree = "<group>"; };
-		C681013218F7EDC4008599BB /* HZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWebViewController.h; sourceTree = "<group>"; };
-		C681013318F7EDC4008599BB /* HZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWebViewController.m; sourceTree = "<group>"; };
+		C681013218F7EDC4008599BB /* JRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRWebViewController.h; sourceTree = "<group>"; };
+		C681013318F7EDC4008599BB /* JRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRWebViewController.m; sourceTree = "<group>"; };
 		C681013418F7EDC4008599BB /* navigationbar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_back.png; sourceTree = "<group>"; };
 		C681013518F7EDC4008599BB /* navigationbar_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_back@2x.png"; sourceTree = "<group>"; };
 		C681013618F7EDC4008599BB /* JRWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRWebViewProgress.h; sourceTree = "<group>"; };
@@ -326,6 +326,7 @@
 		6BADFCA818F684F500249ED8 /* PostBar */ = {
 			isa = PBXGroup;
 			children = (
+				C694832D18FBA35800D6D6B2 /* TabPostBar */,
 				C681014018F7EDC4008599BB /* UIView+Screenshot.h */,
 				C681014118F7EDC4008599BB /* UIView+Screenshot.m */,
 				6BADFCAB18F6850800249ED8 /* JRTableViewCell.h */,
@@ -459,8 +460,8 @@
 		C681015318F7EF51008599BB /* JRWebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C681013218F7EDC4008599BB /* HZWebViewController.h */,
-				C681013318F7EDC4008599BB /* HZWebViewController.m */,
+				C681013218F7EDC4008599BB /* JRWebViewController.h */,
+				C681013318F7EDC4008599BB /* JRWebViewController.m */,
 				C681015118F7EF1B008599BB /* JRGlowLabel */,
 				C681015018F7EF0D008599BB /* UIImage+Blur */,
 				C681014F18F7EEF2008599BB /* JRWebViewProgressView */,
@@ -537,6 +538,13 @@
 				7E4478A418F4370E009EF02D /* 03.jpg */,
 			);
 			name = menu;
+			sourceTree = "<group>";
+		};
+		C694832D18FBA35800D6D6B2 /* TabPostBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TabPostBar;
 			sourceTree = "<group>";
 		};
 		C6AC984618F234F500CCF79C = {
@@ -874,7 +882,7 @@
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
 				6BADFCB518F6850800249ED8 /* PostBarViewController.m in Sources */,
 				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
-				C681014218F7EDC4008599BB /* HZWebViewController.m in Sources */,
+				C681014218F7EDC4008599BB /* JRWebViewController.m in Sources */,
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
