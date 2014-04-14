@@ -251,7 +251,7 @@
 }
 
 - (id)initWithFrame:(CGRect)frame pullingDelegate:(id<PullingRefreshTableViewDelegate>)aPullingDelegate {
-    self = [self initWithFrame:frame style:UITableViewStylePlain];
+    self = [self initWithFrame:frame style:UITableViewStyleGrouped];
     if (self) {
         self.pullingDelegate = aPullingDelegate;
     }
@@ -458,11 +458,17 @@
         _isFooterInAction = NO;
     } else if (_isFooterInAction) {
         CGPoint offset = self.contentOffset;
-        offset.y += 44.f;
-        self.contentOffset = offset;
-    }
+        if ([UIScreen mainScreen].bounds.size.height <= 480) {
+            [UIView beginAnimations:@"Curl"context:nil];//动画开始
+            [UIView setAnimationDuration:3];
+            [UIView setAnimationDelegate:self];
+            offset.y += 70.f;
+            self.contentOffset = offset;
+            [UIView commitAnimations];
 
-    
+        }
+    }
+   
 }
 
 @end

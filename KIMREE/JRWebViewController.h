@@ -1,9 +1,9 @@
 //
 //  HZWebViewController.h
-//  mgpyh
+//  KIMREE
 //
-//  Created by x on 14-4-4.
-//  Copyright (c) 2014年 x. All rights reserved.
+//  Created by JIRUI on 14-4-14.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

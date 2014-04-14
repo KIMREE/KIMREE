@@ -29,8 +29,9 @@ PullingRefreshTableViewDelegate>
     
 //    [self.tableView registerNib:[UINib nibWithNibName:@"TBCell" bundle:nil]forCellReuseIdentifier:@"TBCell"];
     
-    CGRect bounds = self.view.bounds;
+//    CGRect bounds = self.view.bounds;
 //    bounds.size.height -= 44.f;
+    CGRect bounds = CGRectMake(0, 28, self.view.bounds.size.width, self.view.bounds.size.height);
     _mytableView = [[PullingRefreshTableView alloc] initWithFrame:bounds pullingDelegate:self];
     self.tableView = _mytableView;
 
@@ -76,6 +77,9 @@ PullingRefreshTableViewDelegate>
 
 
 #pragma mark - Table view data source
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"你现在选择了第%i行", indexPath.row);
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -87,12 +91,12 @@ PullingRefreshTableViewDelegate>
 {
     
     // Return the number of rows in the section.
-    return 20;
+    return 12;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 127;
+        return 127;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,9 +109,9 @@ PullingRefreshTableViewDelegate>
     }
 
     // Configure the cell...
-    
     return cell;
 }
+
 
 
 @end

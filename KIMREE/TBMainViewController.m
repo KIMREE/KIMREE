@@ -35,8 +35,7 @@
     self.tableviewVC.tableView.dataSource = self.tableviewVC;
     [self.view addSubview:self.tableviewVC.view];
     
-    [self.btn_fresh setCenter:CGPointMake(285, 510)];
-
+    [self.btn_fresh setCenter:CGPointMake(self.view.bounds.size.width*6.5/8.0, self.view.bounds.size.height*7.5/10.0)];
     [self.btn_fresh addSubview:self.pic_fresh];
     
     NSLog(@"%@",NSStringFromCGRect(self.btn_fresh.frame));
@@ -65,7 +64,7 @@
     rotationAnimation.repeatCount = 1;//HUGE_VALF;
     [self.pic_fresh.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
     
-    [self.tableviewVC.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    [self.tableviewVC.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 
     [self.tableviewVC resetViewedCells];
 }

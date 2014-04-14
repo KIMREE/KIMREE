@@ -107,6 +107,7 @@
 		C6BE22BF18FBB50D007DBEF8 /* TBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BE22B618FBB50D007DBEF8 /* TBMainViewController.xib */; };
 		C6BE22C018FBB50D007DBEF8 /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */; };
 		C6BE22C118FBB50D007DBEF8 /* TBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BE22B918FBB50D007DBEF8 /* TBCell.xib */; };
+		C6BE22D718FBE106007DBEF8 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22D618FBE106007DBEF8 /* PostTableViewCell.m */; };
 		C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E573ED18F3A3D0008DFA54 /* pinyin.c */; };
 		C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E573F518F3A688008DFA54 /* SystemHelper.m */; };
 		C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E573F718F3A688008DFA54 /* DateTimeHelper.m */; };
@@ -258,6 +259,8 @@
 		C6BE22B718FBB50D007DBEF8 /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
 		C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
 		C6BE22B918FBB50D007DBEF8 /* TBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBCell.xib; sourceTree = "<group>"; };
+		C6BE22D518FBE106007DBEF8 /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		C6BE22D618FBE106007DBEF8 /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
 		C6E573ED18F3A3D0008DFA54 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		C6E573EE18F3A3D0008DFA54 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		C6E573F318F3A688008DFA54 /* JRTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTool.h; sourceTree = "<group>"; };
@@ -572,6 +575,8 @@
 				C6BE22B718FBB50D007DBEF8 /* PullingRefreshTableView.h */,
 				C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */,
 				C6BE22B918FBB50D007DBEF8 /* TBCell.xib */,
+				C6BE22D518FBE106007DBEF8 /* PostTableViewCell.h */,
+				C6BE22D618FBE106007DBEF8 /* PostTableViewCell.m */,
 			);
 			name = TabPostBar;
 			sourceTree = "<group>";
@@ -912,6 +917,7 @@
 				C6BE22BA18FBB50D007DBEF8 /* TTUITableViewZoomController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
+				C6BE22D718FBE106007DBEF8 /* PostTableViewCell.m in Sources */,
 				6BADFCB318F6850800249ED8 /* JRTableViewCell.m in Sources */,
 				6BADFCB418F6850800249ED8 /* UILabel+JIRUI.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,

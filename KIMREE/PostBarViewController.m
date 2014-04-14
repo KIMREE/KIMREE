@@ -6,17 +6,18 @@
 //  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 #import "PostBarViewController.h"
-
+#import "TBMainViewController.h"
 @interface PostBarViewController () {
     NSMutableArray *_testArray;
 }
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-
+@property (strong, nonatomic) TBMainViewController *tabMainController;
 @end
 
 @implementation PostBarViewController
 @synthesize tableView = _tableView;
+@synthesize tabMainController = _tabMainController;
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.tableView.delegate = self;
@@ -50,18 +51,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cell selected at index path %d", indexPath.row);
-    JRWebViewController *webViewController = [JRWebViewController new];
-    //    webViewController.mode = HZWebBrowserModeNavigation;
-    webViewController.mode = HZWebBrowserModeModal;
-    webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=forumdisplay&fid=39"];
-    [self presentViewController:webViewController animated:YES completion:^{}];
     switch (indexPath.row) {
         case 0:
-            
+        {   
+            self.tabMainController = [[TBMainViewController alloc] initWithNibName:@"TBMainViewController" bundle:nil];
+            [self.navigationController pushViewController:_tabMainController animated:YES];
             break;
+        }
         case 1:
-            
+        {
+            JRWebViewController *webViewController = [JRWebViewController new];
+            //    webViewController.mode = HZWebBrowserModeNavigation;
+            webViewController.mode = HZWebBrowserModeModal;
+            webViewController.URL = [NSURL URLWithString:@"http://192.168.1.168/~renchunyu/forum.php?mod=forumdisplay&fid=39"];
+            [self presentViewController:webViewController animated:YES completion:^{}];
             break;
+        }
         case 2:
             
             break;
@@ -87,15 +92,6 @@
         [leftUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
                                                  title:@"消息"];
-        /*
-        [leftUtilityButtons addUtilityButtonWithColor:
-         [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
-                                                 icon:[UIImage imageNamed:@"cross.png"]];
-        [leftUtilityButtons addUtilityButtonWithColor:
-         [UIColor colorWithRed:0.55f green:0.27f blue:0.07f alpha:1.0]
-                                                 icon:[UIImage imageNamed:@"list.png"]];
-
-         */
         [rightUtilityButtons addUtilityButtonWithColor:
          [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
                                                  title:@"消息"];
