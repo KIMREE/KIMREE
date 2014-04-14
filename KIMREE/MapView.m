@@ -36,10 +36,7 @@
 
         self.span = 40000;
         
-        
-     
-        
-    }
+   }
     return self;
 }
 

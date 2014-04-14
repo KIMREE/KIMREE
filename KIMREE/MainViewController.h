@@ -13,21 +13,26 @@
 #import "KIMREEViewController.h"
 #import "PostBarViewController.h"
 #import "TabBarController.h"
+#import "GameViewController.h"
+#import "sizeconstant.h"
 
 
 @interface MainViewController : UIViewController <EScrollerViewDelegate>
 
 {
-  UITabBarController *tabBarController;
+    UITabBarController *tabBarController;
+    UIButton *productBtn;
+    UIButton *gameBtn;
+    UIButton *postbarBtn;
+    UIButton *kimreeBtn;
+    UIButton *nearbyBtn;
+    UIButton *memberBtn;
+    UILabel *productlabel;
+    UILabel  *gamelabel;
+    UILabel  *postbarlabel;
+    UILabel  *kimreelabel;
+    UILabel  *nearbylabel;
+    UILabel  *memberlabel;
 }
-
-
-- (IBAction)product:(id)sender;
-- (IBAction)nearby:(id)sender;
-- (IBAction)game:(id)sender;
-- (IBAction)KIMREE:(id)sender;
-- (IBAction)member:(id)sender;
-- (IBAction)PostBar:(id)sender;
-
 
 @end
