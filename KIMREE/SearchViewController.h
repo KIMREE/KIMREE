@@ -17,5 +17,8 @@
 - (IBAction)state:(id)sender;
 - (IBAction)country:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UISearchBar *searchbar;
+
+
 @property (retain, nonatomic) IBOutlet UIDatePicker *pickerView;
 @end
