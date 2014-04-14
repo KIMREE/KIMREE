@@ -47,8 +47,5 @@
 #define INCH4_CUSTOM_BTN_H 40.0f
 #define INCH4_CUSTOM_BTN_W 80.0f
 
-#define Y_COMPENSATION 65.0f
-
-
 
 #endif
