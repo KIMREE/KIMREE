@@ -31,10 +31,17 @@
         style.font = [UIFont systemFontOfSize:12];
         return style;
     }];
-
+<<<<<<< HEAD
+   
+<<<<<<< HEAD
+    //初始化主视图 //
+=======
+    //初始化主视图
+=======
 
   //初始化主视图
-
+>>>>>>> master
+>>>>>>> parent of d632a72... Revert 8b8d301..b28d36a
     self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
     self.navController.navigationBar.hidden = YES;

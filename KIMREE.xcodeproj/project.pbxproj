@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B183B1918FB6D09006E8517 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B1818FB6D09006E8517 /* MainViewController.m */; };
 		6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B38B8D418F7FCED005480DC /* GameViewController.m */; };
 		6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B38B8D518F7FCED005480DC /* GameViewController.xib */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
@@ -61,7 +62,6 @@
 		C6AC987618F234F500CCF79C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6AC987418F234F500CCF79C /* InfoPlist.strings */; };
 		C6AC987818F234F500CCF79C /* KIMREETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC987718F234F500CCF79C /* KIMREETests.m */; };
 		C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC988318F27FAC00CCF79C /* EScrollerView.m */; };
-		C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC988B18F2808900CCF79C /* MainViewController.m */; };
 		C6AC98E018F2AD0800CCF79C /* books.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6AC98DF18F2AD0800CCF79C /* books.plist */; };
 		C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E573ED18F3A3D0008DFA54 /* pinyin.c */; };
 		C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E573F518F3A688008DFA54 /* SystemHelper.m */; };
@@ -83,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B183B1818FB6D09006E8517 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6B38B8D318F7FCED005480DC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6B38B8D418F7FCED005480DC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6B38B8D518F7FCED005480DC /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
@@ -161,7 +162,6 @@
 		C6AC988218F27FAC00CCF79C /* EScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EScrollerView.h; sourceTree = "<group>"; };
 		C6AC988318F27FAC00CCF79C /* EScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EScrollerView.m; sourceTree = "<group>"; };
 		C6AC988A18F2808900CCF79C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		C6AC988B18F2808900CCF79C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C6AC98DF18F2AD0800CCF79C /* books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = books.plist; sourceTree = "<group>"; };
 		C6E573ED18F3A3D0008DFA54 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		C6E573EE18F3A3D0008DFA54 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
@@ -454,7 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				C6AC988A18F2808900CCF79C /* MainViewController.h */,
-				C6AC988B18F2808900CCF79C /* MainViewController.m */,
+				6B183B1818FB6D09006E8517 /* MainViewController.m */,
 				7E4478BE18F43B5A009EF02D /* MainViewController.xib */,
 			);
 			name = RootViewController;
@@ -652,6 +652,7 @@
 				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
+				6B183B1918FB6D09006E8517 /* MainViewController.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
@@ -668,7 +669,6 @@
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
-				C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
