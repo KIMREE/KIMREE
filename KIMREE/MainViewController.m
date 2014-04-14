@@ -52,201 +52,201 @@
     
     if (IS_IPHONE5) {
         
-        productlabel=[[UILabel alloc] init];
-        gamelabel=[[UILabel alloc] init];
-        postbarlabel=[[UILabel alloc] init];
-        kimreelabel=[[UILabel alloc] init];
-        nearbylabel=[[UILabel alloc] init];
-        memberlabel=[[UILabel alloc] init];
+        productLabel=[[UILabel alloc] init];
+        gameLabel=[[UILabel alloc] init];
+        postbarLabel=[[UILabel alloc] init];
+        kimreeLabel=[[UILabel alloc] init];
+        nearbyLabel=[[UILabel alloc] init];
+        memberLabel=[[UILabel alloc] init];
         
-    productBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        productBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [productBtn setBackgroundImage:[UIImage imageNamed:@"blue_90.png"] forState:UIControlStateNormal];
         [productBtn addTarget:self action:@selector(product:) forControlEvents:UIControlEventTouchUpInside];
-        productlabel.text=@"产品";
-        productlabel.backgroundColor=[UIColor clearColor];
-        productlabel.textColor=[UIColor whiteColor];
-        productlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        productLabel.text=@"产品";
+        productLabel.backgroundColor=[UIColor clearColor];
+        productLabel.textColor=[UIColor whiteColor];
+        productLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         gameBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [gameBtn setBackgroundImage:[UIImage imageNamed:@"red_90.png"] forState:UIControlStateNormal];
         [gameBtn addTarget:self action:@selector(game:) forControlEvents:UIControlEventTouchUpInside];
-        gamelabel.text=@"酷玩";
-        gamelabel.backgroundColor=[UIColor clearColor];
-        gamelabel.textColor=[UIColor whiteColor];
-        gamelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        gameLabel.text=@"酷玩";
+        gameLabel.backgroundColor=[UIColor clearColor];
+        gameLabel.textColor=[UIColor whiteColor];
+        gameLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         postbarBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [postbarBtn setBackgroundImage:[UIImage imageNamed:@"yellow_90.png"] forState:UIControlStateNormal];
         [postbarBtn addTarget:self action:@selector(PostBar:) forControlEvents:UIControlEventTouchUpInside];
-        postbarlabel.text=@"贴吧";
-        postbarlabel.backgroundColor=[UIColor clearColor];
-        postbarlabel.textColor=[UIColor whiteColor];
-        postbarlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        postbarLabel.text=@"贴吧";
+        postbarLabel.backgroundColor=[UIColor clearColor];
+        postbarLabel.textColor=[UIColor whiteColor];
+        postbarLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         kimreeBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [kimreeBtn setBackgroundImage:[UIImage imageNamed:@"ye90.png"] forState:UIControlStateNormal];
         [kimreeBtn addTarget:self action:@selector(KIMREE:) forControlEvents:UIControlEventTouchUpInside];
-        kimreelabel.text=@"KIMREE";
-        kimreelabel.backgroundColor=[UIColor clearColor];
-        kimreelabel.textColor=[UIColor whiteColor];
-        kimreelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        kimreeLabel.text=@"KIMREE";
+        kimreeLabel.backgroundColor=[UIColor clearColor];
+        kimreeLabel.textColor=[UIColor whiteColor];
+        kimreeLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         nearbyBtn= [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [nearbyBtn setBackgroundImage:[UIImage imageNamed:@"green_90.png"] forState:UIControlStateNormal];
         [nearbyBtn addTarget:self action:@selector(nearby:) forControlEvents:UIControlEventTouchUpInside];
-        nearbylabel.text=@"附近";
-        nearbylabel.backgroundColor=[UIColor clearColor];
-        nearbylabel.textColor=[UIColor whiteColor];
-        nearbylabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        nearbyLabel.text=@"附近";
+        nearbyLabel.backgroundColor=[UIColor clearColor];
+        nearbyLabel.textColor=[UIColor whiteColor];
+        nearbyLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         memberBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [memberBtn setBackgroundImage:[UIImage imageNamed:@"gray_90.png"] forState:UIControlStateNormal];
         [memberBtn addTarget:self action:@selector(member:) forControlEvents:UIControlEventTouchUpInside];
-        memberlabel.text=@"会员";
-        memberlabel.backgroundColor=[UIColor clearColor];
-        memberlabel.textColor=[UIColor whiteColor];
-        memberlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        memberLabel.text=@"会员";
+        memberLabel.backgroundColor=[UIColor clearColor];
+        memberLabel.textColor=[UIColor whiteColor];
+        memberLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         if (IOS7) {
             //the first row
             productBtn.frame = CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y, INCH4_BTN_W, INCH4_BTN_H);
-            productlabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10, INCH4_BTN_W, LABEL_H);
+            productLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10, INCH4_BTN_W, LABEL_H);
             
             gameBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y, INCH4_BTN_W, INCH4_BTN_H);
-            gamelabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10, INCH4_BTN_W, LABEL_H);
+            gameLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10, INCH4_BTN_W, LABEL_H);
             
             //the secend row
             postbarBtn.frame = CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+INCH4_BTN_INTERVAL, INCH4_BTN_W, INCH4_BTN_H);
-            postbarlabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
+            postbarLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
             
             kimreeBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+INCH4_BTN_INTERVAL, INCH4_BTN_W, INCH4_BTN_H);
-            kimreelabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
+            kimreeLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
             //the third row
             nearbyBtn.frame = CGRectMake(INCH4_LEFT_BTN_X,INCH4_FIRST_ROW_BTN_Y+2*(INCH4_BTN_H+INCH4_BTN_INTERVAL), INCH4_BTN_W, INCH4_BTN_H);
-            nearbylabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
+            nearbyLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
             
             memberBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*(INCH4_BTN_H+INCH4_BTN_INTERVAL), INCH4_BTN_W, INCH4_BTN_H);
-            memberlabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W,  INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
+            memberLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W,  INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10, INCH4_BTN_W, LABEL_H);
             
         }else {
             //the first row
             productBtn.frame = CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            productlabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            productLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
             
             gameBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            gamelabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            gameLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
             
             //the secend row
             postbarBtn.frame = CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+INCH4_BTN_INTERVAL-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            postbarlabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            postbarLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
             
             kimreeBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+INCH4_BTN_H+INCH4_BTN_INTERVAL-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            kimreelabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            kimreeLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*INCH4_BTN_H+INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
             //the third row
             nearbyBtn.frame = CGRectMake(INCH4_LEFT_BTN_X,INCH4_FIRST_ROW_BTN_Y+2*(INCH4_BTN_H+INCH4_BTN_INTERVAL)-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            nearbylabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            nearbyLabel.frame=CGRectMake(INCH4_LEFT_BTN_X, INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
             
             memberBtn.frame = CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W, INCH4_FIRST_ROW_BTN_Y+2*(INCH4_BTN_H+INCH4_BTN_INTERVAL)-STATUS_BAR, INCH4_BTN_W, INCH4_BTN_H);
-            memberlabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W,  INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
+            memberLabel.frame=CGRectMake(kScreen_Width-INCH4_LEFT_BTN_X-INCH4_BTN_W,  INCH4_FIRST_ROW_BTN_Y+3*INCH4_BTN_H+2*INCH4_BTN_INTERVAL+10-STATUS_BAR, INCH4_BTN_W, LABEL_H);
         }
         
         
-        [self.view addSubview:productlabel];
+        [self.view addSubview:productLabel];
         [self.view addSubview:productBtn];
-        [self.view addSubview:gamelabel];
+        [self.view addSubview:gameLabel];
         [self.view addSubview:gameBtn];
-        [self.view addSubview:postbarlabel];
+        [self.view addSubview:postbarLabel];
         [self.view addSubview:postbarBtn];
-        [self.view addSubview:kimreelabel];
+        [self.view addSubview:kimreeLabel];
         [self.view addSubview:kimreeBtn];
-        [self.view addSubview:nearbylabel];
+        [self.view addSubview:nearbyLabel];
         [self.view addSubview:nearbyBtn];
-        [self.view addSubview:memberlabel];
+        [self.view addSubview:memberLabel];
         [self.view addSubview:memberBtn];
     }
     
     //fit 3.5inch
     
     else{
-        productlabel=[[UILabel alloc] init];
-        gamelabel=[[UILabel alloc] init];
-        postbarlabel=[[UILabel alloc] init];
-        kimreelabel=[[UILabel alloc] init];
-        nearbylabel=[[UILabel alloc] init];
-        memberlabel=[[UILabel alloc] init];
+        productLabel=[[UILabel alloc] init];
+        gameLabel=[[UILabel alloc] init];
+        postbarLabel=[[UILabel alloc] init];
+        kimreeLabel=[[UILabel alloc] init];
+        nearbyLabel=[[UILabel alloc] init];
+        memberLabel=[[UILabel alloc] init];
         
         productBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [productBtn setBackgroundImage:[UIImage imageNamed:@"blue_90.png"] forState:UIControlStateNormal];
         [productBtn addTarget:self action:@selector(product:) forControlEvents:UIControlEventTouchUpInside];
-        productlabel.text=@"产品";
-        productlabel.font = [UIFont systemFontOfSize:16];
-        productlabel.backgroundColor=[UIColor clearColor];
-        productlabel.textColor=[UIColor whiteColor];
-        productlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        productLabel.text=@"产品";
+        productLabel.font = [UIFont systemFontOfSize:16];
+        productLabel.backgroundColor=[UIColor clearColor];
+        productLabel.textColor=[UIColor whiteColor];
+        productLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         gameBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [gameBtn setBackgroundImage:[UIImage imageNamed:@"red_90.png"] forState:UIControlStateNormal];
         [gameBtn addTarget:self action:@selector(game:) forControlEvents:UIControlEventTouchUpInside];
-        gamelabel.text=@"酷玩";
-        gamelabel.font = [UIFont systemFontOfSize:16];
-        gamelabel.backgroundColor=[UIColor clearColor];
-        gamelabel.textColor=[UIColor whiteColor];
-        gamelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        gameLabel.text=@"酷玩";
+        gameLabel.font = [UIFont systemFontOfSize:16];
+        gameLabel.backgroundColor=[UIColor clearColor];
+        gameLabel.textColor=[UIColor whiteColor];
+        gameLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         postbarBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [postbarBtn setBackgroundImage:[UIImage imageNamed:@"yellow_90.png"] forState:UIControlStateNormal];
         [postbarBtn addTarget:self action:@selector(PostBar:) forControlEvents:UIControlEventTouchUpInside];
-        postbarlabel.text=@"贴吧";
-        postbarlabel.font = [UIFont systemFontOfSize:16];
-        postbarlabel.backgroundColor=[UIColor clearColor];
-        postbarlabel.textColor=[UIColor whiteColor];
-        postbarlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        postbarLabel.text=@"贴吧";
+        postbarLabel.font = [UIFont systemFontOfSize:16];
+        postbarLabel.backgroundColor=[UIColor clearColor];
+        postbarLabel.textColor=[UIColor whiteColor];
+        postbarLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         kimreeBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [kimreeBtn setBackgroundImage:[UIImage imageNamed:@"ye90.png"] forState:UIControlStateNormal];
         [kimreeBtn addTarget:self action:@selector(KIMREE:) forControlEvents:UIControlEventTouchUpInside];
-        kimreelabel.text=@"KIMREE";
-        kimreelabel.font = [UIFont systemFontOfSize:16];
-        kimreelabel.backgroundColor=[UIColor clearColor];
-        kimreelabel.textColor=[UIColor whiteColor];
-        kimreelabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        kimreeLabel.text=@"KIMREE";
+        kimreeLabel.font = [UIFont systemFontOfSize:16];
+        kimreeLabel.backgroundColor=[UIColor clearColor];
+        kimreeLabel.textColor=[UIColor whiteColor];
+        kimreeLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
         nearbyBtn= [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [nearbyBtn setBackgroundImage:[UIImage imageNamed:@"green_90.png"] forState:UIControlStateNormal];
         [nearbyBtn addTarget:self action:@selector(nearby:) forControlEvents:UIControlEventTouchUpInside];
-        nearbylabel.text=@"附近";
-        nearbylabel.font = [UIFont systemFontOfSize:16];
-        nearbylabel.backgroundColor=[UIColor clearColor];
-        nearbylabel.textColor=[UIColor whiteColor];
-        nearbylabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        nearbyLabel.text=@"附近";
+        nearbyLabel.font = [UIFont systemFontOfSize:16];
+        nearbyLabel.backgroundColor=[UIColor clearColor];
+        nearbyLabel.textColor=[UIColor whiteColor];
+        nearbyLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         memberBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [memberBtn setBackgroundImage:[UIImage imageNamed:@"gray_90.png"] forState:UIControlStateNormal];
         [memberBtn addTarget:self action:@selector(member:) forControlEvents:UIControlEventTouchUpInside];
-        memberlabel.text=@"会员";
-        memberlabel.font = [UIFont systemFontOfSize:16];
-        memberlabel.backgroundColor=[UIColor clearColor];
-        memberlabel.textColor=[UIColor whiteColor];
-        memberlabel.textAlignment=UIBaselineAdjustmentAlignCenters;
+        memberLabel.text=@"会员";
+        memberLabel.font = [UIFont systemFontOfSize:16];
+        memberLabel.backgroundColor=[UIColor clearColor];
+        memberLabel.textColor=[UIColor whiteColor];
+        memberLabel.textAlignment=UIBaselineAdjustmentAlignCenters;
         
         
         
@@ -255,23 +255,23 @@
             
        //the first row
         productBtn.frame = CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y, INCH35_BTN_W, INCH35_BTN_H);
-        productlabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4, INCH35_BTN_W, LABEL_H);
+        productLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4, INCH35_BTN_W, LABEL_H);
         
         gameBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y, INCH35_BTN_W, INCH35_BTN_H);
-        gamelabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4, INCH35_BTN_W, LABEL_H);
+        gameLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4, INCH35_BTN_W, LABEL_H);
         
         //the secend row
         postbarBtn.frame = CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+INCH35_BTN_INTERVAL, INCH35_BTN_W, INCH35_BTN_H);
-        postbarlabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
+        postbarLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
         
         kimreeBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+INCH35_BTN_INTERVAL, INCH35_BTN_W, INCH35_BTN_H);
-        kimreelabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
+        kimreeLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
         //the third row
         nearbyBtn.frame = CGRectMake(INCH35_LEFT_BTN_X,INCH35_FIRST_ROW_BTN_Y+2*(INCH35_BTN_H+INCH35_BTN_INTERVAL), INCH35_BTN_W, INCH35_BTN_H);
-        nearbylabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
+        nearbyLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
         
         memberBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*(INCH35_BTN_H+INCH35_BTN_INTERVAL), INCH35_BTN_W, INCH35_BTN_H);
-        memberlabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W,  INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
+        memberLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W,  INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4, INCH35_BTN_W, LABEL_H);
         
     }
     else
@@ -279,36 +279,36 @@
     {
      //the first row
         productBtn.frame = CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        productlabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        productLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
         
         gameBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        gamelabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        gameLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
         
         //the secend row
         postbarBtn.frame = CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+INCH35_BTN_INTERVAL-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        postbarlabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        postbarLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
         
         kimreeBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+INCH35_BTN_H+INCH35_BTN_INTERVAL-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        kimreelabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        kimreeLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*INCH35_BTN_H+INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
         //the third row
         nearbyBtn.frame = CGRectMake(INCH35_LEFT_BTN_X,INCH35_FIRST_ROW_BTN_Y+2*(INCH35_BTN_H+INCH35_BTN_INTERVAL)-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        nearbylabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        nearbyLabel.frame=CGRectMake(INCH35_LEFT_BTN_X, INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
         
         memberBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*(INCH35_BTN_H+INCH35_BTN_INTERVAL)-STATUS_BAR, INCH35_BTN_W, INCH35_BTN_H);
-        memberlabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W,  INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
+        memberLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W,  INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4-STATUS_BAR, INCH35_BTN_W, LABEL_H);
     }
  
-    [self.view addSubview:productlabel];
+    [self.view addSubview:productLabel];
     [self.view addSubview:productBtn];
-    [self.view addSubview:gamelabel];
+    [self.view addSubview:gameLabel];
     [self.view addSubview:gameBtn];
-    [self.view addSubview:postbarlabel];
+    [self.view addSubview:postbarLabel];
     [self.view addSubview:postbarBtn];
-    [self.view addSubview:kimreelabel];
+    [self.view addSubview:kimreeLabel];
     [self.view addSubview:kimreeBtn];
-    [self.view addSubview:nearbylabel];
+    [self.view addSubview:nearbyLabel];
     [self.view addSubview:nearbyBtn];
-    [self.view addSubview:memberlabel];
+    [self.view addSubview:memberLabel];
     [self.view addSubview:memberBtn];
    }
 
@@ -391,6 +391,11 @@
 }
 
 - (IBAction)member:(id)sender {
+    
+    self.navigationController.navigationBar.hidden = NO;
+    MemberViewController *memberView = [[MemberViewController alloc] init];
+    [self.navigationController pushViewController:memberView animated:YES];
+    
 }
 
 - (IBAction)PostBar:(id)sender {

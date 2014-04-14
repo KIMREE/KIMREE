@@ -14,7 +14,7 @@
 #import "PostBarViewController.h"
 #import "TabBarController.h"
 #import "GameViewController.h"
-#import "sizeconstant.h"
+#import "MemberViewController.h"
 
 
 @interface MainViewController : UIViewController <EScrollerViewDelegate>
@@ -27,12 +27,12 @@
     UIButton *kimreeBtn;
     UIButton *nearbyBtn;
     UIButton *memberBtn;
-    UILabel *productlabel;
-    UILabel  *gamelabel;
-    UILabel  *postbarlabel;
-    UILabel  *kimreelabel;
-    UILabel  *nearbylabel;
-    UILabel  *memberlabel;
+    UILabel *productLabel;
+    UILabel  *gameLabel;
+    UILabel  *postbarLabel;
+    UILabel  *kimreeLabel;
+    UILabel  *nearbyLabel;
+    UILabel  *memberLabel;
 }
 
 @end
