@@ -1,44 +1,31 @@
 //
-//  AppDelegate.m
-//  KIMREE
+//  TBAppDelegate.m
+//  baiduTieba
 //
-//  Created by JIRUI on 14-4-7.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by Kevin Lee on 13-5-13.
+//  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TBAppDelegate.h"
 
-@implementation AppDelegate
-@synthesize navController = _navController;
-@synthesize rootController = _rootController;
+#import "TBMainViewController.h"
 
+@implementation TBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    //设置状态栏样式
-      [UIApplication sharedApplication].statusBarHidden = NO;
-     if ([SystemHelper systemVersion] >= 7.0f){
-        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    }
+    // Override point for customization after application launch.
+    self.viewController = [[TBMainViewController alloc] initWithNibName:@"TBMainViewController" bundle:nil];
     
-    //设置状态栏通知样式
-    [JDStatusBarNotification setDefaultStyle:^JDStatusBarStyle *(JDStatusBarStyle *style){
-        style.barColor = [UIColor blackColor];
-        style.textColor = [UIColor whiteColor];
-        style.animationType = JDStatusBarAnimationTypeMove;
-        style.font = [UIFont systemFontOfSize:12];
-        return style;
-    }];
-
-   
-    //初始化主视图 //
-
-    self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
-    self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
-    self.navController.navigationBar.hidden = YES;
-    self.window.rootViewController = _navController;
+    self.window.rootViewController = self.viewController;
+    
+    UIView *abcView = [[UIView alloc]initWithFrame:CGRectMake(10, 10, 100, 100)];
+    abcView.backgroundColor = [UIColor blackColor];
+//    [self.window addSubview:self.viewController.view];
+//    [self.viewController.view addSubview:abcView];
+//    [self.window addSubview:abcView];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
