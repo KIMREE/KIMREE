@@ -100,6 +100,13 @@
 		C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC988318F27FAC00CCF79C /* EScrollerView.m */; };
 		C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AC988B18F2808900CCF79C /* MainViewController.m */; };
 		C6AC98E018F2AD0800CCF79C /* books.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6AC98DF18F2AD0800CCF79C /* books.plist */; };
+		C6BE22BA18FBB50D007DBEF8 /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22AE18FBB50D007DBEF8 /* TTUITableViewZoomController.m */; };
+		C6BE22BC18FBB50D007DBEF8 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22B218FBB50D007DBEF8 /* TBViewController.m */; };
+		C6BE22BD18FBB50D007DBEF8 /* TBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BE22B318FBB50D007DBEF8 /* TBViewController.xib */; };
+		C6BE22BE18FBB50D007DBEF8 /* TBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22B518FBB50D007DBEF8 /* TBMainViewController.m */; };
+		C6BE22BF18FBB50D007DBEF8 /* TBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BE22B618FBB50D007DBEF8 /* TBMainViewController.xib */; };
+		C6BE22C018FBB50D007DBEF8 /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */; };
+		C6BE22C118FBB50D007DBEF8 /* TBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BE22B918FBB50D007DBEF8 /* TBCell.xib */; };
 		C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E573ED18F3A3D0008DFA54 /* pinyin.c */; };
 		C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E573F518F3A688008DFA54 /* SystemHelper.m */; };
 		C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E573F718F3A688008DFA54 /* DateTimeHelper.m */; };
@@ -240,6 +247,17 @@
 		C6AC988A18F2808900CCF79C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C6AC988B18F2808900CCF79C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C6AC98DF18F2AD0800CCF79C /* books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = books.plist; sourceTree = "<group>"; };
+		C6BE22AD18FBB50D007DBEF8 /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
+		C6BE22AE18FBB50D007DBEF8 /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
+		C6BE22B118FBB50D007DBEF8 /* TBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBViewController.h; sourceTree = "<group>"; };
+		C6BE22B218FBB50D007DBEF8 /* TBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
+		C6BE22B318FBB50D007DBEF8 /* TBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBViewController.xib; sourceTree = "<group>"; };
+		C6BE22B418FBB50D007DBEF8 /* TBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMainViewController.h; sourceTree = "<group>"; };
+		C6BE22B518FBB50D007DBEF8 /* TBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMainViewController.m; sourceTree = "<group>"; };
+		C6BE22B618FBB50D007DBEF8 /* TBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBMainViewController.xib; sourceTree = "<group>"; };
+		C6BE22B718FBB50D007DBEF8 /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
+		C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
+		C6BE22B918FBB50D007DBEF8 /* TBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBCell.xib; sourceTree = "<group>"; };
 		C6E573ED18F3A3D0008DFA54 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		C6E573EE18F3A3D0008DFA54 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		C6E573F318F3A688008DFA54 /* JRTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTool.h; sourceTree = "<group>"; };
@@ -543,6 +561,17 @@
 		C694832D18FBA35800D6D6B2 /* TabPostBar */ = {
 			isa = PBXGroup;
 			children = (
+				C6BE22AD18FBB50D007DBEF8 /* TTUITableViewZoomController.h */,
+				C6BE22AE18FBB50D007DBEF8 /* TTUITableViewZoomController.m */,
+				C6BE22B118FBB50D007DBEF8 /* TBViewController.h */,
+				C6BE22B218FBB50D007DBEF8 /* TBViewController.m */,
+				C6BE22B318FBB50D007DBEF8 /* TBViewController.xib */,
+				C6BE22B418FBB50D007DBEF8 /* TBMainViewController.h */,
+				C6BE22B518FBB50D007DBEF8 /* TBMainViewController.m */,
+				C6BE22B618FBB50D007DBEF8 /* TBMainViewController.xib */,
+				C6BE22B718FBB50D007DBEF8 /* PullingRefreshTableView.h */,
+				C6BE22B818FBB50D007DBEF8 /* PullingRefreshTableView.m */,
+				C6BE22B918FBB50D007DBEF8 /* TBCell.xib */,
 			);
 			name = TabPostBar;
 			sourceTree = "<group>";
@@ -782,6 +811,7 @@
 				C694830E18FBA15C00D6D6B2 /* pic_fresh_n@2x.png in Resources */,
 				7E8104F918F5A2F000C7882E /* blue_90.png in Resources */,
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
+				C6BE22BF18FBB50D007DBEF8 /* TBMainViewController.xib in Resources */,
 				C694831918FBA15C00D6D6B2 /* avatar_poto_defaul80.png in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
 				C694830F18FBA15C00D6D6B2 /* pic_icon_fresh.png in Resources */,
@@ -798,6 +828,7 @@
 				C694831618FBA15C00D6D6B2 /* avatar_poto_defaul140@2x.png in Resources */,
 				C681014918F7EDC4008599BB /* pb_tabbar_background.png in Resources */,
 				C694831018FBA15C00D6D6B2 /* pic_icon_fresh@2x.png in Resources */,
+				C6BE22C118FBB50D007DBEF8 /* TBCell.xib in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
 				C694831D18FBA15C00D6D6B2 /* explore_tagbj_lv.png in Resources */,
 				C694831B18FBA15C00D6D6B2 /* drop_down_renovate.png in Resources */,
@@ -818,6 +849,7 @@
 				C694832418FBA15C00D6D6B2 /* pic_background@2x.png in Resources */,
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
+				C6BE22BD18FBB50D007DBEF8 /* TBViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				C694832818FBA15C00D6D6B2 /* pic_plank_down@2x.png in Resources */,
 				C681014418F7EDC4008599BB /* navigationbar_back@2x.png in Resources */,
@@ -866,7 +898,9 @@
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
 				C681014B18F7EDC4008599BB /* UIImage+Blur.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
+				C6BE22BC18FBB50D007DBEF8 /* TBViewController.m in Sources */,
 				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
+				C6BE22C018FBB50D007DBEF8 /* PullingRefreshTableView.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
@@ -875,6 +909,7 @@
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				6BADFCB218F6850800249ED8 /* JRGlowLabel.m in Sources */,
+				C6BE22BA18FBB50D007DBEF8 /* TTUITableViewZoomController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6BADFCB318F6850800249ED8 /* JRTableViewCell.m in Sources */,
@@ -887,6 +922,7 @@
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
 				C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */,
+				C6BE22BE18FBB50D007DBEF8 /* TBMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
