@@ -31,13 +31,10 @@
         style.font = [UIFont systemFontOfSize:12];
         return style;
     }];
-<<<<<<< HEAD
-   
-    //初始化主视图
-=======
+
 
   //初始化主视图
->>>>>>> master
+
     self.rootController = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:_rootController];
     self.navController.navigationBar.hidden = YES;
