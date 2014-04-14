@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <UIKit/UIGestureRecognizerSubclass.h>
-#import "FBGlowLabel.h"
 #import "UILabel+JIRUI.h"
-@class SWTableViewCell;
+@class JRTableViewCell;
 
 typedef enum {
     kCellStateCenter,
@@ -21,13 +20,13 @@ typedef enum {
 @protocol SWTableViewCellDelegate <NSObject>
 
 @optional
-- (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index;
-- (void)swippableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index;
-- (void)swippableTableViewCell:(SWTableViewCell *)cell scrollingToState:(SWCellState)state;
+- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index;
+- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index;
+- (void)swippableTableViewCell:(JRTableViewCell *)cell scrollingToState:(SWCellState)state;
 
 @end
 
-@interface SWTableViewCell : UITableViewCell
+@interface JRTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) NSArray *leftUtilityButtons;
 @property (nonatomic, strong) NSArray *rightUtilityButtons;
