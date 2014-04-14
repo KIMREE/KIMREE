@@ -27,8 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost/~renchunyu/forum.php"]];
+    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.qq.com"]];
     [self.view addSubview: webView];
     [webView loadRequest:request];
 }
