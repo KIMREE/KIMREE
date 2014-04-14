@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B183B2818FB7153006E8517 /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B1C18FB7153006E8517 /* PullingRefreshTableView.m */; };
+		6B183B2918FB7153006E8517 /* TBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B1E18FB7153006E8517 /* TBAppDelegate.m */; };
+		6B183B2A18FB7153006E8517 /* TBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B183B1F18FB7153006E8517 /* TBCell.xib */; };
+		6B183B2B18FB7153006E8517 /* TBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B2118FB7153006E8517 /* TBMainViewController.m */; };
+		6B183B2C18FB7153006E8517 /* TBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B183B2218FB7153006E8517 /* TBMainViewController.xib */; };
+		6B183B2D18FB7153006E8517 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B2418FB7153006E8517 /* TBViewController.m */; };
+		6B183B2E18FB7153006E8517 /* TBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B183B2518FB7153006E8517 /* TBViewController.xib */; };
+		6B183B2F18FB7153006E8517 /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B183B2718FB7153006E8517 /* TTUITableViewZoomController.m */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
@@ -89,6 +97,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B183B1B18FB7153006E8517 /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
+		6B183B1C18FB7153006E8517 /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
+		6B183B1D18FB7153006E8517 /* TBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAppDelegate.h; sourceTree = "<group>"; };
+		6B183B1E18FB7153006E8517 /* TBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAppDelegate.m; sourceTree = "<group>"; };
+		6B183B1F18FB7153006E8517 /* TBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBCell.xib; sourceTree = "<group>"; };
+		6B183B2018FB7153006E8517 /* TBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMainViewController.h; sourceTree = "<group>"; };
+		6B183B2118FB7153006E8517 /* TBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMainViewController.m; sourceTree = "<group>"; };
+		6B183B2218FB7153006E8517 /* TBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBMainViewController.xib; sourceTree = "<group>"; };
+		6B183B2318FB7153006E8517 /* TBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBViewController.h; sourceTree = "<group>"; };
+		6B183B2418FB7153006E8517 /* TBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
+		6B183B2518FB7153006E8517 /* TBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBViewController.xib; sourceTree = "<group>"; };
+		6B183B2618FB7153006E8517 /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
+		6B183B2718FB7153006E8517 /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -233,6 +254,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B183B1A18FB7134006E8517 /* TablePostBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B183B1B18FB7153006E8517 /* PullingRefreshTableView.h */,
+				6B183B1C18FB7153006E8517 /* PullingRefreshTableView.m */,
+				6B183B1D18FB7153006E8517 /* TBAppDelegate.h */,
+				6B183B1E18FB7153006E8517 /* TBAppDelegate.m */,
+				6B183B1F18FB7153006E8517 /* TBCell.xib */,
+				6B183B2018FB7153006E8517 /* TBMainViewController.h */,
+				6B183B2118FB7153006E8517 /* TBMainViewController.m */,
+				6B183B2218FB7153006E8517 /* TBMainViewController.xib */,
+				6B183B2318FB7153006E8517 /* TBViewController.h */,
+				6B183B2418FB7153006E8517 /* TBViewController.m */,
+				6B183B2518FB7153006E8517 /* TBViewController.xib */,
+				6B183B2618FB7153006E8517 /* TTUITableViewZoomController.h */,
+				6B183B2718FB7153006E8517 /* TTUITableViewZoomController.m */,
+			);
+			name = TablePostBar;
+			sourceTree = "<group>";
+		};
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +305,7 @@
 		6BADFCA818F684F500249ED8 /* PostBar */ = {
 			isa = PBXGroup;
 			children = (
+				6B183B1A18FB7134006E8517 /* TablePostBar */,
 				C681014018F7EDC4008599BB /* UIView+Screenshot.h */,
 				C681014118F7EDC4008599BB /* UIView+Screenshot.m */,
 				6BADFCAB18F6850800249ED8 /* JRTableViewCell.h */,
@@ -671,13 +713,16 @@
 				7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */,
 				7E4478AD18F4370E009EF02D /* 02.jpg in Resources */,
 				7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */,
+				6B183B2A18FB7153006E8517 /* TBCell.xib in Resources */,
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
+				6B183B2C18FB7153006E8517 /* TBMainViewController.xib in Resources */,
 				C681014418F7EDC4008599BB /* navigationbar_back@2x.png in Resources */,
 				C681014718F7EDC4008599BB /* pb_tabbar_background_os7.png in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* grey_90.png in Resources */,
+				6B183B2E18FB7153006E8517 /* TBViewController.xib in Resources */,
 				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C681014818F7EDC4008599BB /* pb_tabbar_background_os7@2x.png in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
@@ -701,10 +746,12 @@
 			files = (
 				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
 				C681014618F7EDC4008599BB /* JRWebViewProgressView.m in Sources */,
+				6B183B2F18FB7153006E8517 /* TTUITableViewZoomController.m in Sources */,
 				7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */,
 				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
 				6B909F1C18F7E17C002CDB30 /* TabBarController.m in Sources */,
 				C681014518F7EDC4008599BB /* JRWebViewProgress.m in Sources */,
+				6B183B2D18FB7153006E8517 /* TBViewController.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
@@ -713,14 +760,17 @@
 				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
+				6B183B2918FB7153006E8517 /* TBAppDelegate.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
 				C681014C18F7EDC4008599BB /* UIView+Screenshot.m in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				6BADFCB218F6850800249ED8 /* JRGlowLabel.m in Sources */,
+				6B183B2B18FB7153006E8517 /* TBMainViewController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
+				6B183B2818FB7153006E8517 /* PullingRefreshTableView.m in Sources */,
 				6BADFCB318F6850800249ED8 /* JRTableViewCell.m in Sources */,
 				6BADFCB418F6850800249ED8 /* UILabel+JIRUI.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
