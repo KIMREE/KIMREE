@@ -62,16 +62,14 @@
 
 	self.mapView = [[MapView alloc] init];
     
-
+    
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
     [_mapView beginLoad];
     
-
-    
+    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 60, self.view.bounds.size.width, 50)];
+    [self.view addSubview:searchBar];
 }
-
-
 
 
 - (void)didReceiveMemoryWarning
