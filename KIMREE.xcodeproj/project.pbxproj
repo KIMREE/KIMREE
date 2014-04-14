@@ -40,6 +40,7 @@
 		7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4478B718F43AA3009EF02D /* NearbyViewController.m */; };
 		7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478B818F43AA3009EF02D /* NearbyViewController.xib */; };
 		7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478BE18F43B5A009EF02D /* MainViewController.xib */; };
+		7E618E9818FC418000EA93BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E618E9718FC418000EA93BF /* Default-568h@2x.png */; };
 		7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C218F84B9F000155B7 /* checkbox_in.png */; };
 		7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C318F84B9F000155B7 /* checkbox_out.png */; };
 		7E77A8C918F84D77000155B7 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C818F84D77000155B7 /* login.png */; };
@@ -135,6 +136,7 @@
 		7E4478B718F43AA3009EF02D /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyViewController.m; sourceTree = "<group>"; };
 		7E4478B818F43AA3009EF02D /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
 		7E4478BD18F43B5A009EF02D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		7E618E9718FC418000EA93BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7E77A8C218F84B9F000155B7 /* checkbox_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_in.png; sourceTree = "<group>"; };
 		7E77A8C318F84B9F000155B7 /* checkbox_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_out.png; sourceTree = "<group>"; };
 		7E77A8C818F84D77000155B7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		7E4478A018F4360A009EF02D /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				7E618E9718FC418000EA93BF /* Default-568h@2x.png */,
 				7E77A8C818F84D77000155B7 /* login.png */,
 				7E77A8C218F84B9F000155B7 /* checkbox_in.png */,
 				7E77A8C318F84B9F000155B7 /* checkbox_out.png */,
@@ -627,6 +630,7 @@
 				6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */,
 				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
 				7E77A8C918F84D77000155B7 /* login.png in Resources */,
+				7E618E9818FC418000EA93BF /* Default-568h@2x.png in Resources */,
 				7E8104FA18F5A2F000C7882E /* green_90.png in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
 				7E4478AD18F4370E009EF02D /* 02.jpg in Resources */,

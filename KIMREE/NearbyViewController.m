@@ -12,8 +12,7 @@
 #import "TestMapCell.h"
 
 
-@interface NearbyViewController ()
-
+@interface NearbyViewController ()<MapViewDelegate>
 @property (nonatomic,strong)MapView *mapView;
 @property (nonatomic,strong)NSArray *annotations;
 
@@ -60,14 +59,15 @@
                          ];
     
 
-	self.mapView = [[MapView alloc] init];
+    self.mapView = [[MapView alloc] initWithDelegate:self];
+
     
     
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
     [_mapView beginLoad];
     
-    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 60, self.view.bounds.size.width, 50)];
+    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 65, self.view.bounds.size.width, 50)];
     [self.view addSubview:searchBar];
 }
 

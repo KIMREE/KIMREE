@@ -47,37 +47,42 @@
     autoLonInLabel = [[UILabel alloc] init];
     amountHintLabl = [[UILabel alloc] init];
     
+   
+    forgotpsswordBtn.frame = CGRectMake(kScreen_Width-3*INCH4_LEFT_X, 290-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
+    logInBtn.frame=CGRectMake(0, 400-compensation, kScreen_Width, INCH4_CUSTOM_BTN_H);
+    signInBTn.frame=CGRectMake(INCH4_CUSTOM_BTN_W+50, 500-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
     
- 
-        
-        forgotpsswordBtn.frame = CGRectMake(kScreen_Width-3*INCH4_LEFT_X, 290-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
-        logInBtn.frame=CGRectMake(0, 400-compensation, kScreen_Width, INCH4_CUSTOM_BTN_H);
-        signInBTn.frame=CGRectMake(INCH4_CUSTOM_BTN_W+50, 500-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
-        
-        firstHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+10-compensation, kScreen_Width, LABEL_H);
-        sencondHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+LABEL_H+20-compensation, kScreen_Width, LABEL_H);
-        autoLonInLabel.frame=CGRectMake(INCH4_LEFT_X+2*INCH4_SELECTED_SIDE, 290-compensation, kScreen_Width, LABEL_H);
-        amountHintLabl.frame=CGRectMake(INCH4_LEFT_X, 510-compensation, kScreen_Width, LABEL_H);
-        
-        
-        [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
-        [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
-        [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
-        
-
+    firstHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+10-compensation, kScreen_Width, LABEL_H);
+    sencondHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+LABEL_H+20-compensation, kScreen_Width, LABEL_H);
+    autoLonInLabel.frame=CGRectMake(INCH4_LEFT_X+2*INCH4_SELECTED_SIDE, 290-compensation, kScreen_Width, LABEL_H);
+    amountHintLabl.frame=CGRectMake(INCH4_LEFT_X, 510-compensation, kScreen_Width, LABEL_H);
+    
+    
     [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
     [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
     [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
     
-     firstHintLabel.text = @"请输入用户名、密码进行登陆";
-    firstHintLabel.backgroundColor =[UIColor clearColor];
     
-     sencondHintLabel.text = @"温馨提示：尊贵会员拥有更多专属权利，进入查看更多优惠";
+    [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
+    [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
+    [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
+    
+    firstHintLabel.text = @"请输入用户名、密码进行登陆";
+    firstHintLabel.backgroundColor =[UIColor clearColor];
+    firstHintLabel.textColor=[UIColor whiteColor];
+    
+    sencondHintLabel.text = @"温馨提示：尊贵会员拥有更多专属权利，进入查看更多优惠";
     sencondHintLabel.backgroundColor=[UIColor clearColor];
-     autoLonInLabel.text = @"下次自动登陆";
+    sencondHintLabel.textColor=[UIColor whiteColor];
+    
+    autoLonInLabel.text = @"下次自动登陆";
     autoLonInLabel.backgroundColor=[UIColor clearColor];
-     amountHintLabl.text=@"还没有账号";
+    autoLonInLabel.textColor=[UIColor whiteColor];
+    
+    amountHintLabl.text=@"还没有账号";
     amountHintLabl.backgroundColor=[UIColor clearColor];
+    amountHintLabl.textColor=[UIColor whiteColor];
+    
     
     
     
@@ -90,9 +95,10 @@
     [self.view addSubview:amountHintLabl];
     
     
+    UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
+    self.view.backgroundColor=[UIColor colorWithPatternImage:img];
     
     
-    self.view.backgroundColor=[UIColor grayColor];
     userbox=[[UITextField alloc] initWithFrame:CGRectMake(30, 180-compensation, 260, 30)];
     passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(30, 230-compensation, 260, 30)];
     
@@ -132,7 +138,7 @@
     
     
     
-  
+    
 }
 
 

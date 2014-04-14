@@ -45,25 +45,25 @@
 
 
 
-//获得位置信息
-
-
--(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation: (CLLocation *)oldLocation
-{
-    NSTimeInterval howRecent = [newLocation.timestamp timeIntervalSinceNow];
-    if(howRecent < -10) return ; //离上次更新的时间少于10秒
-        if(newLocation.horizontalAccuracy > 100) return; //精度> 100米
-    //经度和纬度
-    double lat = newLocation.coordinate.latitude;
-    double lon = newLocation.coordinate.longitude;
-}
-
-//获得方向信息（比如往南走）
--(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-{
-    //获得方向
-    CLLocationDirection heading = newHeading .trueHeading;
-}
+////获得位置信息
+//
+//
+//-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation: (CLLocation *)oldLocation
+//{
+//    NSTimeInterval howRecent = [newLocation.timestamp timeIntervalSinceNow];
+//    if(howRecent < -10) return ; //离上次更新的时间少于10秒
+//        if(newLocation.horizontalAccuracy > 100) return; //精度> 100米
+//    //经度和纬度
+//    double lat = newLocation.coordinate.latitude;
+//    double lon = newLocation.coordinate.longitude;
+//}
+//
+////获得方向信息（比如往南走）
+//-(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+//{
+//    //获得方向
+//    CLLocationDirection heading = newHeading .trueHeading;
+//}
 
 
 //四、停止定位

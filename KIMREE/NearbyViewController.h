@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface NearbyViewController : UIViewController
-
 {
-    UIToolbar *toolBar;
+  
     UITabBarController *tabBarController;
 }
 
