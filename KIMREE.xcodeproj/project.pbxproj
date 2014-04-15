@@ -11,8 +11,15 @@
 		6B1F9F7C18FCDC7900475D23 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F7B18FCDC7900475D23 /* LogInViewController.m */; };
 		6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F8118FCDD9F00475D23 /* SignInViewController.m */; };
 		6B1F9F8518FD17CC00475D23 /* GetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F8418FD17CC00475D23 /* GetPasswordViewController.m */; };
-		6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B38B8D418F7FCED005480DC /* GameViewController.m */; };
-		6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B38B8D518F7FCED005480DC /* GameViewController.xib */; };
+		6B1F9F8D18FD1B8F00475D23 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F8C18FD1B8F00475D23 /* ProductViewController.m */; };
+		6B1F9F9D18FD26DF00475D23 /* HotSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F9B18FD26DF00475D23 /* HotSaleViewController.m */; };
+		6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */; };
+		6B1F9FA218FD26F900475D23 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA018FD26F900475D23 /* RankViewController.m */; };
+		6B1F9FA318FD26F900475D23 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA118FD26F900475D23 /* RankViewController.xib */; };
+		6B1F9FA718FD272C00475D23 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */; };
+		6B1F9FA818FD272C00475D23 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */; };
+		6B1F9FAC18FD2C5700475D23 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FAA18FD2C5700475D23 /* GameViewController.m */; };
+		6B1F9FAD18FD2C5700475D23 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */; };
 		6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */; };
 		6B496AB118FBD23200A67882 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB018FBD23200A67882 /* MainViewController.m */; };
 		6B496AB318FBD28A00A67882 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB218FBD28A00A67882 /* MemberViewController.m */; };
@@ -54,7 +61,6 @@
 		7E8104FC18F5A2F000C7882E /* red_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F618F5A2F000C7882E /* red_90.png */; };
 		7E8104FD18F5A2F000C7882E /* ye90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F718F5A2F000C7882E /* ye90.png */; };
 		7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F818F5A2F000C7882E /* yellow_90.png */; };
-		7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE318F60A570040145C /* ProductViewController.m */; };
 		7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE718F60D180040145C /* KIMREEViewController.m */; };
 		C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985218F234F500CCF79C /* Foundation.framework */; };
 		C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985418F234F500CCF79C /* CoreGraphics.framework */; };
@@ -97,9 +103,20 @@
 		6B1F9F8118FCDD9F00475D23 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		6B1F9F8318FD17CC00475D23 /* GetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPasswordViewController.h; sourceTree = "<group>"; };
 		6B1F9F8418FD17CC00475D23 /* GetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPasswordViewController.m; sourceTree = "<group>"; };
-		6B38B8D318F7FCED005480DC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		6B38B8D418F7FCED005480DC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		6B38B8D518F7FCED005480DC /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		6B1F9F8B18FD1B8F00475D23 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		6B1F9F8C18FD1B8F00475D23 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		6B1F9F9A18FD26DF00475D23 /* HotSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleViewController.h; sourceTree = "<group>"; };
+		6B1F9F9B18FD26DF00475D23 /* HotSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSaleViewController.m; sourceTree = "<group>"; };
+		6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSaleViewController.xib; sourceTree = "<group>"; };
+		6B1F9F9F18FD26F900475D23 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		6B1F9FA018FD26F900475D23 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		6B1F9FA118FD26F900475D23 /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
+		6B1F9FA418FD272C00475D23 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
+		6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		6B1F9FA918FD2C5700475D23 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		6B1F9FAA18FD2C5700475D23 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		6B496AAA18FBCF4800A67882 /* ViewConstanTDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstanTDef.h; sourceTree = "<group>"; };
 		6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
 		6B496AAF18FBD01200A67882 /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
@@ -157,8 +174,6 @@
 		7E8104F618F5A2F000C7882E /* red_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_90.png; sourceTree = "<group>"; };
 		7E8104F718F5A2F000C7882E /* ye90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ye90.png; sourceTree = "<group>"; };
 		7E8104F818F5A2F000C7882E /* yellow_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_90.png; sourceTree = "<group>"; };
-		7ECB0FE218F60A570040145C /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
-		7ECB0FE318F60A570040145C /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		7ECB0FE618F60D180040145C /* KIMREEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIMREEViewController.h; sourceTree = "<group>"; };
 		7ECB0FE718F60D180040145C /* KIMREEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIMREEViewController.m; sourceTree = "<group>"; };
 		C6AC984F18F234F500CCF79C /* KIMREE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMREE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,9 +254,9 @@
 		6B38B8D218F7FBBD005480DC /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				6B38B8D318F7FCED005480DC /* GameViewController.h */,
-				6B38B8D418F7FCED005480DC /* GameViewController.m */,
-				6B38B8D518F7FCED005480DC /* GameViewController.xib */,
+				6B1F9FA918FD2C5700475D23 /* GameViewController.h */,
+				6B1F9FAA18FD2C5700475D23 /* GameViewController.m */,
+				6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -387,8 +402,17 @@
 		7ECB0FE118F60A380040145C /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				7ECB0FE218F60A570040145C /* ProductViewController.h */,
-				7ECB0FE318F60A570040145C /* ProductViewController.m */,
+				6B1F9F8B18FD1B8F00475D23 /* ProductViewController.h */,
+				6B1F9F8C18FD1B8F00475D23 /* ProductViewController.m */,
+				6B1F9F9A18FD26DF00475D23 /* HotSaleViewController.h */,
+				6B1F9F9B18FD26DF00475D23 /* HotSaleViewController.m */,
+				6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */,
+				6B1F9F9F18FD26F900475D23 /* RankViewController.h */,
+				6B1F9FA018FD26F900475D23 /* RankViewController.m */,
+				6B1F9FA118FD26F900475D23 /* RankViewController.xib */,
+				6B1F9FA418FD272C00475D23 /* FavoriteViewController.h */,
+				6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */,
+				6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -642,6 +666,8 @@
 				7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */,
 				7E8104FC18F5A2F000C7882E /* red_90.png in Resources */,
 				6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */,
+				6B1F9FA318FD26F900475D23 /* RankViewController.xib in Resources */,
+				6B1F9FA818FD272C00475D23 /* FavoriteViewController.xib in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				6BADFCB618F6850800249ED8 /* PostBarViewController.xib in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
@@ -656,13 +682,14 @@
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
 				7E2BDD8218F840900002ADF3 /* bg-body.jpg in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
-				6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */,
+				6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,
 				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
 				6B1F9F7018FCD20200475D23 /* Login_button.png in Resources */,
+				6B1F9FAD18FD2C5700475D23 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,15 +708,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1F9FA718FD272C00475D23 /* FavoriteViewController.m in Sources */,
 				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
 				7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */,
 				6B77D10118F4E6F300D49E9F /* Item.m in Sources */,
 				6B909F1C18F7E17C002CDB30 /* TabBarController.m in Sources */,
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
+				6B1F9FA218FD26F900475D23 /* RankViewController.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
+				6B1F9F9D18FD26DF00475D23 /* HotSaleViewController.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
-				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
@@ -699,16 +728,17 @@
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				6B496AB318FBD28A00A67882 /* MemberViewController.m in Sources */,
 				6BADFCB218F6850800249ED8 /* FBGlowLabel.m in Sources */,
-				6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6BADFCB318F6850800249ED8 /* SWTableViewCell.m in Sources */,
 				6BADFCB418F6850800249ED8 /* UILabel+JIRUI.m in Sources */,
 				6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
+				6B1F9F8D18FD1B8F00475D23 /* ProductViewController.m in Sources */,
 				6BADFCB518F6850800249ED8 /* PostBarViewController.m in Sources */,
 				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
+				6B1F9FAC18FD2C5700475D23 /* GameViewController.m in Sources */,
 				6B1F9F7C18FCDC7900475D23 /* LogInViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,

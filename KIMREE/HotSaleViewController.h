@@ -1,5 +1,5 @@
 //
-//  GameViewController.h
+//  HotSaleViewController.h
 //  KIMREE
 //
 //  Created by renchunyu on 14-4-15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HotSaleViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *list;
 
 @end
+
+

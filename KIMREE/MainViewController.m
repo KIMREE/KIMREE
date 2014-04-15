@@ -256,8 +256,7 @@
             memberBtn.frame = CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W, INCH35_FIRST_ROW_BTN_Y+2*(INCH35_BTN_H+INCH35_BTN_INTERVAL)-compensation, INCH35_BTN_W, INCH35_BTN_H);
             memberLabel.frame=CGRectMake(kScreen_Width-INCH35_LEFT_BTN_X-INCH35_BTN_W,  INCH35_FIRST_ROW_BTN_Y+3*INCH35_BTN_H+2*INCH35_BTN_INTERVAL+4-compensation, INCH35_BTN_W, LABEL_H);
             
-
-        
+       
         [self.view addSubview:productLabel];
         [self.view addSubview:productBtn];
         [self.view addSubview:gameLabel];
@@ -367,7 +366,7 @@
 
 - (IBAction)product:(id)sender {
     self.navigationController.navigationBar.hidden = NO;
-    ProductViewController  *secondVC = [[ProductViewController  alloc] init];
+    ProductViewController  *secondVC = [[ProductViewController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
 }
 @end

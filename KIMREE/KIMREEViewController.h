@@ -10,7 +10,7 @@
 
 @interface KIMREEViewController : UIViewController
 {
-UIWebView *webView;
-UIActivityIndicatorView  *activityIndicator;
+    UIWebView *webView;
+    UIActivityIndicatorView  *activityIndicator;
 }
 @end

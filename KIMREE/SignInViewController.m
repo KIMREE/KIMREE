@@ -59,7 +59,7 @@
     submitBtn.BackgroundColor=[UIColor clearColor];
     submitBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
     // [submitBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
-    submitBtn.frame = CGRectMake(120, 420, 80, 30);
+    submitBtn.frame = CGRectMake(120, 420-m_compensation-m2_compensation, 80, 30);
     
     logInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [logInBtn setTitle:@"马上登陆" forState:UIControlStateNormal];
@@ -67,12 +67,12 @@
     logInBtn.BackgroundColor=[UIColor clearColor];
     logInBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
     [logInBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
-    logInBtn.frame=CGRectMake(120, 500, 80, 30);
+    logInBtn.frame=CGRectMake(120, 500-m_compensation-m2_compensation, 80, 30);
     
     
   
     HintLabel = [[UILabel alloc] init];
-    HintLabel.frame = CGRectMake(15, 100, 250, 60);
+    HintLabel.frame = CGRectMake(15, 105-m_compensation-m2_compensation, 250, 60);
     HintLabel.text = @"欢迎注册被分享你的吉瑞时刻，温馨提示，注册会员将拥有更多的优惠和权利";
     HintLabel.lineBreakMode = NSLineBreakByWordWrapping;
     HintLabel.numberOfLines = 3;
@@ -87,22 +87,22 @@
     agreeInLabel.backgroundColor=[UIColor clearColor];
     agreeInLabel.textColor=[UIColor whiteColor];
     agreeInLabel.font = [UIFont systemFontOfSize:14];
-    agreeInLabel.frame = CGRectMake(50, 350, 290, 15);
+    agreeInLabel.frame = CGRectMake(50, 350-m_compensation-m2_compensation, 290, 15);
     
     acountHintLabl = [[UILabel alloc] init];
     acountHintLabl.text=@"已有账号？";
     acountHintLabl.backgroundColor=[UIColor clearColor];
     acountHintLabl.textColor=[UIColor whiteColor];
     acountHintLabl.font = [UIFont systemFontOfSize:14];
-    acountHintLabl.frame = CGRectMake(15, 510, 290, 15);
+    acountHintLabl.frame = CGRectMake(15, 510-m_compensation-m2_compensation, 290, 15);
 
     
     
   
-    nickname=[[UITextField alloc] initWithFrame:CGRectMake(10, 170, 300, 30)];
-    userbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 210, 300, 30)];
-    passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 250, 300, 30)];
-    comfirmpasswordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 290, 300, 30)];
+    nickname=[[UITextField alloc] initWithFrame:CGRectMake(10, 170-m_compensation-m2_compensation, 300, 30)];
+    userbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 210-m_compensation-m2_compensation, 300, 30)];
+    passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 250-m_compensation-m2_compensation, 300, 30)];
+    comfirmpasswordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 290-m_compensation-m2_compensation, 300, 30)];
     
     
     [nickname setBorderStyle:UITextBorderStyleRoundedRect];
@@ -136,7 +136,7 @@
     
     UIButton *checkbox = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    CGRect checkboxRect = CGRectMake(14, 350, 17, 17);
+    CGRect checkboxRect = CGRectMake(14, 350-m_compensation-m2_compensation, 17, 17);
     [checkbox setFrame:checkboxRect];
     
     [checkbox setImage:[UIImage imageNamed:@"checkbox_in.png"] forState:UIControlStateNormal];
