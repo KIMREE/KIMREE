@@ -15,11 +15,11 @@
 		6B1F9F9D18FD26DF00475D23 /* HotSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F9B18FD26DF00475D23 /* HotSaleViewController.m */; };
 		6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */; };
 		6B1F9FA218FD26F900475D23 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA018FD26F900475D23 /* RankViewController.m */; };
-		6B1F9FA318FD26F900475D23 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA118FD26F900475D23 /* RankViewController.xib */; };
 		6B1F9FA718FD272C00475D23 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */; };
 		6B1F9FA818FD272C00475D23 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */; };
 		6B1F9FAC18FD2C5700475D23 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9FAA18FD2C5700475D23 /* GameViewController.m */; };
 		6B1F9FAD18FD2C5700475D23 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */; };
+		6B1F9FAE18FD334300475D23 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9FB018FD334300475D23 /* RankViewController.xib */; };
 		6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */; };
 		6B496AB118FBD23200A67882 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB018FBD23200A67882 /* MainViewController.m */; };
 		6B496AB318FBD28A00A67882 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB218FBD28A00A67882 /* MemberViewController.m */; };
@@ -110,13 +110,13 @@
 		6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSaleViewController.xib; sourceTree = "<group>"; };
 		6B1F9F9F18FD26F900475D23 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
 		6B1F9FA018FD26F900475D23 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
-		6B1F9FA118FD26F900475D23 /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
 		6B1F9FA418FD272C00475D23 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
 		6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		6B1F9FA918FD2C5700475D23 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6B1F9FAA18FD2C5700475D23 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		6B1F9FAF18FD334300475D23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RankViewController.xib; sourceTree = "<group>"; };
 		6B496AAA18FBCF4800A67882 /* ViewConstanTDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstanTDef.h; sourceTree = "<group>"; };
 		6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
 		6B496AAF18FBD01200A67882 /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 				6B1F9F9C18FD26DF00475D23 /* HotSaleViewController.xib */,
 				6B1F9F9F18FD26F900475D23 /* RankViewController.h */,
 				6B1F9FA018FD26F900475D23 /* RankViewController.m */,
-				6B1F9FA118FD26F900475D23 /* RankViewController.xib */,
+				6B1F9FB018FD334300475D23 /* RankViewController.xib */,
 				6B1F9FA418FD272C00475D23 /* FavoriteViewController.h */,
 				6B1F9FA518FD272C00475D23 /* FavoriteViewController.m */,
 				6B1F9FA618FD272C00475D23 /* FavoriteViewController.xib */,
@@ -666,7 +666,7 @@
 				7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */,
 				7E8104FC18F5A2F000C7882E /* red_90.png in Resources */,
 				6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */,
-				6B1F9FA318FD26F900475D23 /* RankViewController.xib in Resources */,
+				6B1F9FAE18FD334300475D23 /* RankViewController.xib in Resources */,
 				6B1F9FA818FD272C00475D23 /* FavoriteViewController.xib in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				6BADFCB618F6850800249ED8 /* PostBarViewController.xib in Resources */,
@@ -765,6 +765,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6B1F9FB018FD334300475D23 /* RankViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1F9FAF18FD334300475D23 /* en */,
+			);
+			name = RankViewController.xib;
+			sourceTree = "<group>";
+		};
 		7E4478BE18F43B5A009EF02D /* MainViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

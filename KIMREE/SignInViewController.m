@@ -55,11 +55,12 @@
     
     submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [submitBtn setTitle:@"提交" forState:UIControlStateNormal];
-    [submitBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
+    [submitBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal] ;
     submitBtn.BackgroundColor=[UIColor clearColor];
+    [submitBtn setBackgroundImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
     submitBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
     // [submitBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
-    submitBtn.frame = CGRectMake(120, 420-m_compensation-m2_compensation, 80, 30);
+    submitBtn.frame = CGRectMake(10, 420-m_compensation-m2_compensation, 300, 30);
     
     logInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [logInBtn setTitle:@"马上登陆" forState:UIControlStateNormal];
@@ -67,7 +68,7 @@
     logInBtn.BackgroundColor=[UIColor clearColor];
     logInBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
     [logInBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
-    logInBtn.frame=CGRectMake(120, 500-m_compensation-m2_compensation, 80, 30);
+    logInBtn.frame=CGRectMake(120, 500-m_compensation-m2_compensation, 80, 40);
     
     
   

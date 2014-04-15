@@ -48,8 +48,8 @@
     }
     
     forgotpsswordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    logInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    signInBTn = [UIButton buttonWithType:UIButtonTypeCustom];
+    logInBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    signInBTn = [UIButton buttonWithType:UIButtonTypeSystem];
     
     firstHintLabel = [[UILabel alloc] init];
     sencondHintLabel = [[UILabel alloc] init];
@@ -76,10 +76,11 @@
     
     
     [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
-    [logInBtn setImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
-    [logInBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
+    [logInBtn setBackgroundImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
+    [logInBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal] ;
     logInBtn.BackgroundColor=[UIColor clearColor];
-    logInBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];    [logInBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
+    logInBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [logInBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
     
     
     [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
@@ -170,7 +171,7 @@
     
     self.navigationController.navigationBar.hidden = NO;
     LogInViewController *logINVC = [[LogInViewController alloc]init];
-    [self.navigationController pushViewController:logINVC animated:NO];
+    [self.navigationController pushViewController:logINVC animated:YES];
     
 }
 
@@ -180,7 +181,7 @@
 {
     self.navigationController.navigationBar.hidden = NO;
     GetPasswordViewController *getPasswordView =[[GetPasswordViewController alloc] init];
-    [self.navigationController pushViewController:getPasswordView animated:NO];
+    [self.navigationController pushViewController:getPasswordView animated:YES];
     
 }
 
