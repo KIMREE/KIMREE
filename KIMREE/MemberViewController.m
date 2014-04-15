@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.view.backgroundColor= [UIColor grayColor];
     }
     return self;
 }
@@ -49,7 +50,7 @@
     
     forgotpsswordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     logInBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    signInBTn = [UIButton buttonWithType:UIButtonTypeSystem];
+    signInBTn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     firstHintLabel = [[UILabel alloc] init];
     sencondHintLabel = [[UILabel alloc] init];
@@ -70,7 +71,7 @@
     
     [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
     [forgotpsswordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
-    forgotpsswordBtn.BackgroundColor=[UIColor clearColor];
+   // forgotpsswordBtn.BackgroundColor=[UIColor clearColor];
     forgotpsswordBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
     [forgotpsswordBtn addTarget:self action:@selector(getPassword:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -123,8 +124,8 @@
     [self.view addSubview:acountHintLabl];
     
     
-    UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
-    self.view.backgroundColor=[UIColor colorWithPatternImage:img];
+//    UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
+//    self.view.backgroundColor=[UIColor colorWithPatternImage:img];
     
     userbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 200-m_compensation-m2_compensation, 300, 30)];
     passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 250-m_compensation-m2_compensation, 300, 30)];

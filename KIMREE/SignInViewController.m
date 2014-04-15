@@ -59,7 +59,7 @@
     submitBtn.BackgroundColor=[UIColor clearColor];
     [submitBtn setBackgroundImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
     submitBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
-    // [submitBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
+     [submitBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
     submitBtn.frame = CGRectMake(10, 420-m_compensation-m2_compensation, 300, 30);
     
     logInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
