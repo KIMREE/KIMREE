@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewConstanTDef.h"
+#import "SignInViewController.h"
+#import "LogInViewController.h"
+#import "GetPasswordViewController.h"
 
 @interface MemberViewController : UIViewController
 
@@ -19,7 +22,7 @@
     UILabel *firstHintLabel;
     UILabel  *sencondHintLabel;
     UILabel  *autoLonInLabel;
-    UILabel  *amountHintLabl;;
+    UILabel  *acountHintLabl;;
     
     UITextField *userbox;
     UITextField *passwordbox;

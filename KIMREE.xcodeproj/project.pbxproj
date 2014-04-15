@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1F9F7018FCD20200475D23 /* Login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1F9F6F18FCD20200475D23 /* Login_button.png */; };
+		6B1F9F7C18FCDC7900475D23 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F7B18FCDC7900475D23 /* LogInViewController.m */; };
+		6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F8118FCDD9F00475D23 /* SignInViewController.m */; };
+		6B1F9F8518FD17CC00475D23 /* GetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F9F8418FD17CC00475D23 /* GetPasswordViewController.m */; };
 		6B38B8D618F7FCED005480DC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B38B8D418F7FCED005480DC /* GameViewController.m */; };
 		6B38B8D718F7FCED005480DC /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B38B8D518F7FCED005480DC /* GameViewController.xib */; };
 		6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */; };
@@ -86,6 +90,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B1F9F6F18FCD20200475D23 /* Login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_button.png; sourceTree = "<group>"; };
+		6B1F9F7A18FCDC7900475D23 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		6B1F9F7B18FCDC7900475D23 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		6B1F9F8018FCDD9F00475D23 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6B1F9F8118FCDD9F00475D23 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		6B1F9F8318FD17CC00475D23 /* GetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPasswordViewController.h; sourceTree = "<group>"; };
+		6B1F9F8418FD17CC00475D23 /* GetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPasswordViewController.m; sourceTree = "<group>"; };
 		6B38B8D318F7FCED005480DC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6B38B8D418F7FCED005480DC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		6B38B8D518F7FCED005480DC /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
@@ -241,6 +252,12 @@
 				6B496AAF18FBD01200A67882 /* MemberViewController.h */,
 				6B496AB218FBD28A00A67882 /* MemberViewController.m */,
 				6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */,
+				6B1F9F7A18FCDC7900475D23 /* LogInViewController.h */,
+				6B1F9F7B18FCDC7900475D23 /* LogInViewController.m */,
+				6B1F9F8018FCDD9F00475D23 /* SignInViewController.h */,
+				6B1F9F8118FCDD9F00475D23 /* SignInViewController.m */,
+				6B1F9F8318FD17CC00475D23 /* GetPasswordViewController.h */,
+				6B1F9F8418FD17CC00475D23 /* GetPasswordViewController.m */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -316,6 +333,7 @@
 		7E4478A018F4360A009EF02D /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				6B1F9F6F18FCD20200475D23 /* Login_button.png */,
 				7E618E9718FC418000EA93BF /* Default-568h@2x.png */,
 				7E77A8C818F84D77000155B7 /* login.png */,
 				7E77A8C218F84B9F000155B7 /* checkbox_in.png */,
@@ -644,6 +662,7 @@
 				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,
 				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
+				6B1F9F7018FCD20200475D23 /* Login_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,12 +704,15 @@
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6BADFCB318F6850800249ED8 /* SWTableViewCell.m in Sources */,
 				6BADFCB418F6850800249ED8 /* UILabel+JIRUI.m in Sources */,
+				6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
 				6BADFCB518F6850800249ED8 /* PostBarViewController.m in Sources */,
 				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
+				6B1F9F7C18FCDC7900475D23 /* LogInViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
+				6B1F9F8518FD17CC00475D23 /* GetPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

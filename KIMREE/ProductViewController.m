@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.view.backgroundColor=[UIColor orangeColor];
     }
     return self;
 }
@@ -27,11 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-  
-      NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://map.baidu.com"]];
-    [self.view addSubview: webView];
-    [webView loadRequest:request];
+
 }
 
 
@@ -42,41 +39,5 @@
 }
 
 
-- (void) webViewDidStartLoad:(UIWebView *)webView
-{
-    
-    //创建UIActivityIndicatorView背底半透明View
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    [view setTag:108];
-    [view setBackgroundColor:[UIColor blackColor]];
-    [view setAlpha:0.5];
-    [self.view addSubview:view];
-    
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 32.0f, 32.0f)];
-    [activityIndicator setCenter:view.center];
-    [activityIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
-    [view addSubview:activityIndicator];
-    
-    [activityIndicator startAnimating];
-    NSLog(@"webViewDidStartLoad");
-}
-
-
-
-- (void) webViewDidFinishLoad:(UIWebView *)webView
-{
-    [activityIndicator stopAnimating];
-    UIView *view = (UIView*)[self.view viewWithTag:108];
-    [view removeFromSuperview];
-    NSLog(@"webViewDidFinishLoad");
-  
-}
-- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    [activityIndicator stopAnimating];
-    UIView *view = (UIView*)[self.view viewWithTag:108];
-    [view removeFromSuperview];
-    NSLog(@"didFailLoadWithError:%@", error);
-}
 
 @end

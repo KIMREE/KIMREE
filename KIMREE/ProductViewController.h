@@ -10,9 +10,6 @@
 
 @interface ProductViewController : UIViewController
 
-{
-    UIWebView *webView;
-    UIActivityIndicatorView  *activityIndicator;
-}
+
 
 @end

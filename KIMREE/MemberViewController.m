@@ -30,60 +30,87 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    float compensation;
+    float m_compensation;
+    float m2_compensation;
+    
     if (IOS7) {
-        compensation=0;
+        m_compensation=0;
     }
     else {
-        compensation=65.0;
+        m_compensation=65.0;
     }
     
-    forgotpsswordBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    logInBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    signInBTn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (IS_INCH4) {
+        m2_compensation=0;
+    }
+    else {
+        m2_compensation=50;
+    }
+    
+    forgotpsswordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    logInBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    signInBTn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     firstHintLabel = [[UILabel alloc] init];
     sencondHintLabel = [[UILabel alloc] init];
     autoLonInLabel = [[UILabel alloc] init];
-    amountHintLabl = [[UILabel alloc] init];
-    
-   
-    forgotpsswordBtn.frame = CGRectMake(kScreen_Width-3*INCH4_LEFT_X, 290-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
-    logInBtn.frame=CGRectMake(0, 400-compensation, kScreen_Width, INCH4_CUSTOM_BTN_H);
-    signInBTn.frame=CGRectMake(INCH4_CUSTOM_BTN_W+50, 500-compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
-    
-    firstHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+10-compensation, kScreen_Width, LABEL_H);
-    sencondHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+LABEL_H+20-compensation, kScreen_Width, LABEL_H);
-    autoLonInLabel.frame=CGRectMake(INCH4_LEFT_X+2*INCH4_SELECTED_SIDE, 290-compensation, kScreen_Width, LABEL_H);
-    amountHintLabl.frame=CGRectMake(INCH4_LEFT_X, 510-compensation, kScreen_Width, LABEL_H);
+    acountHintLabl = [[UILabel alloc] init];
     
     
-    [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
-    [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
-    [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
+    forgotpsswordBtn.frame = CGRectMake(kScreen_Width-INCH4_CUSTOM_BTN_W-INCH4_LEFT_X, 320-m_compensation-m2_compensation, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
+    logInBtn.frame=CGRectMake(5, 400-m_compensation-m2_compensation, kScreen_Width-10, INCH4_CUSTOM_BTN_H);
+    signInBTn.frame=CGRectMake(INCH4_CUSTOM_BTN_W+50, 490-m_compensation-m2_compensation-20, INCH4_CUSTOM_BTN_W, INCH4_CUSTOM_BTN_H);
+    
+    
+    firstHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+10-m_compensation, kScreen_Width, LABEL_H);
+    sencondHintLabel.frame=CGRectMake(INCH4_LEFT_X, STATUS_BAR+NAVIGATION_BAR+LABEL_H+20-m_compensation, kScreen_Width-INCH4_LEFT_X, 2*LABEL_H+10);
+    autoLonInLabel.frame=CGRectMake(INCH4_LEFT_X+INCH4_SELECTED_SIDE, 300-m_compensation-m2_compensation, kScreen_Width, LABEL_H);
+    acountHintLabl.frame=CGRectMake(INCH4_LEFT_X, 500-m_compensation-m2_compensation-20, kScreen_Width, LABEL_H);
     
     
     [forgotpsswordBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
+    [forgotpsswordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
+    forgotpsswordBtn.BackgroundColor=[UIColor clearColor];
+    forgotpsswordBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [forgotpsswordBtn addTarget:self action:@selector(getPassword:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [logInBtn setTitle:@"登陆" forState:UIControlStateNormal];
+    [logInBtn setImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
+    [logInBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
+    logInBtn.BackgroundColor=[UIColor clearColor];
+    logInBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];    [logInBtn addTarget:self action:@selector(logIn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [signInBTn setTitle:@"马上注册" forState:UIControlStateNormal];
+    [signInBTn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal] ;
+    signInBTn.BackgroundColor=[UIColor clearColor];
+    signInBTn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [signInBTn addTarget:self action:@selector(signIn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     
     firstHintLabel.text = @"请输入用户名、密码进行登陆";
     firstHintLabel.backgroundColor =[UIColor clearColor];
     firstHintLabel.textColor=[UIColor whiteColor];
+    firstHintLabel.font = [UIFont systemFontOfSize:14];
     
     sencondHintLabel.text = @"温馨提示：尊贵会员拥有更多专属权利，进入查看更多优惠";
+    sencondHintLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    sencondHintLabel.numberOfLines = 2;
     sencondHintLabel.backgroundColor=[UIColor clearColor];
     sencondHintLabel.textColor=[UIColor whiteColor];
+    sencondHintLabel.font = [UIFont systemFontOfSize:14];
     
     autoLonInLabel.text = @"下次自动登陆";
     autoLonInLabel.backgroundColor=[UIColor clearColor];
     autoLonInLabel.textColor=[UIColor whiteColor];
+    autoLonInLabel.font = [UIFont systemFontOfSize:14];
     
-    amountHintLabl.text=@"还没有账号";
-    amountHintLabl.backgroundColor=[UIColor clearColor];
-    amountHintLabl.textColor=[UIColor whiteColor];
-    
-    
+    acountHintLabl.text=@"还没有账号";
+    acountHintLabl.backgroundColor=[UIColor clearColor];
+    acountHintLabl.textColor=[UIColor whiteColor];
+    acountHintLabl.font = [UIFont systemFontOfSize:14];
     
     
     [self.view addSubview:forgotpsswordBtn];
@@ -92,15 +119,14 @@
     [self.view addSubview:firstHintLabel];
     [self.view addSubview:sencondHintLabel];
     [self.view addSubview:autoLonInLabel];
-    [self.view addSubview:amountHintLabl];
+    [self.view addSubview:acountHintLabl];
     
     
     UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:img];
     
-    
-    userbox=[[UITextField alloc] initWithFrame:CGRectMake(30, 180-compensation, 260, 30)];
-    passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(30, 230-compensation, 260, 30)];
+    userbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 200-m_compensation-m2_compensation, 300, 30)];
+    passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 250-m_compensation-m2_compensation, 300, 30)];
     
     [userbox setBorderStyle:UITextBorderStyleRoundedRect];
     userbox.placeholder = @"email";
@@ -125,21 +151,49 @@
     
     UIButton *checkbox = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    CGRect checkboxRect = CGRectMake(30, 285-compensation, 20, 20);
+    CGRect checkboxRect = CGRectMake(30, 300-m_compensation-m2_compensation, 17, 17);
     [checkbox setFrame:checkboxRect];
     
-    [checkbox setImage:[UIImage imageNamed:@"checkbox_out.png"] forState:UIControlStateNormal];
-    [checkbox setImage:[UIImage imageNamed:@"checkbox_in.png"] forState:UIControlStateSelected];
+    [checkbox setImage:[UIImage imageNamed:@"checkbox_in.png"] forState:UIControlStateNormal];
+    [checkbox setImage:[UIImage imageNamed:@"checkbox_out.png"] forState:UIControlStateSelected];
     
     [checkbox addTarget:self action:@selector(checkboxClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    
     [self.view addSubview:checkbox];
     
+}
+
+
+-(void)logIn:(UIButton *)btn
+{
     
     
+    self.navigationController.navigationBar.hidden = NO;
+    LogInViewController *logINVC = [[LogInViewController alloc]init];
+    [self.navigationController pushViewController:logINVC animated:NO];
     
 }
+
+
+
+-(void)getPassword:(UIButton *)btn
+{
+    self.navigationController.navigationBar.hidden = NO;
+    GetPasswordViewController *getPasswordView =[[GetPasswordViewController alloc] init];
+    [self.navigationController pushViewController:getPasswordView animated:NO];
+    
+}
+
+
+
+-(void)signIn:(UIButton *)btn
+{
+    self.navigationController.navigationBar.hidden = NO;
+    SignInViewController *signInVC = [[SignInViewController alloc]init];
+    [self.navigationController pushViewController:signInVC animated:YES];
+    
+}
+
 
 
 -(void)checkboxClick:(UIButton *)btn

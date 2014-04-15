@@ -40,7 +40,7 @@
 //登陆界面尺寸常量
 
 
-#define INCH4_LEFT_X 30.0f
+#define INCH4_LEFT_X 20.0f
 #define INCH4_INPUT_BOX_W 200.0f
 #define INCH4_INPUT_BOX_H 60.0f
 #define INCH4_SELECTED_SIDE 30.0f
