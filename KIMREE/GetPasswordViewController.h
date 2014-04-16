@@ -10,4 +10,11 @@
 
 @interface GetPasswordViewController : UIViewController
 
+{
+
+    UITextField *emailbox;
+    UIButton *resetpsswordBtn;
+    UILabel *hintlabel;
+    
+}
 @end

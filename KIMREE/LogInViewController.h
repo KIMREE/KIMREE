@@ -10,4 +10,12 @@
 
 @interface LogInViewController : UIViewController
 
+{
+
+    UIButton *logOutBtn;
+
+}
+
+
+
 @end

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "NearbyViewController.h"
 #import "SearchViewController.h"
-#import "MyshopViewController.h"
+//#import "MyshopViewController.h"
+#import "MemberViewController.h"
 
 @interface TabBarController : UITabBarController
 

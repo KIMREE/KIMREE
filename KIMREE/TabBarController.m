@@ -30,7 +30,7 @@
    
     
     SearchViewController *searchVC=[[SearchViewController alloc] init];
-    MyshopViewController *myshopVC=[[MyshopViewController alloc] init];
+    MemberViewController *myshopVC=[[MemberViewController alloc] init];
     NearbyViewController *nearbyVC=[[NearbyViewController alloc] init];
     NSArray* controllerArray = [[NSArray alloc]initWithObjects:nearbyVC,searchVC,myshopVC,nil];
     self.viewControllers = controllerArray;

@@ -57,6 +57,13 @@
 		6B96E3CB18FD3B9900DCA79F /* JRWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */; };
 		6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB93AA918F552D900EA1F65 /* MyshopViewController.m */; };
 		6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */; };
+		6BE7153E18FE1BE500CD0552 /* Other.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7153C18FE1BE500CD0552 /* Other.png */; };
+		6BE7153F18FE1BE500CD0552 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7153D18FE1BE500CD0552 /* Spaceship.png */; };
+		6BE7154218FE1C0600CD0552 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7154018FE1C0600CD0552 /* background-music-aac.caf */; };
+		6BE7154318FE1C0600CD0552 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7154118FE1C0600CD0552 /* pew-pew-lei.caf */; };
+		6BE7154718FE1D8400CD0552 /* FirstScence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7154618FE1D8400CD0552 /* FirstScence.m */; };
+		6BE7154A18FE1E3B00CD0552 /* PlaneGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7154918FE1E3B00CD0552 /* PlaneGameViewController.m */; };
+		6BE7154C18FE1F5900CD0552 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE7154B18FE1F5900CD0552 /* SpriteKit.framework */; };
 		7E2BDD8218F840900002ADF3 /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E2BDD8118F840900002ADF3 /* bg-body.jpg */; };
 		7E4478AC18F4370E009EF02D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A218F4370E009EF02D /* 01.jpg */; };
 		7E4478AD18F4370E009EF02D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4478A318F4370E009EF02D /* 02.jpg */; };
@@ -192,6 +199,15 @@
 		6BB93AA818F552D900EA1F65 /* MyshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyshopViewController.h; sourceTree = "<group>"; };
 		6BB93AA918F552D900EA1F65 /* MyshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyshopViewController.m; sourceTree = "<group>"; };
 		6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyshopViewController.xib; sourceTree = "<group>"; };
+		6BE7153C18FE1BE500CD0552 /* Other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Other.png; sourceTree = "<group>"; };
+		6BE7153D18FE1BE500CD0552 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		6BE7154018FE1C0600CD0552 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		6BE7154118FE1C0600CD0552 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		6BE7154518FE1D8400CD0552 /* FirstScence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScence.h; sourceTree = "<group>"; };
+		6BE7154618FE1D8400CD0552 /* FirstScence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScence.m; sourceTree = "<group>"; };
+		6BE7154818FE1E3B00CD0552 /* PlaneGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneGameViewController.h; sourceTree = "<group>"; };
+		6BE7154918FE1E3B00CD0552 /* PlaneGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneGameViewController.m; sourceTree = "<group>"; };
+		6BE7154B18FE1F5900CD0552 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7E2BDD8118F840900002ADF3 /* bg-body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-body.jpg"; sourceTree = "<group>"; };
 		7E4478A218F4370E009EF02D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		7E4478A318F4370E009EF02D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
@@ -266,6 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE7154C18FE1F5900CD0552 /* SpriteKit.framework in Frameworks */,
 				6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */,
 				6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */,
 				C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */,
@@ -290,6 +307,7 @@
 		6B38B8D218F7FBBD005480DC /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6BE7153A18FE1BA900CD0552 /* Plane */,
 				6B1F9FA918FD2C5700475D23 /* GameViewController.h */,
 				6B1F9FAA18FD2C5700475D23 /* GameViewController.m */,
 				6B1F9FAB18FD2C5700475D23 /* GameViewController.xib */,
@@ -427,6 +445,28 @@
 			name = PostBar;
 			sourceTree = "<group>";
 		};
+		6BE7153A18FE1BA900CD0552 /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7154818FE1E3B00CD0552 /* PlaneGameViewController.h */,
+				6BE7154918FE1E3B00CD0552 /* PlaneGameViewController.m */,
+				6BE7154518FE1D8400CD0552 /* FirstScence.h */,
+				6BE7154618FE1D8400CD0552 /* FirstScence.m */,
+			);
+			name = Plane;
+			sourceTree = "<group>";
+		};
+		6BE7153B18FE1BD400CD0552 /* plane */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7154018FE1C0600CD0552 /* background-music-aac.caf */,
+				6BE7154118FE1C0600CD0552 /* pew-pew-lei.caf */,
+				6BE7153C18FE1BE500CD0552 /* Other.png */,
+				6BE7153D18FE1BE500CD0552 /* Spaceship.png */,
+			);
+			name = plane;
+			sourceTree = "<group>";
+		};
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +495,7 @@
 		7E4478A018F4360A009EF02D /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				6BE7153B18FE1BD400CD0552 /* plane */,
 				6B1F9F6F18FCD20200475D23 /* Login_button.png */,
 				7E618E9718FC418000EA93BF /* Default-568h@2x.png */,
 				7E77A8C818F84D77000155B7 /* login.png */,
@@ -555,6 +596,7 @@
 		C6AC985118F234F500CCF79C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BE7154B18FE1F5900CD0552 /* SpriteKit.framework */,
 				6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */,
 				6B77D0E718F4E60200D49E9F /* MapKit.framework */,
 				C6AC985218F234F500CCF79C /* Foundation.framework */,
@@ -769,6 +811,7 @@
 				6B96E3B418FD3B0F00DCA79F /* TBMainViewController.xib in Resources */,
 				7E8104F918F5A2F000C7882E /* blue_90.png in Resources */,
 				7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */,
+				6BE7154318FE1C0600CD0552 /* pew-pew-lei.caf in Resources */,
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
 				7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */,
@@ -782,6 +825,7 @@
 				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
 				7E77A8C918F84D77000155B7 /* login.png in Resources */,
 				7E618E9818FC418000EA93BF /* Default-568h@2x.png in Resources */,
+				6BE7153E18FE1BE500CD0552 /* Other.png in Resources */,
 				7E8104FA18F5A2F000C7882E /* green_90.png in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
 				6B96E3B218FD3B0F00DCA79F /* TBCell.xib in Resources */,
@@ -793,7 +837,9 @@
 				6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
+				6BE7153F18FE1BE500CD0552 /* Spaceship.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,
+				6BE7154218FE1C0600CD0552 /* background-music-aac.caf in Resources */,
 				6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
 				6B96E3B618FD3B0F00DCA79F /* TBViewController.xib in Resources */,
@@ -846,6 +892,7 @@
 				6B96E3CB18FD3B9900DCA79F /* JRWebViewProgress.m in Sources */,
 				6B96E3B318FD3B0F00DCA79F /* TBMainViewController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
+				6BE7154A18FE1E3B00CD0552 /* PlaneGameViewController.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
@@ -857,6 +904,7 @@
 				6B96E3A118FD3AEA00DCA79F /* UIView+Screenshot.m in Sources */,
 				6B1F9F7C18FCDC7900475D23 /* LogInViewController.m in Sources */,
 				6B96E3B718FD3B0F00DCA79F /* TTUITableViewZoomController.m in Sources */,
+				6BE7154718FE1D8400CD0552 /* FirstScence.m in Sources */,
 				6B96E39E18FD3AEA00DCA79F /* PostBarViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B96E3B518FD3B0F00DCA79F /* TBViewController.m in Sources */,

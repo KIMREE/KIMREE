@@ -28,7 +28,47 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    float m_compensation;
+    float m2_compensation;
+    
+    if (IOS7) {
+        m_compensation=0;
+    }
+    else {
+        m_compensation=65.0;
+    }
+    
+    if (IS_INCH4) {
+        m2_compensation=0;
+    }
+    else {
+        m2_compensation=50;
+    }
+    
+    logOutBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    logOutBtn.frame = CGRectMake(10, 260-m_compensation-m2_compensation, 300, 40);
+    [logOutBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+    [logOutBtn setBackgroundImage:[UIImage imageNamed:@"Login_button.png"] forState:UIControlStateNormal];
+    [logOutBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal] ;
+    logOutBtn.BackgroundColor=[UIColor clearColor];
+    logOutBtn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [logOutBtn addTarget:self action:@selector(logOut:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:logOutBtn];
+    
 }
+
+
+- (IBAction)logOut:(id)sender {
+    
+    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController popViewControllerAnimated:YES];
+    NSLog(@"退出登录");
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

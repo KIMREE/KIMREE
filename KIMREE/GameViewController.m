@@ -76,10 +76,26 @@
     cell.detailTextLabel.text = @"美女，玩哪个";
 	return cell;
 }
+
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *rowString = [self.list objectAtIndex:[indexPath row]];
-    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    
+    if ([rowString isEqualToString:@"打飞机"]) {
+        
+        PlaneGameViewController *planeVC = [[PlaneGameViewController alloc]init];
+        
+        [self.navigationController pushViewController:planeVC animated:YES];
+        
+    }else{
+    
+   UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alter show];
+    }
 }
+
+
+
 
 @end
