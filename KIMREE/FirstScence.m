@@ -218,7 +218,7 @@ static const uint32_t planeCategory          =  0x00000010;
 - (void)shot:(id)sender
 {
     
-    [self runAction:[SKAction playSoundFileNamed:@"pew-pew-lei.caf" waitForCompletion:NO]];
+    [self runAction:[SKAction playSoundFileNamed:@"bullet.mp3" waitForCompletion:NO]];
     SKSpriteNode* bulletSprite=[[SKSpriteNode alloc] initWithTexture:bulletTexture color:[UIColor redColor] size:CGSizeMake(10, 15)];
     bulletSprite.name = @"bullet";
     bulletSprite.physicsBody.affectedByGravity = NO;

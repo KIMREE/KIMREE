@@ -27,6 +27,24 @@
 - (id)init
 {
     if (self = [super init]) {
+        
+        float m_compensation;
+        float m2_compensation;
+        
+        if (IOS7) {
+            m_compensation=0;
+        }
+        else {
+            m_compensation=65.0;
+        }
+        
+        if (IS_INCH4) {
+            m2_compensation=0;
+        }
+        else {
+            m2_compensation=75;
+        }
+        
         self.backgroundColor = [UIColor clearColor];
         
         MKMapView *mapView = [[MKMapView alloc] initWithFrame:self.bounds];
@@ -39,8 +57,9 @@
         self.mapView.mapType=MKMapTypeStandard;
         
         UIButton *location=[UIButton buttonWithType:UIButtonTypeCustom];
-        location.frame = CGRectMake(10, 450, 20, 20);
-        location.backgroundColor =[UIColor redColor];
+        [location setImage:[UIImage imageNamed:@"wl_map_icon_position"] forState:UIControlStateNormal];
+        location.frame = CGRectMake(9, 470-m_compensation-m2_compensation, 30, 30);
+        //location.backgroundColor =[UIColor redColor];
         [location addTarget:self action:@selector(location:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:location];
