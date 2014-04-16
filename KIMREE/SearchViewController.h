@@ -10,12 +10,6 @@
 
 @interface SearchViewController : UIViewController
 
-{
-    UIToolbar *toolBar;
-}
-- (IBAction)area:(id)sender;
-- (IBAction)state:(id)sender;
-- (IBAction)country:(id)sender;
 
-@property (retain, nonatomic) IBOutlet UIDatePicker *pickerView;
+@property (strong, nonatomic) NSArray *list;
 @end

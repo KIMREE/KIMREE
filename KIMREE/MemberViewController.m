@@ -131,14 +131,14 @@
     passwordbox=[[UITextField alloc] initWithFrame:CGRectMake(10, 250-m_compensation-m2_compensation, 300, 30)];
     
     [userbox setBorderStyle:UITextBorderStyleRoundedRect];
-    userbox.placeholder = @"email";
+    userbox.placeholder = @"邮箱地址";
     userbox.autocorrectionType = UITextAutocorrectionTypeNo;
     userbox.autocapitalizationType = UITextAutocapitalizationTypeNone;
     userbox.returnKeyType = UIReturnKeyDone;
     userbox.clearButtonMode = UITextFieldViewModeWhileEditing; //编辑时会出现个修改X
     
     [passwordbox setBorderStyle:UITextBorderStyleRoundedRect];
-    passwordbox.placeholder = @"password";
+    passwordbox.placeholder = @"密码";
     passwordbox.secureTextEntry = YES;
     passwordbox.autocorrectionType = UITextAutocorrectionTypeNo;
     passwordbox.autocapitalizationType = UITextAutocapitalizationTypeNone;

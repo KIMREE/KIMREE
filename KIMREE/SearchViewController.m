@@ -14,7 +14,7 @@
 @end
 
 @implementation SearchViewController
-@synthesize pickerView;
+@synthesize list=_list;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,15 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    [self.navigationController  setToolbarHidden:YES animated:YES];
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"about" style:UIBarButtonItemStylePlain target:self action:nil];
-    
-    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 60, self.view.bounds.size.width, 50)];
-    [self.view addSubview:searchBar];
-
+    NSArray *array = [[NSArray alloc] initWithObjects:@"河东店", @"河西店",
+                      @"江北店", @"江南店", @"某某旗舰店", @"他的店", @"有间店",
+                      @"店去哪儿了" , nil];
+    self.list = array;
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,19 +44,46 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)area:(id)sender {
-
-}
-
-- (IBAction)state:(id)sender {
- 
-}
-
-
-- (IBAction)country:(id)sender {
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    self.list = nil;
     
 }
-
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return [self.list count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *TableSampleIdentifier = @"CellIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
+                             TableSampleIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]
+                initWithStyle:UITableViewCellStyleValue1
+                reuseIdentifier:TableSampleIdentifier];
+    }
+    
+    NSUInteger row = [indexPath row];
+    cell.textLabel.text = [self.list objectAtIndex:row];
+    UIImage *image = [UIImage imageNamed:@"pin"];
+    cell.imageView.image = image;
+    UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
+    cell.imageView.highlightedImage = highLighedImage;
+    cell.detailTextLabel.text = @"你找哪个";
+	return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *rowString = [self.list objectAtIndex:[indexPath row]];
+    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alter show];
+}
 
 
 @end

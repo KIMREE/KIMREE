@@ -33,48 +33,72 @@
          mapView.delegate = self;
         [self addSubview:mapView];
         self.mapView =  mapView;
-
         self.span = 40000;
+     
+        //地图类型
+        self.mapView.mapType=MKMapTypeStandard;
         
-   }
+        UIButton *location=[UIButton buttonWithType:UIButtonTypeCustom];
+        location.frame = CGRectMake(10, 450, 20, 20);
+        location.backgroundColor =[UIColor redColor];
+        [location addTarget:self action:@selector(location:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self addSubview:location];
+        
+  }
     return self;
 }
 
 
+- (IBAction)location:(id)sender {
+    
+    if ([CLLocationManager locationServicesEnabled]){
+        
+        //定位功能开启的情况下进行定位
+    
+        CLLocationManager *manager = [[CLLocationManager alloc] init];
+        
+        manager.distanceFilter = kCLDistanceFilterNone;
+    
+        manager.desiredAccuracy = kCLLocationAccuracyBest;
+        
+        //manager.delegate = self;
+        
+        [manager startUpdatingLocation];
+        
+        NSLog(@"已定位");
+
+  }
+    else{
+        NSLog(@"定位未打开");
+    }
+}
 
 
+#pragma mark-
+
+- (void)locationManager:(CLLocationManager *)manager
+
+didUpdateToLocation:(CLLocation *)newLocation
+
+fromLocation:(CLLocation *)oldLocation
+
+{
+    
+    [manager stopUpdatingLocation];
+}
 
 
-////获得位置信息
-//
-//
-//-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation: (CLLocation *)oldLocation
-//{
-//    NSTimeInterval howRecent = [newLocation.timestamp timeIntervalSinceNow];
-//    if(howRecent < -10) return ; //离上次更新的时间少于10秒
-//        if(newLocation.horizontalAccuracy > 100) return; //精度> 100米
-//    //经度和纬度
-//    double lat = newLocation.coordinate.latitude;
-//    double lon = newLocation.coordinate.longitude;
-//}
-//
-////获得方向信息（比如往南走）
-//-(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-//{
-//    //获得方向
-//    CLLocationDirection heading = newHeading .trueHeading;
-//}
+- (void)locationManager:(CLLocationManager *)manager
 
+didFailWithError:(NSError *)error
 
-//四、停止定位
-//
-//[locManager stopUpdatingLocation];
-//你可以设置你想要的精度和距离过滤：
-//locManager.desiredAccuracy = kLLocationAccuracyBest;
-//locManager.distanceFilter = 1000;
+{
+    
+    [manager stopUpdatingLocation];
+    NSLog(@"定位失败");
 
-
-
+}
 
 
 - (id)initWithDelegate:(id<MapViewDelegate>)delegate

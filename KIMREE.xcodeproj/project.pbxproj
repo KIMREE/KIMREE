@@ -780,6 +780,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					C6AC984E18F234F500CCF79C = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					C6AC986918F234F500CCF79C = {
 						TestTargetID = C6AC984E18F234F500CCF79C;
 					};

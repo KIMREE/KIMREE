@@ -76,6 +76,8 @@
     cell.detailTextLabel.text = @"样样不少";
 	return cell;
 }
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *rowString = [self.list objectAtIndex:[indexPath row]];
     UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
