@@ -2,20 +2,12 @@
 //  LogInViewController.h
 //  KIMREE
 //
-//  Created by renchunyu on 14-4-15.
+//  Created by renchunyu on 14-4-16.
 //  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface LogInViewController : UIViewController
-
-{
-
-    UIButton *logOutBtn;
-
-}
-
-
 
 @end
