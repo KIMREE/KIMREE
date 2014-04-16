@@ -98,9 +98,10 @@ static JRRequestManager *manager;
   
   //保存请求信息
   [items setValue:item forKey:key];
-  
+    
   //发送请求
   [item startRequest];
+
 }
 /*
  * @brief 取消请求

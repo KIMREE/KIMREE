@@ -10,8 +10,8 @@
 #define haitaotong_ApiDef_h
 
 // 服务器地址
-//#define API_SERVER_URL @"http://42.121.59.189/api" //v1.8
-#define API_SERVER_URL @"httapi.hai0.com" //v2.0
+#define API_SERVER_URL @"http://42.121.59.189/api" //v1.8
+//#define API_SERVER_URL @"http://httapi.hai0.com" //v2.0
 #define API_SERVER_PATH @""
 #define API_SERVER_PARAMS @""
 // 接口版本

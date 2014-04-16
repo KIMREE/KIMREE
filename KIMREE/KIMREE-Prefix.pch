@@ -5,7 +5,6 @@
 //
 
 #import <Availability.h>
-
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
@@ -16,7 +15,10 @@
     #import "MainViewController.h"
     #import "JRTool.h"
     #import "JDStatusBarNotification.h"
-    #import "MKNetworkKit.h"
+    #import "JRNetwork.h"
+    #import "SVProgressHUD.h"
+    #import "ASIHTTPRequest.h"
+    #import "Reachability/Reachability.h"
 #endif
 
 #define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)

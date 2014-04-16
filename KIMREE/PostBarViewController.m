@@ -147,7 +147,7 @@
 
 #pragma mark - SWTableViewDelegate
 //从左往右滑
-- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
+- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {    [cell hideUtilityButtonsAnimated:YES];
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:
@@ -189,11 +189,12 @@
         default:
             break;
     }
-    [cell hideUtilityButtonsAnimated:YES];
+
 }
 
 //从右往左滑
 - (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
+    [cell hideUtilityButtonsAnimated:YES];
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:
@@ -227,7 +228,6 @@
         default:
             break;
     }
-    [cell hideUtilityButtonsAnimated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
