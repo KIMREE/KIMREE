@@ -40,8 +40,8 @@
     
 
     
-    self.annotations = @[@{@"latitude":@"30.281843",
-                           @"longitude":@"120.102193",
+    self.annotations = @[@{@"latitude":@"22.5717781",
+                           @"longitude":@"113.87585609999996",
                            @"title":@"test-title-1",
                            @"subtitle":@"test-sub-title-11"},
                          @{@"latitude":@"30.290144",

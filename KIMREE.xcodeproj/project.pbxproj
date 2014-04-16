@@ -80,6 +80,7 @@
 		7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C218F84B9F000155B7 /* checkbox_in.png */; };
 		7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C318F84B9F000155B7 /* checkbox_out.png */; };
 		7E77A8C918F84D77000155B7 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77A8C818F84D77000155B7 /* login.png */; };
+		7E801E0E18FEE0B10044E99C /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E801E0D18FEE0B10044E99C /* DisplayViewController.m */; };
 		7E8104F918F5A2F000C7882E /* blue_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F318F5A2F000C7882E /* blue_90.png */; };
 		7E8104FA18F5A2F000C7882E /* green_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F418F5A2F000C7882E /* green_90.png */; };
 		7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F518F5A2F000C7882E /* gray_90.png */; };
@@ -230,6 +231,8 @@
 		7E77A8C218F84B9F000155B7 /* checkbox_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_in.png; sourceTree = "<group>"; };
 		7E77A8C318F84B9F000155B7 /* checkbox_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_out.png; sourceTree = "<group>"; };
 		7E77A8C818F84D77000155B7 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		7E801E0C18FEE0B10044E99C /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		7E801E0D18FEE0B10044E99C /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
 		7E8104F318F5A2F000C7882E /* blue_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_90.png; sourceTree = "<group>"; };
 		7E8104F418F5A2F000C7882E /* green_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_90.png; sourceTree = "<group>"; };
 		7E8104F518F5A2F000C7882E /* gray_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_90.png; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				7E801E0C18FEE0B10044E99C /* DisplayViewController.h */,
+				7E801E0D18FEE0B10044E99C /* DisplayViewController.m */,
 				6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */,
 				6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */,
 				6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */,
@@ -936,6 +941,7 @@
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
 				6B96E3B518FD3B0F00DCA79F /* TBViewController.m in Sources */,
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
+				7E801E0E18FEE0B10044E99C /* DisplayViewController.m in Sources */,
 				6B1F9F8518FD17CC00475D23 /* GetPasswordViewController.m in Sources */,
 				6B96E3C718FD3B7F00DCA79F /* JRWebViewProgressView.m in Sources */,
 			);

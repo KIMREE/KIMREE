@@ -55,11 +55,14 @@
      
         //地图类型
         self.mapView.mapType=MKMapTypeStandard;
+        //火星坐标
+        //self.mapView.showsUserLocation=YES;
+        
         
         UIButton *location=[UIButton buttonWithType:UIButtonTypeCustom];
         [location setImage:[UIImage imageNamed:@"wl_map_icon_position"] forState:UIControlStateNormal];
         location.frame = CGRectMake(9, 470-m_compensation-m2_compensation, 30, 30);
-        //location.backgroundColor =[UIColor redColor];
+        
         [location addTarget:self action:@selector(location:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:location];
