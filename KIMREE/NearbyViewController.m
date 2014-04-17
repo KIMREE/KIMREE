@@ -12,6 +12,7 @@
 #import "TestMapCell.h"
 
 
+
 @interface NearbyViewController ()<MapViewDelegate>
 @property (nonatomic,strong)MapView *mapView;
 @property (nonatomic,strong)NSArray *annotations;
@@ -38,8 +39,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-
-    
     self.annotations = @[@{@"latitude":@"22.5717781",
                            @"longitude":@"113.87585609999996",
                            @"title":@"test-title-1",
@@ -60,7 +59,7 @@
     
 
     self.mapView = [[MapView alloc] initWithDelegate:self];
-
+  
    
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
@@ -77,6 +76,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)MapViewCellClicked{
+    
+    self.navigationController.navigationBar.hidden = NO;
+   DisplayViewController  *displayView = [[DisplayViewController alloc] init] ;
+   [self.navigationController pushViewController:displayView animated:YES];
+    
+    
+
+}
 
 #pragma mark -
 #pragma mark delegate
@@ -104,8 +113,10 @@
 {
     Item *item = [[Item alloc] initWithDictionary:[_annotations objectAtIndex:index]];
     TestMapCell  *cell = [[[NSBundle mainBundle] loadNibNamed:@"TestMapCell" owner:self options:nil] objectAtIndex:0];
+    
     cell.title.text = item.title;
     cell.subtitle.text = item.subtitle;
+    cell.delegate=self;
     return cell;
 }
 

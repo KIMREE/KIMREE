@@ -37,4 +37,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)gotoShop:(id)sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)setting:(id)sender {
+    
+     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)logOut:(id)sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

@@ -37,9 +37,9 @@
     self.selectedIndex = 0;
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:0] setTitle:@"附近"];
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"pin.png"]];
-    [(UITabBarItem *)[self.tabBar.items objectAtIndex:1] setTitle:@"商户列表"];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:1] setTitle:@"商家"];
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"pin.png"]];
-    [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setTitle:@"我的商户"];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setTitle:@"收藏"];
     [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"pin.png"]];
     UIViewController* activeController = self.selectedViewController;
     if(activeController == myshopVC){

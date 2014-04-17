@@ -32,8 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    NSArray *array = [[NSArray alloc] initWithObjects:@"河东店", @"河西店",
-                      @"江北店", @"江南店", @"某某旗舰店", @"他的店", @"有间店",
+    NSArray *array = [[NSArray alloc] initWithObjects:@"河东小二店", @"中南旗舰店",
+                      @"江北翠花店", @"江南绿店", @"某某旗舰店", @"很好的店", @"有间店",
                       @"店去哪儿了" , nil];
     self.list = array;
 }
@@ -76,13 +76,17 @@
     cell.imageView.image = image;
     UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
     cell.imageView.highlightedImage = highLighedImage;
-    cell.detailTextLabel.text = @"你找哪个";
+    cell.detailTextLabel.text = @"查看详情";
 	return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *rowString = [self.list objectAtIndex:[indexPath row]];
-    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [alter show];
+//    NSString *rowString = [self.list objectAtIndex:[indexPath row]];
+//   UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//    [alter show];
+    DisplayViewController *displayVC=[[DisplayViewController alloc] init];
+    [self.navigationController pushViewController:displayVC animated:YES];
+    
+    
 }
 
 

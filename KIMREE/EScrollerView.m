@@ -13,6 +13,8 @@
 @synthesize titleArray;
 @synthesize imageArray;
 @synthesize pageControl;
+
+
 -(id)initWithFrameRect:(CGRect)rect ImageArray:(NSArray *)imgArr TitleArray:(NSArray *)titArr
 {
         
