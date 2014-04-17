@@ -69,7 +69,7 @@
 		6BAC89AA18FFC3FB00D8E952 /* M2GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89A818FFC3FB00D8E952 /* M2GlobalState.m */; };
 		6BAC89B118FFC47D00D8E952 /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89AC18FFC47D00D8E952 /* M2SettingsDetailViewController.m */; };
 		6BAC89B218FFC47D00D8E952 /* M2SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89AE18FFC47D00D8E952 /* M2SettingsViewController.m */; };
-		6BAC89B318FFC47D00D8E952 /* M2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89B018FFC47D00D8E952 /* M2ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6BAC89B318FFC47D00D8E952 /* M2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89B018FFC47D00D8E952 /* M2ViewController.m */; };
 		6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB93AA918F552D900EA1F65 /* MyshopViewController.m */; };
 		6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */; };
 		6BD029D718FE64C000785923 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BD029D518FE64C000785923 /* background.mp3 */; };

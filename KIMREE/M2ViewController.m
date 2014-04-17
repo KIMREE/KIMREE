@@ -65,9 +65,6 @@
   _scene.delegate = self;
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
 
 - (void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:YES];
