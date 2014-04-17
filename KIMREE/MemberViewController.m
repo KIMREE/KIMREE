@@ -31,9 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    float m_compensation;
-    float m2_compensation;
-    
+    float m_compensation,m2_compensation;
+   
     if (IOS7) {
         m_compensation=0;
     }
@@ -143,7 +142,7 @@
     passwordbox.autocorrectionType = UITextAutocorrectionTypeNo;
     passwordbox.autocapitalizationType = UITextAutocapitalizationTypeNone;
     passwordbox.returnKeyType = UIReturnKeyDone;
-    passwordbox.clearButtonMode = UITextFieldViewModeWhileEditing; //编辑时会出现个修改X
+    passwordbox.clearButtonMode = UITextFieldViewModeWhileEditing;
     
     
     [self.view addSubview:userbox];

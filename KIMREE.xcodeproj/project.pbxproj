@@ -617,9 +617,9 @@
 			isa = PBXGroup;
 			children = (
 				C6AC985818F234F500CCF79C /* KIMREE */,
+				C6AC985018F234F500CCF79C /* Products */,
 				C6AC987118F234F500CCF79C /* KIMREETests */,
 				C6AC985118F234F500CCF79C /* Frameworks */,
-				C6AC985018F234F500CCF79C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
