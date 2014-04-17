@@ -153,7 +153,6 @@ static JRRequestManager *manager;
   NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
   //加密请求参数
   NSString *encryptStr = [CipherUtil encryptWithString:str];
-  
   return @{@"data":encryptStr,@"vkey":@"htt"};
 }
 

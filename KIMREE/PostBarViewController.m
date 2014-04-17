@@ -118,6 +118,7 @@
 //    cell.textLabel.text = [dateObject description];
     //显示关注度和帖子数
 //    cell.notePost.text = @"关注 999999  帖子 999999";
+
     cell.textLabel.text = _testArray[indexPath.row];
     switch (indexPath.row) {
         case 0:

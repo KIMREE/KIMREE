@@ -10,6 +10,7 @@
 #define haitaotong_ApiDef_h
 
 // 服务器地址
+//#define API_SERVER_URL @"http://www.ecigarfan.com/api/api.php?action=products" //产品
 #define API_SERVER_URL @"http://42.121.59.189/api" //v1.8
 //#define API_SERVER_URL @"http://httapi.hai0.com" //v2.0
 #define API_SERVER_PATH @""

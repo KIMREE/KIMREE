@@ -95,13 +95,13 @@
 {
     //如果uid为0，则注册一个uid
     [self configUID];
-
+    
     //配置通知
     [self configNotification];
 }
 
 /*
- * @brief 第一次安装应用，注册uid
+ * @brief 第一次安装应用，注册uid    [[AppHelper sharedInstance].uid isEqual:@"0"]
  */
 - (void)configUID
 {
@@ -112,12 +112,10 @@
          }
          finished:^(NSString *uid){
              [AppHelper sharedInstance].uid = uid;
-                 NSLog(@"注册uid..");
              [self updateBaseInfo:NO];
-                 NSLog(@"注册通知..");
+
          }];
     }
-
 }
 
 /*
@@ -127,7 +125,6 @@
 {
     //注册推送通知
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationType)(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
-
 }
 
 /*

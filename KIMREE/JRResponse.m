@@ -17,9 +17,9 @@
   self = [super init];
   if (self) {
     if (data) {
-      if ([data valueForKey:@"ret"]) {
-        self.code = [[data valueForKey:@"ret"] integerValue];
-      }
+//      if ([data valueForKey:@"ret"]) {
+//        self.code = [[data valueForKey:@"ret"] integerValue];
+//      }
       if ([data valueForKey:@"code"]) {
         self.code = [[data valueForKey:@"code"] integerValue];
       }

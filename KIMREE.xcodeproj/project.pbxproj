@@ -600,7 +600,6 @@
 				C6B41CC418FE6A7D006901E7 /* SVProgressHUD */,
 				C6B01C8018FCE1820045A59E /* TouchJSON */,
 				C6B01C7218FCE0200045A59E /* utilities */,
-				C6B01C4A18FCDE380045A59E /* MKNetworkKit */,
 				C6B01BB718FCD3760045A59E /* JRNetwork */,
 				C6E5740818F3AB76008DFA54 /* headers */,
 				C6E573FE18F3A6D7008DFA54 /* JDStatusBarNotification */,
@@ -903,21 +902,6 @@
 				C6B01BBE18FCD3970045A59E /* JRRequestManager.m */,
 			);
 			name = JRNetwork;
-			sourceTree = "<group>";
-		};
-		C6B01C4A18FCDE380045A59E /* MKNetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				C6B01C4B18FCDE380045A59E /* Categories */,
-			);
-			path = MKNetworkKit;
-			sourceTree = "<group>";
-		};
-		C6B01C4B18FCDE380045A59E /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		C6B01C7218FCE0200045A59E /* utilities */ = {
