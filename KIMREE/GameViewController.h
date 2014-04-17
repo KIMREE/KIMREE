@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PlaneGameViewController.h"
-#import "M2ViewController.h"
+
 
 @interface GameViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 

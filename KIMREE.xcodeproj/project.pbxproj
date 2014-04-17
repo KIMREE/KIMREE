@@ -56,7 +56,7 @@
 		6B96E3C318FD3B5E00DCA79F /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3C218FD3B5E00DCA79F /* UIImage+Blur.m */; };
 		6B96E3C718FD3B7F00DCA79F /* JRWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3C618FD3B7F00DCA79F /* JRWebViewProgressView.m */; };
 		6B96E3CB18FD3B9900DCA79F /* JRWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */; };
-		6BAC898518FFC11500D8E952 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC898418FFC11500D8E952 /* main.storyboard */; };
+		6BAC898518FFC11500D8E952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC898418FFC11500D8E952 /* Main.storyboard */; };
 		6BAC898E18FFC26600D8E952 /* M2Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC898D18FFC26600D8E952 /* M2Theme.m */; };
 		6BAC899718FFC29C00D8E952 /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899018FFC29C00D8E952 /* M2Cell.m */; };
 		6BAC899818FFC29C00D8E952 /* M2Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899218FFC29C00D8E952 /* M2Grid.m */; };
@@ -218,7 +218,7 @@
 		6B96E3C618FD3B7F00DCA79F /* JRWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRWebViewProgressView.m; sourceTree = "<group>"; };
 		6B96E3C918FD3B9900DCA79F /* JRWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRWebViewProgress.h; sourceTree = "<group>"; };
 		6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRWebViewProgress.m; sourceTree = "<group>"; };
-		6BAC898418FFC11500D8E952 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		6BAC898418FFC11500D8E952 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6BAC898C18FFC26600D8E952 /* M2Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Theme.h; sourceTree = "<group>"; };
 		6BAC898D18FFC26600D8E952 /* M2Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Theme.m; sourceTree = "<group>"; };
 		6BAC898F18FFC29C00D8E952 /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 		6BAC898618FFC1D100D8E952 /* Gamecontroller */ = {
 			isa = PBXGroup;
 			children = (
-				6BAC898418FFC11500D8E952 /* main.storyboard */,
+				6BAC898418FFC11500D8E952 /* Main.storyboard */,
 				6BAC89AB18FFC47D00D8E952 /* M2SettingsDetailViewController.h */,
 				6BAC89AC18FFC47D00D8E952 /* M2SettingsDetailViewController.m */,
 				6BAC89AD18FFC47D00D8E952 /* M2SettingsViewController.h */,
@@ -1011,7 +1011,7 @@
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
-				6BAC898518FFC11500D8E952 /* main.storyboard in Resources */,
+				6BAC898518FFC11500D8E952 /* Main.storyboard in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
 				6BE7153F18FE1BE500CD0552 /* Spaceship.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,

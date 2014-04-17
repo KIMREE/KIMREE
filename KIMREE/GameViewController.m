@@ -90,9 +90,9 @@
         
     }else if([rowString isEqualToString:@"2048"]){
         
-        M2ViewController *numberVC = [[M2ViewController alloc]init];
-        
-        [self.navigationController pushViewController:numberVC animated:YES];
+         self.navigationController.navigationBar.hidden = NO;
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
+       [ self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
         
     }else{
     

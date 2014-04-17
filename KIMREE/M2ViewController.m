@@ -34,7 +34,7 @@
 {
   [super viewDidLoad];
     
-    
+
   [self updateState];
   
   _bestView.score.text = [NSString stringWithFormat:@"%ld", (long)[Settings integerForKey:@"Best Score"]];
@@ -64,6 +64,15 @@
   _scene = scene;
   _scene.delegate = self;
 }
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 
 
 - (void)updateState
