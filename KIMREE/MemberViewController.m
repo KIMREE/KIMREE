@@ -162,7 +162,11 @@
     
     [self.view addSubview:checkbox];
     
+
 }
+
+
+
 
 
 -(void)logIn:(UIButton *)btn

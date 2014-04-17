@@ -88,6 +88,12 @@
         
         [self.navigationController pushViewController:planeVC animated:YES];
         
+    }else if([rowString isEqualToString:@"2048"]){
+        
+        M2ViewController *numberVC = [[M2ViewController alloc]init];
+        
+        [self.navigationController pushViewController:numberVC animated:YES];
+        
     }else{
     
    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];

@@ -16,6 +16,7 @@
     #import "MainViewController.h"
     #import "JRTool.h"
     #import "JDStatusBarNotification.h"
+    #import "M2GlobalState.h"
 #endif
 
 #define IS_INCH4 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)

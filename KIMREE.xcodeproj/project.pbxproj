@@ -56,6 +56,20 @@
 		6B96E3C318FD3B5E00DCA79F /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3C218FD3B5E00DCA79F /* UIImage+Blur.m */; };
 		6B96E3C718FD3B7F00DCA79F /* JRWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3C618FD3B7F00DCA79F /* JRWebViewProgressView.m */; };
 		6B96E3CB18FD3B9900DCA79F /* JRWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */; };
+		6BAC898518FFC11500D8E952 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC898418FFC11500D8E952 /* main.storyboard */; };
+		6BAC898E18FFC26600D8E952 /* M2Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC898D18FFC26600D8E952 /* M2Theme.m */; };
+		6BAC899718FFC29C00D8E952 /* M2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899018FFC29C00D8E952 /* M2Cell.m */; };
+		6BAC899818FFC29C00D8E952 /* M2Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899218FFC29C00D8E952 /* M2Grid.m */; };
+		6BAC899918FFC29C00D8E952 /* M2Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899418FFC29C00D8E952 /* M2Scene.m */; };
+		6BAC899A18FFC29C00D8E952 /* M2Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899618FFC29C00D8E952 /* M2Tile.m */; };
+		6BAC899D18FFC2AB00D8E952 /* M2GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899C18FFC2AB00D8E952 /* M2GameManager.m */; };
+		6BAC89A418FFC2BB00D8E952 /* M2GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC899F18FFC2BB00D8E952 /* M2GridView.m */; };
+		6BAC89A518FFC2BB00D8E952 /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89A118FFC2BB00D8E952 /* M2Overlay.m */; };
+		6BAC89A618FFC2BB00D8E952 /* M2ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89A318FFC2BB00D8E952 /* M2ScoreView.m */; };
+		6BAC89AA18FFC3FB00D8E952 /* M2GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89A818FFC3FB00D8E952 /* M2GlobalState.m */; };
+		6BAC89B118FFC47D00D8E952 /* M2SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89AC18FFC47D00D8E952 /* M2SettingsDetailViewController.m */; };
+		6BAC89B218FFC47D00D8E952 /* M2SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89AE18FFC47D00D8E952 /* M2SettingsViewController.m */; };
+		6BAC89B318FFC47D00D8E952 /* M2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC89B018FFC47D00D8E952 /* M2ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB93AA918F552D900EA1F65 /* MyshopViewController.m */; };
 		6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */; };
 		6BD029D718FE64C000785923 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BD029D518FE64C000785923 /* background.mp3 */; };
@@ -204,6 +218,34 @@
 		6B96E3C618FD3B7F00DCA79F /* JRWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRWebViewProgressView.m; sourceTree = "<group>"; };
 		6B96E3C918FD3B9900DCA79F /* JRWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRWebViewProgress.h; sourceTree = "<group>"; };
 		6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRWebViewProgress.m; sourceTree = "<group>"; };
+		6BAC898418FFC11500D8E952 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		6BAC898C18FFC26600D8E952 /* M2Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Theme.h; sourceTree = "<group>"; };
+		6BAC898D18FFC26600D8E952 /* M2Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Theme.m; sourceTree = "<group>"; };
+		6BAC898F18FFC29C00D8E952 /* M2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Cell.h; sourceTree = "<group>"; };
+		6BAC899018FFC29C00D8E952 /* M2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Cell.m; sourceTree = "<group>"; };
+		6BAC899118FFC29C00D8E952 /* M2Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Grid.h; sourceTree = "<group>"; };
+		6BAC899218FFC29C00D8E952 /* M2Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Grid.m; sourceTree = "<group>"; };
+		6BAC899318FFC29C00D8E952 /* M2Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Scene.h; sourceTree = "<group>"; };
+		6BAC899418FFC29C00D8E952 /* M2Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Scene.m; sourceTree = "<group>"; };
+		6BAC899518FFC29C00D8E952 /* M2Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Tile.h; sourceTree = "<group>"; };
+		6BAC899618FFC29C00D8E952 /* M2Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Tile.m; sourceTree = "<group>"; };
+		6BAC899B18FFC2AB00D8E952 /* M2GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GameManager.h; sourceTree = "<group>"; };
+		6BAC899C18FFC2AB00D8E952 /* M2GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GameManager.m; sourceTree = "<group>"; };
+		6BAC899E18FFC2BB00D8E952 /* M2GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GridView.h; sourceTree = "<group>"; };
+		6BAC899F18FFC2BB00D8E952 /* M2GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GridView.m; sourceTree = "<group>"; };
+		6BAC89A018FFC2BB00D8E952 /* M2Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Overlay.h; sourceTree = "<group>"; };
+		6BAC89A118FFC2BB00D8E952 /* M2Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2Overlay.m; sourceTree = "<group>"; };
+		6BAC89A218FFC2BB00D8E952 /* M2ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ScoreView.h; sourceTree = "<group>"; };
+		6BAC89A318FFC2BB00D8E952 /* M2ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ScoreView.m; sourceTree = "<group>"; };
+		6BAC89A718FFC3FB00D8E952 /* M2GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2GlobalState.h; sourceTree = "<group>"; };
+		6BAC89A818FFC3FB00D8E952 /* M2GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2GlobalState.m; sourceTree = "<group>"; };
+		6BAC89A918FFC3FB00D8E952 /* M2Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2Position.h; sourceTree = "<group>"; };
+		6BAC89AB18FFC47D00D8E952 /* M2SettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsDetailViewController.h; sourceTree = "<group>"; };
+		6BAC89AC18FFC47D00D8E952 /* M2SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsDetailViewController.m; sourceTree = "<group>"; };
+		6BAC89AD18FFC47D00D8E952 /* M2SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SettingsViewController.h; sourceTree = "<group>"; };
+		6BAC89AE18FFC47D00D8E952 /* M2SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SettingsViewController.m; sourceTree = "<group>"; };
+		6BAC89AF18FFC47D00D8E952 /* M2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2ViewController.h; sourceTree = "<group>"; };
+		6BAC89B018FFC47D00D8E952 /* M2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2ViewController.m; sourceTree = "<group>"; };
 		6BB93AA818F552D900EA1F65 /* MyshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyshopViewController.h; sourceTree = "<group>"; };
 		6BB93AA918F552D900EA1F65 /* MyshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyshopViewController.m; sourceTree = "<group>"; };
 		6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyshopViewController.xib; sourceTree = "<group>"; };
@@ -342,6 +384,7 @@
 		6B38B8D218F7FBBD005480DC /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				6BAC898018FFC01200D8E952 /* 2048 */,
 				6BE7153A18FE1BA900CD0552 /* Plane */,
 				6B1F9FA918FD2C5700475D23 /* GameViewController.h */,
 				6B1F9FAA18FD2C5700475D23 /* GameViewController.m */,
@@ -462,6 +505,89 @@
 				6B96E3CA18FD3B9900DCA79F /* JRWebViewProgress.m */,
 			);
 			name = JRWebViewProgress;
+			sourceTree = "<group>";
+		};
+		6BAC898018FFC01200D8E952 /* 2048 */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC898B18FFC24400D8E952 /* View */,
+				6BAC898A18FFC23100D8E952 /* Appearance */,
+				6BAC898918FFC20F00D8E952 /* Sprite Kit */,
+				6BAC898818FFC20000D8E952 /* State */,
+				6BAC898718FFC1EE00D8E952 /* global */,
+				6BAC898618FFC1D100D8E952 /* Gamecontroller */,
+			);
+			name = 2048;
+			sourceTree = "<group>";
+		};
+		6BAC898618FFC1D100D8E952 /* Gamecontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC898418FFC11500D8E952 /* main.storyboard */,
+				6BAC89AB18FFC47D00D8E952 /* M2SettingsDetailViewController.h */,
+				6BAC89AC18FFC47D00D8E952 /* M2SettingsDetailViewController.m */,
+				6BAC89AD18FFC47D00D8E952 /* M2SettingsViewController.h */,
+				6BAC89AE18FFC47D00D8E952 /* M2SettingsViewController.m */,
+				6BAC89AF18FFC47D00D8E952 /* M2ViewController.h */,
+				6BAC89B018FFC47D00D8E952 /* M2ViewController.m */,
+			);
+			name = Gamecontroller;
+			sourceTree = "<group>";
+		};
+		6BAC898718FFC1EE00D8E952 /* global */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC89A718FFC3FB00D8E952 /* M2GlobalState.h */,
+				6BAC89A818FFC3FB00D8E952 /* M2GlobalState.m */,
+				6BAC89A918FFC3FB00D8E952 /* M2Position.h */,
+			);
+			name = global;
+			sourceTree = "<group>";
+		};
+		6BAC898818FFC20000D8E952 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC899B18FFC2AB00D8E952 /* M2GameManager.h */,
+				6BAC899C18FFC2AB00D8E952 /* M2GameManager.m */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		6BAC898918FFC20F00D8E952 /* Sprite Kit */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC898F18FFC29C00D8E952 /* M2Cell.h */,
+				6BAC899018FFC29C00D8E952 /* M2Cell.m */,
+				6BAC899118FFC29C00D8E952 /* M2Grid.h */,
+				6BAC899218FFC29C00D8E952 /* M2Grid.m */,
+				6BAC899318FFC29C00D8E952 /* M2Scene.h */,
+				6BAC899418FFC29C00D8E952 /* M2Scene.m */,
+				6BAC899518FFC29C00D8E952 /* M2Tile.h */,
+				6BAC899618FFC29C00D8E952 /* M2Tile.m */,
+			);
+			name = "Sprite Kit";
+			sourceTree = "<group>";
+		};
+		6BAC898A18FFC23100D8E952 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC898C18FFC26600D8E952 /* M2Theme.h */,
+				6BAC898D18FFC26600D8E952 /* M2Theme.m */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
+		6BAC898B18FFC24400D8E952 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC899E18FFC2BB00D8E952 /* M2GridView.h */,
+				6BAC899F18FFC2BB00D8E952 /* M2GridView.m */,
+				6BAC89A018FFC2BB00D8E952 /* M2Overlay.h */,
+				6BAC89A118FFC2BB00D8E952 /* M2Overlay.m */,
+				6BAC89A218FFC2BB00D8E952 /* M2ScoreView.h */,
+				6BAC89A318FFC2BB00D8E952 /* M2ScoreView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		6BADFCA818F684F500249ED8 /* PostBar */ = {
@@ -885,6 +1011,7 @@
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
 				6B1F9F9E18FD26DF00475D23 /* HotSaleViewController.xib in Resources */,
 				7E4478BC18F43B5A009EF02D /* MainViewController.xib in Resources */,
+				6BAC898518FFC11500D8E952 /* main.storyboard in Resources */,
 				6B77D10518F4EAF000D49E9F /* pin.png in Resources */,
 				6BE7153F18FE1BE500CD0552 /* Spaceship.png in Resources */,
 				7E8104FB18F5A2F000C7882E /* gray_90.png in Resources */,
@@ -928,10 +1055,13 @@
 				6B1F9FA218FD26F900475D23 /* RankViewController.m in Sources */,
 				6B96E3C318FD3B5E00DCA79F /* UIImage+Blur.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
+				6BAC899818FFC29C00D8E952 /* M2Grid.m in Sources */,
+				6BAC89A518FFC2BB00D8E952 /* M2Overlay.m in Sources */,
 				6B1F9F9D18FD26DF00475D23 /* HotSaleViewController.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				6B96E39D18FD3AEA00DCA79F /* JRTableViewCell.m in Sources */,
 				6B96E3B118FD3B0F00DCA79F /* PullingRefreshTableView.m in Sources */,
+				6BAC89B218FFC47D00D8E952 /* M2SettingsViewController.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */,
 				6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */,
@@ -940,15 +1070,24 @@
 				6B496AB118FBD23200A67882 /* MainViewController.m in Sources */,
 				6B96E3B018FD3B0F00DCA79F /* PostTableViewCell.m in Sources */,
 				6B96E3BF18FD3B4900DCA79F /* JRGlowLabel.m in Sources */,
+				6BAC898E18FFC26600D8E952 /* M2Theme.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
+				6BAC89B318FFC47D00D8E952 /* M2ViewController.m in Sources */,
+				6BAC89A618FFC2BB00D8E952 /* M2ScoreView.m in Sources */,
+				6BAC899718FFC29C00D8E952 /* M2Cell.m in Sources */,
 				6BD029E218FE715600785923 /* LogInViewController.m in Sources */,
+				6BAC899D18FFC2AB00D8E952 /* M2GameManager.m in Sources */,
 				6B496AB318FBD28A00A67882 /* MemberViewController.m in Sources */,
+				6BAC899A18FFC29C00D8E952 /* M2Tile.m in Sources */,
 				6B96E3CB18FD3B9900DCA79F /* JRWebViewProgress.m in Sources */,
 				6B96E3B318FD3B0F00DCA79F /* TBMainViewController.m in Sources */,
 				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				6BE7154A18FE1E3B00CD0552 /* PlaneGameViewController.m in Sources */,
+				6BAC89B118FFC47D00D8E952 /* M2SettingsDetailViewController.m in Sources */,
+				6BAC899918FFC29C00D8E952 /* M2Scene.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				6B1F9F8218FCDD9F00475D23 /* SignInViewController.m in Sources */,
+				6BAC89AA18FFC3FB00D8E952 /* M2GlobalState.m in Sources */,
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
 				6B1F9F8D18FD1B8F00475D23 /* ProductViewController.m in Sources */,
 				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
@@ -964,6 +1103,7 @@
 				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
 				6B1F9F8518FD17CC00475D23 /* GetPasswordViewController.m in Sources */,
 				6B96E3C718FD3B7F00DCA79F /* JRWebViewProgressView.m in Sources */,
+				6BAC89A418FFC2BB00D8E952 /* M2GridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

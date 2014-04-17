@@ -57,17 +57,18 @@
                            @"subtitle":@"test-sub-title-44"}
                          ];
     
-
+    
     self.mapView = [[MapView alloc] initWithDelegate:self];
-  
-   
+    
+    
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
     [_mapView beginLoad];
     
     UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 50)];
     [self.view addSubview:searchBar];
-}
+    
+  }
 
 
 - (void)didReceiveMemoryWarning
@@ -80,11 +81,11 @@
 - (void)MapViewCellClicked{
     
     self.navigationController.navigationBar.hidden = NO;
-   DisplayViewController  *displayView = [[DisplayViewController alloc] init] ;
-   [self.navigationController pushViewController:displayView animated:YES];
+    DisplayViewController  *displayView = [[DisplayViewController alloc] init] ;
+    [self.navigationController pushViewController:displayView animated:YES];
     
     
-
+    
 }
 
 #pragma mark -

@@ -42,7 +42,21 @@
     UIViewController* activeController = self.selectedViewController;
     if(activeController == favoriteVC){
     }
+    
+     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@"LogIn" style:UIBarButtonItemStylePlain target:self action:@selector(signIn:)];
 }
+
+
+
+-(IBAction)signIn:(id)sender{
+    
+    self.navigationController.navigationBar.hidden = NO;
+    MemberViewController *secVC = [[MemberViewController alloc] init];
+    [self.navigationController pushViewController:secVC animated:YES];
+
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

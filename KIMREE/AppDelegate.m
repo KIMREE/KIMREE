@@ -38,13 +38,12 @@
     self.navController.navigationBar.hidden = YES;
     self.window.rootViewController = _navController;
     
-    
-
-    
-    
-    [self.window makeKeyAndVisible];
+   [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

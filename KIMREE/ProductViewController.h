@@ -10,7 +10,15 @@
 #import "HotSaleViewController.h"
 #import "RankViewController.h"
 #import "FavoriteViewController.h"
+#import "MemberViewController.h"
+
+@protocol ProductViewControllerDelegate <NSObject>
+
+- (IBAction)member:(id)sender;
+
+@end
 
 @interface ProductViewController : UITabBarController
+
 
 @end
