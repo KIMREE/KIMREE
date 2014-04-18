@@ -1,11 +1,10 @@
 //
 //  AppSettings.h
-//  haitaotong
+//  KIMREE
 //
-//  Created by 淘海科技 on 13-11-28.
-//  Copyright (c) 2013年 淘海科技. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 
 @interface AppHelper : NSObject

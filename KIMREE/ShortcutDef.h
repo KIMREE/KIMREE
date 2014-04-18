@@ -1,13 +1,13 @@
 //
 //  ShortcutDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
-#ifndef _ShortcutDef_h
-#define _ShortcutDef_h
+#ifndef jirui_ShortcutDef_h
+#define jirui_ShortcutDef_h
 
 //AppDelegate
 #define S_APPDELEGATE ((AppDelegate *) [[UIApplication sharedApplication] delegate])

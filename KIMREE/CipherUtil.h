@@ -1,9 +1,9 @@
 //
 //  CipherUtil.h
-//  HAITAO
+//  KIMREE
 //
-//  Created by 詹 国豪 on 13-2-20.
-//  Copyright (c) 2013年 Wang Meng. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
