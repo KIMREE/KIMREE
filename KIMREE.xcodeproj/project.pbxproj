@@ -37,7 +37,6 @@
 		6B22F4B61900C652001838FD /* enemy3_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B22F4AB1900C652001838FD /* enemy3_down.mp3 */; };
 		6B22F4B81900C652001838FD /* game_over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B22F4AD1900C652001838FD /* game_over.mp3 */; };
 		6B22F4B91900C652001838FD /* gameArts-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B22F4AE1900C652001838FD /* gameArts-hd.plist */; };
-		6B22F4BA1900C652001838FD /* gameArts-hd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B22F4AF1900C652001838FD /* gameArts-hd@2x.png */; };
 		6B22F4BC1900C672001838FD /* game_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B22F4BB1900C672001838FD /* game_music.mp3 */; };
 		6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */; };
 		6B496AB118FBD23200A67882 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB018FBD23200A67882 /* MainViewController.m */; };
@@ -46,6 +45,7 @@
 		6B52DFB11901025D006E8117 /* mark_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFAF1901025D006E8117 /* mark_background.png */; };
 		6B52DFB91901214D006E8117 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B52DFB71901214D006E8117 /* SettingViewController.m */; };
 		6B52DFBA1901214D006E8117 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFB81901214D006E8117 /* SettingViewController.xib */; };
+		6B52DFBC19012CF4006E8117 /* gameArts-hd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFBB19012CF4006E8117 /* gameArts-hd@2x.png */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
@@ -192,7 +192,6 @@
 		6B22F4AB1900C652001838FD /* enemy3_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enemy3_down.mp3; sourceTree = "<group>"; };
 		6B22F4AD1900C652001838FD /* game_over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_over.mp3; sourceTree = "<group>"; };
 		6B22F4AE1900C652001838FD /* gameArts-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "gameArts-hd.plist"; sourceTree = "<group>"; };
-		6B22F4AF1900C652001838FD /* gameArts-hd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameArts-hd@2x.png"; sourceTree = "<group>"; };
 		6B22F4BB1900C672001838FD /* game_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_music.mp3; sourceTree = "<group>"; };
 		6B496AAA18FBCF4800A67882 /* ViewConstanTDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstanTDef.h; sourceTree = "<group>"; };
 		6B496AAC18FBCFBA00A67882 /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
@@ -204,6 +203,7 @@
 		6B52DFB61901214D006E8117 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		6B52DFB71901214D006E8117 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		6B52DFB81901214D006E8117 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		6B52DFBB19012CF4006E8117 /* gameArts-hd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameArts-hd@2x.png"; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -414,6 +414,7 @@
 		6B22F48C1900BB11001838FD /* plane */ = {
 			isa = PBXGroup;
 			children = (
+				6B52DFBB19012CF4006E8117 /* gameArts-hd@2x.png */,
 				6B22F4BB1900C672001838FD /* game_music.mp3 */,
 				6B22F4A51900C652001838FD /* bullet.mp3 */,
 				6B22F4A61900C652001838FD /* BurstAircraftPause.png */,
@@ -424,7 +425,6 @@
 				6B22F4AB1900C652001838FD /* enemy3_down.mp3 */,
 				6B22F4AD1900C652001838FD /* game_over.mp3 */,
 				6B22F4AE1900C652001838FD /* gameArts-hd.plist */,
-				6B22F4AF1900C652001838FD /* gameArts-hd@2x.png */,
 			);
 			name = plane;
 			sourceTree = "<group>";
@@ -1048,12 +1048,12 @@
 				7E8104F918F5A2F000C7882E /* blue_90.png in Resources */,
 				7E77A8C618F84B9F000155B7 /* checkbox_out.png in Resources */,
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
+				6B52DFBC19012CF4006E8117 /* gameArts-hd@2x.png in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
 				6BD029E318FE715600785923 /* LogInViewController.xib in Resources */,
 				6B22F4B61900C652001838FD /* enemy3_down.mp3 in Resources */,
 				7E77A8C518F84B9F000155B7 /* checkbox_in.png in Resources */,
 				7E8104FC18F5A2F000C7882E /* red_90.png in Resources */,
-				6B22F4BA1900C652001838FD /* gameArts-hd@2x.png in Resources */,
 				6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */,
 				6B1F9FAE18FD334300475D23 /* RankViewController.xib in Resources */,
 				6B22F4B91900C652001838FD /* gameArts-hd.plist in Resources */,
