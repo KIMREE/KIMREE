@@ -25,8 +25,8 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.canShowCallout = NO;
-        self.centerOffset = CGPointMake(0, -55);
-        self.frame = CGRectMake(0, 0, 240, 80);
+        self.centerOffset = CGPointMake(0, -45);//泡泡框离标记多高 //yu mark
+        self.frame = CGRectMake(0, 0, 200, 55);//设置标记的大小
         if (delegate) {
             self.delegate = delegate;
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];

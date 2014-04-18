@@ -53,8 +53,8 @@
                            @"subtitle":@"test-sub-title-33"},
                          @{@"latitude":@"30.425622",
                            @"longitude":@"120.299605",
-                           @"title":@"test-title-4",
-                           @"subtitle":@"test-sub-title-44"}
+                           @"title":@"东海坊店",
+                           @"subtitle":@"0755769394"}
                          ];
     
     
@@ -68,7 +68,7 @@
     UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 50)];
     [self.view addSubview:searchBar];
     
-  }
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -114,9 +114,11 @@
 {
     Item *item = [[Item alloc] initWithDictionary:[_annotations objectAtIndex:index]];
     TestMapCell  *cell = [[[NSBundle mainBundle] loadNibNamed:@"TestMapCell" owner:self options:nil] objectAtIndex:0];
-    
     cell.title.text = item.title;
     cell.subtitle.text = item.subtitle;
+    
+    [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"mark_background.png"]]] ;
+    
     cell.delegate=self;
     return cell;
 }

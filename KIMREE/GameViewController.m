@@ -73,7 +73,7 @@
     cell.imageView.image = image;
     UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
     cell.imageView.highlightedImage = highLighedImage;
-    cell.detailTextLabel.text = @"美女，玩哪个";
+    cell.detailTextLabel.text = @"进入游戏";
 	return cell;
 }
 
@@ -84,17 +84,21 @@
     
     if ([rowString isEqualToString:@"打飞机"]) {
         
-        PlaneGameViewController *planeVC = [[PlaneGameViewController alloc]init];
-        
-        [self.navigationController pushViewController:planeVC animated:YES];
+        self.navigationController.navigationBar.hidden = YES;
+        UIStoryboard *planestoryboard = [UIStoryboard storyboardWithName:@ "second" bundle: nil ];
+        [self .navigationController pushViewController:planestoryboard.instantiateInitialViewController animated: YES ];
         
     }else if([rowString isEqualToString:@"2048"]){
         
-         self.navigationController.navigationBar.hidden = NO;
-        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
-       [ self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
+        self.navigationController.navigationBar.hidden = NO;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
+       [self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
         
-    }else{
+    }
+    
+    
+    
+    else{
     
    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alter show];

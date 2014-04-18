@@ -35,8 +35,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UIMainStoryboardFile </key>
-	<string>Main</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>sencond</string>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeBike</string>
