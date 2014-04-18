@@ -54,6 +54,8 @@
  numberOfRowsInSection:(NSInteger)section {
     return [self.list count];
 }
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -69,9 +71,9 @@
     
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [self.list objectAtIndex:row];
-    UIImage *image = [UIImage imageNamed:@"pin"];
+    UIImage *image = [UIImage imageNamed:@"blue_90"];
     cell.imageView.image = image;
-    UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
+    UIImage *highLighedImage = [UIImage imageNamed:@"gray_90"];
     cell.imageView.highlightedImage = highLighedImage;
     cell.detailTextLabel.text = @"样样不少";
 	return cell;

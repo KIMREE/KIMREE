@@ -44,6 +44,8 @@
 		6B496AB318FBD28A00A67882 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B496AB218FBD28A00A67882 /* MemberViewController.m */; };
 		6B52DFB01901025D006E8117 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFAE1901025D006E8117 /* arrow.png */; };
 		6B52DFB11901025D006E8117 /* mark_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFAF1901025D006E8117 /* mark_background.png */; };
+		6B52DFB91901214D006E8117 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B52DFB71901214D006E8117 /* SettingViewController.m */; };
+		6B52DFBA1901214D006E8117 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B52DFB81901214D006E8117 /* SettingViewController.xib */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
@@ -199,6 +201,9 @@
 		6B496AB218FBD28A00A67882 /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
 		6B52DFAE1901025D006E8117 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		6B52DFAF1901025D006E8117 /* mark_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_background.png; sourceTree = "<group>"; };
+		6B52DFB61901214D006E8117 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		6B52DFB71901214D006E8117 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		6B52DFB81901214D006E8117 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -460,6 +465,16 @@
 				6B52DFAF1901025D006E8117 /* mark_background.png */,
 			);
 			name = map;
+			sourceTree = "<group>";
+		};
+		6B52DFB2190113F2006E8117 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				6B52DFB61901214D006E8117 /* SettingViewController.h */,
+				6B52DFB71901214D006E8117 /* SettingViewController.m */,
+				6B52DFB81901214D006E8117 /* SettingViewController.xib */,
+			);
+			name = setting;
 			sourceTree = "<group>";
 		};
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
@@ -742,6 +757,7 @@
 		7E4478BB18F43AAE009EF02D /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				6B52DFB2190113F2006E8117 /* setting */,
 				6B1FAFD218FF87F500B09093 /* favorite */,
 				6B1FAFD118FF841600B09093 /* shop information */,
 				6B909F1A18F7E17C002CDB30 /* TabBarController.h */,
@@ -1045,6 +1061,7 @@
 				6B1F9FA818FD272C00475D23 /* FavoriteViewController.xib in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
+				6B52DFBA1901214D006E8117 /* SettingViewController.xib in Resources */,
 				6B496AAE18FBCFBA00A67882 /* MemberViewController.xib in Resources */,
 				6B1FAFD018FF840200B09093 /* DisplayViewController.xib in Resources */,
 				6B22F4B21900C652001838FD /* BurstAircraftPause@2x.png in Resources */,
@@ -1112,6 +1129,7 @@
 				6BAC899818FFC29C00D8E952 /* M2Grid.m in Sources */,
 				6BAC89A518FFC2BB00D8E952 /* M2Overlay.m in Sources */,
 				6B1F9F9D18FD26DF00475D23 /* HotSaleViewController.m in Sources */,
+				6B52DFB91901214D006E8117 /* SettingViewController.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				6B22F4881900B9FA001838FD /* SKViewController.m in Sources */,
 				6B96E39D18FD3AEA00DCA79F /* JRTableViewCell.m in Sources */,

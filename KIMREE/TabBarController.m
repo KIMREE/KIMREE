@@ -45,8 +45,19 @@
     if(activeController == myshopVC){
     }
     
-     
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Setting" style:UIBarButtonItemStylePlain target:self action:@selector(setting:)];
+    
  }
+
+
+-(IBAction)setting:(id)sender{
+
+    SettingViewController *settingVC = [[SettingViewController alloc] init];
+    [self.navigationController pushViewController:settingVC animated:NO];
+
+
+}
 
 
 

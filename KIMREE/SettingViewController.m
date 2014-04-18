@@ -1,18 +1,18 @@
 //
-//  HotSaleViewController.m
+//  SettingViewController.m
 //  KIMREE
 //
-//  Created by renchunyu on 14-4-15.
+//  Created by renchunyu on 14-4-18.
 //  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
-#import "HotSaleViewController.h"
+#import "SettingViewController.h"
 
-@interface HotSaleViewController ()
+@interface SettingViewController ()
 
 @end
 
-@implementation HotSaleViewController
+@implementation SettingViewController
 @synthesize list=_list;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -20,6 +20,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        NSArray *array = [[NSArray alloc] initWithObjects:@"修改用户信息", @"修改头像",
+                          @"语言", @"社交网络同步", @"开启推送", @"允许手机定位", @"允许自动签到",
+                          @"注销当前用户",@"进入欢迎页",nil];
+        self.list = array;
     }
     return self;
 }
@@ -28,16 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSArray *array = [[NSArray alloc] initWithObjects:@"鸡蛋", @"鸭蛋",
-                      @"鹅蛋", @"鸟蛋", @"茶叶蛋", @"狗蛋", @"蛋蛋",
-                      @"王八蛋" , nil];
-    self.list = array;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 - (void)viewDidUnload
@@ -48,12 +43,21 @@
     
 }
 
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 #pragma mark -
 #pragma mark Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section {
     return [self.list count];
 }
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -69,13 +73,11 @@
     
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [self.list objectAtIndex:row];
-    UIImage *image = [UIImage imageNamed:@"blue_90"];
-    cell.imageView.image = image;
-    UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
-    cell.imageView.highlightedImage = highLighedImage;
-    cell.detailTextLabel.text = @"美女，要哪个";
-	return cell;
+    cell.detailTextLabel.text = @"IN";
+    return cell;
 }
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *rowString = [self.list objectAtIndex:[indexPath row]];
     UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
