@@ -1,13 +1,12 @@
 //
 //  ColorDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
-
-#ifndef haitaotong_ColorDef_h
-#define haitaotong_ColorDef_h
+#ifndef jirui_ColorDef_h
+#define jirui_ColorDef_h
 
 //深灰
 #define COLOR_DARK_GRAY F_COLOR_RGB(47,48,48)

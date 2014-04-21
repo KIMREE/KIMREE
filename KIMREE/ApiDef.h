@@ -1,17 +1,20 @@
 //
 //  ApiDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
-#ifndef haitaotong_ApiDef_h
-#define haitaotong_ApiDef_h
+#ifndef jirui_ApiDef_h
+#define jirui_ApiDef_h
 
 // 服务器地址
-//#define API_SERVER_URL @"http://42.121.59.189/api" //v1.8
-#define API_SERVER_URL @"http://httapi.hai0.com/" //v2.0
+//#define API_SERVER_URL @"http://www.ecigarfan.com/api/api.php?action=products" //产品
+#define API_SERVER_URL @"http://42.121.59.189/api" //v1.8
+//#define API_SERVER_URL @"http://httapi.hai0.com" //v2.0
+#define API_SERVER_PATH @""
+#define API_SERVER_PARAMS @""
 // 接口版本
 #define API_VER 3
 //

@@ -1,13 +1,12 @@
 //
 //  FontDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
-
-#ifndef haitaotong_FontDef_h
-#define haitaotong_FontDef_h
+#ifndef jirui_FontDef_h
+#define jirui_FontDef_h
 
 #define FONT_SUPER_LARGE [UIFont systemFontOfSize:17]
 #define FONT_LARGE [UIFont systemFontOfSize:14]

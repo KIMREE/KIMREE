@@ -1,12 +1,12 @@
 //
 //  NotificationNameDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
-#ifndef haitaotong_NotificationNameDef_h
-#define haitaotong_NotificationNameDef_h
+#ifndef jirui_NotificationNameDef_h
+#define jirui_NotificationNameDef_h
 
 //用户登录
 #define NOTIFICATION_USER_LOGIN @"notification.user.login"

@@ -1,13 +1,13 @@
 //
 //  UserDefaultsKeyDef.h
-//  Smoking
+//  KIMREE
 //
-//  Created by JIRUI on 14-4-1.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
+//  Created by JIRUI on 14-4-18.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
-#ifndef haitaotong_UserDefaultsKeyDef_h
-#define haitaotong_UserDefaultsKeyDef_h
+#ifndef jirui_UserDefaultsKeyDef_h
+#define jirui_UserDefaultsKeyDef_h
 
 #define UDK_QUA @"udk.qua"
 #define UDK_UID @"udk.uid"
