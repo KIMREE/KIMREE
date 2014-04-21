@@ -1,9 +1,9 @@
 //
 //  SystemHelper.h
-//  KIMREE
+//  Smoking
 //
-//  Created by JIRUI on 14-4-18.
-//  Copyright (c) 2014年 JIRUI. All rights reserved.
+//  Created by JIRUI on 14-4-1.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

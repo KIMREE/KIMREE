@@ -1,13 +1,13 @@
 //
 //  ConstantDef.h
-//  KIMREE
+//  Smoking
 //
-//  Created by JIRUI on 14-4-18.
-//  Copyright (c) 2014年 JIRUI. All rights reserved.
+//  Created by JIRUI on 14-4-1.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#ifndef jirui_ConstantDef_h
-#define jirui_ConstantDef_h
+#ifndef haitaotong_ConstantDef_h
+#define haitaotong_ConstantDef_h
 //贴吧菜单
 #define S_POSTBAR_SELL @"供应"
 #define S_POSTBAR_BUY @"求购"

@@ -1,6 +1,5 @@
 {
   "images" : [
-<<<<<<< HEAD
     {
       "idiom" : "universal",
       "filename" : "Default-568h@2x.png",
@@ -8,9 +7,6 @@
       "subtype" : "retina4",
       "scale" : "2x"
     }
-=======
-
->>>>>>> gouwenqi
   ],
   "info" : {
     "version" : 1,

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#ifndef jirui_ErrorCodeDef_h
-#define jirui_ErrorCodeDef_h
+#ifndef haitaotong_ErrorCodeDef_h
+#define haitaotong_ErrorCodeDef_h
 
 //业务逻辑错误码，@abing整理后提供
 #define ERROR_CODE_NULL -1

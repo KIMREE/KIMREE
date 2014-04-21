@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-<<<<<<< HEAD
     HotSaleViewController *hotVC=[[HotSaleViewController alloc] init];
     RankViewController *rankVC=[[RankViewController alloc] init];
     FavoriteViewController *favoriteVC=[[FavoriteViewController alloc] init];
@@ -45,20 +44,6 @@
     }
     
      self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@"LogIn" style:UIBarButtonItemStylePlain target:self action:@selector(signIn:)];
-=======
-     webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-  
-      NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://baidu.com"]];
-    [self.view addSubview: webView];
-    [webView loadRequest:request];
-}
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
->>>>>>> gouwenqi
 }
 
 

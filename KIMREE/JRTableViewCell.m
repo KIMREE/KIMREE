@@ -158,11 +158,8 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 }
 
 - (void)initializer {
-<<<<<<< HEAD:KIMREE/JRTableViewCell.m
     
  
-=======
->>>>>>> gouwenqi:KIMREE/JRTableViewCell.m
     self.detailTextLabel.numberOfLines = 2;
     self.textLabel.textColor = [UIColor brownColor];
     //Set up the note numbers
