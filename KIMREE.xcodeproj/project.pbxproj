@@ -16,6 +16,12 @@
 		6B3BB38B1904FB8900E4622A /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3851904FB8900E4622A /* FavoriteViewController.xib */; };
 		6B3BB38C1904FB8900E4622A /* HotSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3861904FB8900E4622A /* HotSaleViewController.xib */; };
 		6B3BB38D1904FB8900E4622A /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3871904FB8900E4622A /* ProductViewController.m */; };
+		6B3BB3991904FE1300E4622A /* GetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3901904FE1300E4622A /* GetPasswordViewController.m */; };
+		6B3BB39A1904FE1300E4622A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3921904FE1300E4622A /* LogInViewController.m */; };
+		6B3BB39B1904FE1300E4622A /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3931904FE1300E4622A /* LogInViewController.xib */; };
+		6B3BB39C1904FE1300E4622A /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3951904FE1300E4622A /* MemberViewController.m */; };
+		6B3BB39D1904FE1300E4622A /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3961904FE1300E4622A /* MemberViewController.xib */; };
+		6B3BB39E1904FE1300E4622A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3981904FE1300E4622A /* SignInViewController.m */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
@@ -247,6 +253,16 @@
 		6B3BB3851904FB8900E4622A /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		6B3BB3861904FB8900E4622A /* HotSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSaleViewController.xib; sourceTree = "<group>"; };
 		6B3BB3871904FB8900E4622A /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		6B3BB38F1904FE1300E4622A /* GetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPasswordViewController.h; sourceTree = "<group>"; };
+		6B3BB3901904FE1300E4622A /* GetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPasswordViewController.m; sourceTree = "<group>"; };
+		6B3BB3911904FE1300E4622A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		6B3BB3921904FE1300E4622A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		6B3BB3931904FE1300E4622A /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		6B3BB3941904FE1300E4622A /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
+		6B3BB3951904FE1300E4622A /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
+		6B3BB3961904FE1300E4622A /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
+		6B3BB3971904FE1300E4622A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6B3BB3981904FE1300E4622A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -563,6 +579,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3BB38E1904FDB400E4622A /* member */ = {
+			isa = PBXGroup;
+			children = (
+				6B3BB38F1904FE1300E4622A /* GetPasswordViewController.h */,
+				6B3BB3901904FE1300E4622A /* GetPasswordViewController.m */,
+				6B3BB3911904FE1300E4622A /* LogInViewController.h */,
+				6B3BB3921904FE1300E4622A /* LogInViewController.m */,
+				6B3BB3931904FE1300E4622A /* LogInViewController.xib */,
+				6B3BB3941904FE1300E4622A /* MemberViewController.h */,
+				6B3BB3951904FE1300E4622A /* MemberViewController.m */,
+				6B3BB3961904FE1300E4622A /* MemberViewController.xib */,
+				6B3BB3971904FE1300E4622A /* SignInViewController.h */,
+				6B3BB3981904FE1300E4622A /* SignInViewController.m */,
+			);
+			name = member;
+			sourceTree = "<group>";
+		};
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +644,7 @@
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B3BB38E1904FDB400E4622A /* member */,
 				C6C0CCF319010D2E00796228 /* guide */,
 				C681015318F7EF51008599BB /* JRWebViewController */,
 				6BADFCA818F684F500249ED8 /* PostBar */,
@@ -1349,6 +1383,7 @@
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
 				C6BE22BF18FBB50D007DBEF8 /* TBMainViewController.xib in Resources */,
 				6B3BB38C1904FB8900E4622A /* HotSaleViewController.xib in Resources */,
+				6B3BB39B1904FE1300E4622A /* LogInViewController.xib in Resources */,
 				C694831918FBA15C00D6D6B2 /* avatar_poto_defaul80.png in Resources */,
 				C6C0CD281901346600796228 /* guide1@2x.png in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
@@ -1378,6 +1413,7 @@
 				C694831218FBA15C00D6D6B2 /* arrow@2x.png in Resources */,
 				C6C0CD2D1901346600796228 /* guide4-h@2x.png in Resources */,
 				C694830D18FBA15C00D6D6B2 /* pic_fresh_n.png in Resources */,
+				6B3BB39D1904FE1300E4622A /* MemberViewController.xib in Resources */,
 				C681014318F7EDC4008599BB /* navigationbar_back.png in Resources */,
 				C6B41CC818FE6A94006901E7 /* SVProgressHUD.bundle in Resources */,
 				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
@@ -1469,6 +1505,7 @@
 				C6B41D4F18FE8A5C006901E7 /* ASICloudFilesContainerRequest.h in Sources */,
 				C6B41D5018FE8A5C006901E7 /* ASICloudFilesContainerRequest.m in Sources */,
 				C6B41D5118FE8A5C006901E7 /* ASICloudFilesContainerXMLParserDelegate.h in Sources */,
+				6B3BB3991904FE1300E4622A /* GetPasswordViewController.m in Sources */,
 				C6B41D5218FE8A5C006901E7 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				C6B41D5318FE8A5C006901E7 /* ASICloudFilesObject.h in Sources */,
 				6B3BB37C1904F92B00E4622A /* CallOutAnnotationView.m in Sources */,
@@ -1487,6 +1524,7 @@
 				6B3BB37D1904F92B00E4622A /* CalloutMapAnnotation.m in Sources */,
 				C6B41D5F18FE8A5C006901E7 /* ASIS3BucketRequest.m in Sources */,
 				C6B41D6018FE8A5C006901E7 /* ASIS3ObjectRequest.h in Sources */,
+				6B3BB39A1904FE1300E4622A /* LogInViewController.m in Sources */,
 				C6B41D6118FE8A5C006901E7 /* ASIS3ObjectRequest.m in Sources */,
 				C6B41D6218FE8A5C006901E7 /* ASIS3Request.h in Sources */,
 				C6B41D6318FE8A5C006901E7 /* ASIS3Request.m in Sources */,
@@ -1535,8 +1573,10 @@
 				C6B01BBF18FCD3970045A59E /* JRRequest.m in Sources */,
 				C6C0CCFD1901169400796228 /* LaunchView.m in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
+				6B3BB39E1904FE1300E4622A /* SignInViewController.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				C6C0CD0319011AF700796228 /* UIView+Frame.m in Sources */,
+				6B3BB39C1904FE1300E4622A /* MemberViewController.m in Sources */,
 				6B3BB38A1904FB8900E4622A /* HotSaleViewController.m in Sources */,
 				6BADFCB218F6850800249ED8 /* JRGlowLabel.m in Sources */,
 				C6BE22BA18FBB50D007DBEF8 /* TTUITableViewZoomController.m in Sources */,
