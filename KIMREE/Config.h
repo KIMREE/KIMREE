@@ -1,13 +1,13 @@
 //
 //  Config.h
-//  KIMREE
+//  Smoking
 //
-//  Created by JIRUI on 14-4-18.
-//  Copyright (c) 2014年 JIRUI. All rights reserved.
+//  Created by JIRUI on 14-4-1.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#ifndef jirui_Config_h
-#define jirui_Config_h
+#ifndef haitaotong_Config_h
+#define haitaotong_Config_h
 
 //官网的渠道号：1000 | 群渠道号：2000 | AppStore：1001 | 91渠道：1002
 #define CONFIG_CHANNEL @"1001"

@@ -13,5 +13,5 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainViewController *rootController;
 @property (strong, nonatomic) UINavigationController *navController;
-@property (nonatomic,assign) BOOL isReachable;//连接状态
+
 @end

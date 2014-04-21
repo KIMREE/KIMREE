@@ -24,7 +24,6 @@
     self.tableView.dataSource = self;
     self.tableView.rowHeight = 90;
     self.tableView.allowsSelection = NO; // We essentially implement our own selection
-<<<<<<< HEAD
     //self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0); // Makes the horizontal row seperator stretch the entire length of the table view
     
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
@@ -32,9 +31,6 @@
     }
 
     
-=======
-    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0); // Makes the horizontal row seperator stretch the entire length of the table view
->>>>>>> gouwenqi
     _testArray = [[NSMutableArray alloc] init];
     
     // Add test data to our test array
@@ -128,10 +124,6 @@
 //    cell.textLabel.text = [dateObject description];
     //显示关注度和帖子数
 //    cell.notePost.text = @"关注 999999  帖子 999999";
-<<<<<<< HEAD
-=======
-
->>>>>>> gouwenqi
     cell.textLabel.text = _testArray[indexPath.row];
     switch (indexPath.row) {
         case 0:
@@ -161,11 +153,7 @@
 
 #pragma mark - SWTableViewDelegate
 //从左往右滑
-<<<<<<< HEAD
 - (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {
-=======
-- (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index {    [cell hideUtilityButtonsAnimated:YES];
->>>>>>> gouwenqi
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:
@@ -207,19 +195,11 @@
         default:
             break;
     }
-<<<<<<< HEAD
     [cell hideUtilityButtonsAnimated:YES];
-=======
-
->>>>>>> gouwenqi
 }
 
 //从右往左滑
 - (void)swippableTableViewCell:(JRTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
-<<<<<<< HEAD
-=======
-    [cell hideUtilityButtonsAnimated:YES];
->>>>>>> gouwenqi
     NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
     switch (cellIndexPath.row) {
         case 0:

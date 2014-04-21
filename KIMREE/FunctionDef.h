@@ -1,13 +1,13 @@
 //
 //  FunctionDef.h
-//  KIMREE
+//  Smoking
 //
-//  Created by JIRUI on 14-4-18.
-//  Copyright (c) 2014年 JIRUI. All rights reserved.
+//  Created by JIRUI on 14-4-1.
+//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
-#ifndef jirui_FunctionDef_h
-#define jirui_FunctionDef_h
+#ifndef haitaotong_FunctionDef_h
+#define haitaotong_FunctionDef_h
 
 //颜色
 #define F_COLOR_RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
