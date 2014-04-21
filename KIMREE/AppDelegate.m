@@ -48,6 +48,7 @@
         return style;
     }];
     
+<<<<<<< HEAD
     
     [self.window makeKeyAndVisible];
     
@@ -55,6 +56,15 @@
     LaunchView *launchView = [[LaunchView alloc] initWithDelegate:self];
     [launchView showInView:self.window delay:1.f];
     
+=======
+ 
+    [self.window makeKeyAndVisible];
+    
+    //启动动画、渐渐消失
+    LaunchView *launchView = [[LaunchView alloc] initWithDelegate:self];
+    [launchView showInView:self.window delay:1.f];
+    
+>>>>>>> gouwenqi
     //配置信息
     [self config];
     
@@ -196,7 +206,11 @@
          finished:^(NSString *uid){
              [AppHelper sharedInstance].uid = uid;
              [self updateBaseInfo:NO];
+<<<<<<< HEAD
              
+=======
+
+>>>>>>> gouwenqi
          }];
     }
 }

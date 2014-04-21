@@ -106,6 +106,10 @@ PullingRefreshTableViewDelegate>
     if (cell == nil){
         NSArray *nibArray = [[NSBundle mainBundle] loadNibNamed:@"TBCell" owner:self options:nil];
         cell = (UITableViewCell *)[nibArray objectAtIndex:0];
+<<<<<<< HEAD
+=======
+
+>>>>>>> gouwenqi
     }
 
     // Configure the cell...
