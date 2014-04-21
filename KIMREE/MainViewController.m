@@ -27,9 +27,9 @@
     if (self) {
         // Custom initialization
         
-        UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
-        self.view.backgroundColor=[UIColor colorWithPatternImage:img];
-    
+//        UIImage*img =[UIImage imageNamed:@"bg-body.jpg"];
+//        self.view.backgroundColor=[UIColor colorWithPatternImage:img];
+        self.view.backgroundColor =[UIColor grayColor];
     
     }
     return self;
@@ -111,16 +111,26 @@
 }
 
 - (IBAction)game:(id)sender {
+    
+    self.navigationController.navigationBar.hidden = NO;
+    GameViewController *gameVC = [[GameViewController alloc] init];
+    [self.navigationController pushViewController:gameVC animated:YES];
 }
 
 - (IBAction)KIMREE:(id)sender {
     
     self.navigationController.navigationBar.hidden = NO;
-    KIMREEViewController   *KIMREEView = [[KIMREEViewController alloc] init];
+    KIMREEViewController *KIMREEView = [[KIMREEViewController alloc] init];
     [self.navigationController pushViewController:KIMREEView animated:YES];
 }
 
 - (IBAction)member:(id)sender {
+    
+    self.navigationController.navigationBar.hidden = NO;
+    MemberViewController *memberVC = [[MemberViewController alloc] init];
+    [self.navigationController pushViewController:memberVC animated:YES];
+    
+    
 }
 
 - (IBAction)PostBar:(id)sender {

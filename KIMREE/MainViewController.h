@@ -13,6 +13,8 @@
 #import "KIMREEViewController.h"
 #import "PostBarViewController.h"
 #import "TabBarController.h"
+#import "MemberViewController.h"
+#import "GameViewController.h"
 
 
 @interface MainViewController : UIViewController <EScrollerViewDelegate>

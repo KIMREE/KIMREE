@@ -1,28 +1,25 @@
 //
-//  SearchViewController.m
+//  GameViewController.m
 //  KIMREE
 //
-//  Created by renchunyu on 14-4-9.
+//  Created by renchunyu on 14-4-15.
 //  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "GameViewController.h"
 
-
-@interface SearchViewController ()
+@interface GameViewController ()
 
 @end
 
-@implementation SearchViewController
+@implementation GameViewController
 @synthesize list=_list;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
     }
     return self;
 }
@@ -31,10 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
-    NSArray *array = [[NSArray alloc] initWithObjects:@"河东小二店", @"中南旗舰店",
-                      @"江北翠花店", @"江南绿店", @"某某旗舰店", @"很好的店", @"有间店",
-                      @"店去哪儿了" , nil];
+    NSArray *array = [[NSArray alloc] initWithObjects:@"打飞机", @"跑酷",
+                      @"极品飞车", @"愤怒小鸟", @"植物大战僵尸", @"2048", @"糖果传奇",
+                      @"我叫MT" , nil];
     self.list = array;
 }
 
@@ -51,6 +47,7 @@
     self.list = nil;
     
 }
+
 #pragma mark -
 #pragma mark Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView
@@ -76,15 +73,40 @@
     cell.imageView.image = image;
     UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
     cell.imageView.highlightedImage = highLighedImage;
-    cell.detailTextLabel.text = @"查看详情";
+    cell.detailTextLabel.text = @"进入游戏";
 	return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    DisplayViewController *displayVC=[[DisplayViewController alloc] init];
-    [self.navigationController pushViewController:displayVC animated:YES];
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *rowString = [self.list objectAtIndex:[indexPath row]];
     
+//    if ([rowString isEqualToString:@"打飞机"]) {
+//        
+//        self.navigationController.navigationBar.hidden = YES;
+//        UIStoryboard *planestoryboard = [UIStoryboard storyboardWithName:@ "second" bundle: nil ];
+//        [self .navigationController pushViewController:planestoryboard.instantiateInitialViewController animated: YES ];
+//        
+//    }else if([rowString isEqualToString:@"2048"]){
+//        
+//        self.navigationController.navigationBar.hidden = NO;
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
+//       [self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
+//        
+//    }
+    
+    
+    
+//    else
+    {
+    
+   UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alter show];
+    }
 }
+
+
 
 
 @end

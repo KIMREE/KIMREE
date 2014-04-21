@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DisplayViewController.h"
+#import "TestMapCell.h"
 
-@interface NearbyViewController : UIViewController
 
+@interface NearbyViewController : UIViewController <TestMapCellDelegate>
 {
-    UIToolbar *toolBar;
+  
     UITabBarController *tabBarController;
 }
 

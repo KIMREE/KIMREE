@@ -21,4 +21,8 @@
     #import "Reachability/Reachability.h"
 #endif
 
-#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IS_INCH4 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+#define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
+#define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)

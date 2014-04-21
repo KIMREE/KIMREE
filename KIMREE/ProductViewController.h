@@ -2,17 +2,23 @@
 //  ProductViewController.h
 //  KIMREE
 //
-//  Created by cool on 14-4-10.
-//  Copyright (c) 2014年 cool. All rights reserved.
+//  Created by renchunyu on 14-4-15.
+//  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "HotSaleViewController.h"
+#import "RankViewController.h"
+#import "FavoriteViewController.h"
+#import "MemberViewController.h"
 
-@interface ProductViewController : UIViewController
+@protocol ProductViewControllerDelegate <NSObject>
 
-{
-    UIWebView *webView;
-    UIActivityIndicatorView  *activityIndicator;
-}
+- (IBAction)member:(id)sender;
+
+@end
+
+@interface ProductViewController : UITabBarController
+
 
 @end

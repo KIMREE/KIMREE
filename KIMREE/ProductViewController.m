@@ -2,8 +2,8 @@
 //  ProductViewController.m
 //  KIMREE
 //
-//  Created by cool on 14-4-10.
-//  Copyright (c) 2014年 cool. All rights reserved.
+//  Created by renchunyu on 14-4-15.
+//  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
 #import "ProductViewController.h"
@@ -27,12 +27,35 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-  
-      NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://baidu.com"]];
-    [self.view addSubview: webView];
-    [webView loadRequest:request];
+    HotSaleViewController *hotVC=[[HotSaleViewController alloc] init];
+    RankViewController *rankVC=[[RankViewController alloc] init];
+    FavoriteViewController *favoriteVC=[[FavoriteViewController alloc] init];
+    NSArray* controllerArray = [[NSArray alloc]initWithObjects:hotVC,rankVC,favoriteVC,nil];
+    self.viewControllers = controllerArray;
+    self.selectedIndex = 0;
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:0] setTitle:@"商品"];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"pin.png"]];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:1] setTitle:@"排行"];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"pin.png"]];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setTitle:@"收藏"];
+    [(UITabBarItem *)[self.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"pin.png"]];
+    UIViewController* activeController = self.selectedViewController;
+    if(activeController == favoriteVC){
+    }
+    
+     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@"LogIn" style:UIBarButtonItemStylePlain target:self action:@selector(signIn:)];
 }
+
+
+
+-(IBAction)signIn:(id)sender{
+    
+    self.navigationController.navigationBar.hidden = NO;
+    MemberViewController *secVC = [[MemberViewController alloc] init];
+    [self.navigationController pushViewController:secVC animated:YES];
+
+}
+
 
 
 - (void)didReceiveMemoryWarning
@@ -41,52 +64,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (void) webViewDidStartLoad:(UIWebView *)webView
-{
-    
-    //创建UIActivityIndicatorView背底半透明View
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    [view setTag:108];
-    [view setBackgroundColor:[UIColor blackColor]];
-    [view setAlpha:0.5];
-    [self.view addSubview:view];
-    
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 32.0f, 32.0f)];
-    [activityIndicator setCenter:view.center];
-    [activityIndicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
-    [view addSubview:activityIndicator];
-    
-    [activityIndicator startAnimating];
-    NSLog(@"webViewDidStartLoad");
-}
-
-
-
-- (void) webViewDidFinishLoad:(UIWebView *)webView
-{
-    [activityIndicator stopAnimating];
-    UIView *view = (UIView*)[self.view viewWithTag:108];
-    [view removeFromSuperview];
-    NSLog(@"webViewDidFinishLoad");
-  
-}
-- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    [activityIndicator stopAnimating];
-    UIView *view = (UIView*)[self.view viewWithTag:108];
-    [view removeFromSuperview];
-    NSLog(@"didFailLoadWithError:%@", error);
-}
 
 @end

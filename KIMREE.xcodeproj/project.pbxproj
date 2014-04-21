@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3BB37B1904F92B00E4622A /* BasicMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3761904F92B00E4622A /* BasicMapAnnotation.m */; };
+		6B3BB37C1904F92B00E4622A /* CallOutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3781904F92B00E4622A /* CallOutAnnotationView.m */; };
+		6B3BB37D1904F92B00E4622A /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB37A1904F92B00E4622A /* CalloutMapAnnotation.m */; };
+		6B3BB3881904FB8900E4622A /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB37E1904FB8900E4622A /* RankViewController.m */; };
+		6B3BB3891904FB8900E4622A /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3801904FB8900E4622A /* FavoriteViewController.m */; };
+		6B3BB38A1904FB8900E4622A /* HotSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3841904FB8900E4622A /* HotSaleViewController.m */; };
+		6B3BB38B1904FB8900E4622A /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3851904FB8900E4622A /* FavoriteViewController.xib */; };
+		6B3BB38C1904FB8900E4622A /* HotSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3861904FB8900E4622A /* HotSaleViewController.xib */; };
+		6B3BB38D1904FB8900E4622A /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3871904FB8900E4622A /* ProductViewController.m */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
-		6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */; };
-		6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */; };
-		6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */; };
 		6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */; };
 		6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */; };
 		6B77D10118F4E6F300D49E9F /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FE18F4E6F300D49E9F /* Item.m */; };
@@ -41,7 +47,6 @@
 		7E8104FD18F5A2F000C7882E /* ye90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F718F5A2F000C7882E /* ye90.png */; };
 		7E8104FE18F5A2F000C7882E /* yellow_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8104F818F5A2F000C7882E /* yellow_90.png */; };
 		7E81050218F5A78C00C7882E /* bg-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E81050118F5A78C00C7882E /* bg-body.jpg */; };
-		7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE318F60A570040145C /* ProductViewController.m */; };
 		7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FE718F60D180040145C /* KIMREEViewController.m */; };
 		C681014218F7EDC4008599BB /* JRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681013318F7EDC4008599BB /* JRWebViewController.m */; };
 		C681014318F7EDC4008599BB /* navigationbar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C681013418F7EDC4008599BB /* navigationbar_back.png */; };
@@ -226,16 +231,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B3BB3751904F92B00E4622A /* BasicMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMapAnnotation.h; sourceTree = "<group>"; };
+		6B3BB3761904F92B00E4622A /* BasicMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapAnnotation.m; sourceTree = "<group>"; };
+		6B3BB3771904F92B00E4622A /* CallOutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutAnnotationView.h; sourceTree = "<group>"; };
+		6B3BB3781904F92B00E4622A /* CallOutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutAnnotationView.m; sourceTree = "<group>"; };
+		6B3BB3791904F92B00E4622A /* CalloutMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotation.h; sourceTree = "<group>"; };
+		6B3BB37A1904F92B00E4622A /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
+		6B3BB37E1904FB8900E4622A /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		6B3BB37F1904FB8900E4622A /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		6B3BB3801904FB8900E4622A /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
+		6B3BB3811904FB8900E4622A /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		6B3BB3821904FB8900E4622A /* HotSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleViewController.h; sourceTree = "<group>"; };
+		6B3BB3831904FB8900E4622A /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		6B3BB3841904FB8900E4622A /* HotSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSaleViewController.m; sourceTree = "<group>"; };
+		6B3BB3851904FB8900E4622A /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		6B3BB3861904FB8900E4622A /* HotSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSaleViewController.xib; sourceTree = "<group>"; };
+		6B3BB3871904FB8900E4622A /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		6B77D0EE18F4E67200D49E9F /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
-		6B77D0F118F4E6D200D49E9F /* BasicMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMapAnnotation.h; sourceTree = "<group>"; };
-		6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapAnnotation.m; sourceTree = "<group>"; };
-		6B77D0F318F4E6D200D49E9F /* CallOutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutAnnotationView.h; sourceTree = "<group>"; };
-		6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutAnnotationView.m; sourceTree = "<group>"; };
-		6B77D0F518F4E6D200D49E9F /* CalloutMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotation.h; sourceTree = "<group>"; };
-		6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
 		6B77D0FA18F4E6F300D49E9F /* TestMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMapCell.h; sourceTree = "<group>"; };
 		6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMapCell.m; sourceTree = "<group>"; };
 		6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestMapCell.xib; sourceTree = "<group>"; };
@@ -274,8 +289,6 @@
 		7E8104F718F5A2F000C7882E /* ye90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ye90.png; sourceTree = "<group>"; };
 		7E8104F818F5A2F000C7882E /* yellow_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_90.png; sourceTree = "<group>"; };
 		7E81050118F5A78C00C7882E /* bg-body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-body.jpg"; sourceTree = "<group>"; };
-		7ECB0FE218F60A570040145C /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
-		7ECB0FE318F60A570040145C /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		7ECB0FE618F60D180040145C /* KIMREEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIMREEViewController.h; sourceTree = "<group>"; };
 		7ECB0FE718F60D180040145C /* KIMREEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIMREEViewController.m; sourceTree = "<group>"; };
 		C681013218F7EDC4008599BB /* JRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRWebViewController.h; sourceTree = "<group>"; };
@@ -568,12 +581,12 @@
 		6B77D0F018F4E6A400D49E9F /* MapCalloutView */ = {
 			isa = PBXGroup;
 			children = (
-				6B77D0F118F4E6D200D49E9F /* BasicMapAnnotation.h */,
-				6B77D0F218F4E6D200D49E9F /* BasicMapAnnotation.m */,
-				6B77D0F318F4E6D200D49E9F /* CallOutAnnotationView.h */,
-				6B77D0F418F4E6D200D49E9F /* CallOutAnnotationView.m */,
-				6B77D0F518F4E6D200D49E9F /* CalloutMapAnnotation.h */,
-				6B77D0F618F4E6D200D49E9F /* CalloutMapAnnotation.m */,
+				6B3BB3751904F92B00E4622A /* BasicMapAnnotation.h */,
+				6B3BB3761904F92B00E4622A /* BasicMapAnnotation.m */,
+				6B3BB3771904F92B00E4622A /* CallOutAnnotationView.h */,
+				6B3BB3781904F92B00E4622A /* CallOutAnnotationView.m */,
+				6B3BB3791904F92B00E4622A /* CalloutMapAnnotation.h */,
+				6B3BB37A1904F92B00E4622A /* CalloutMapAnnotation.m */,
 			);
 			name = MapCalloutView;
 			sourceTree = "<group>";
@@ -669,8 +682,16 @@
 		7ECB0FE118F60A380040145C /* product */ = {
 			isa = PBXGroup;
 			children = (
-				7ECB0FE218F60A570040145C /* ProductViewController.h */,
-				7ECB0FE318F60A570040145C /* ProductViewController.m */,
+				6B3BB37E1904FB8900E4622A /* RankViewController.m */,
+				6B3BB37F1904FB8900E4622A /* RankViewController.h */,
+				6B3BB3801904FB8900E4622A /* FavoriteViewController.m */,
+				6B3BB3811904FB8900E4622A /* FavoriteViewController.h */,
+				6B3BB3821904FB8900E4622A /* HotSaleViewController.h */,
+				6B3BB3831904FB8900E4622A /* ProductViewController.h */,
+				6B3BB3841904FB8900E4622A /* HotSaleViewController.m */,
+				6B3BB3851904FB8900E4622A /* FavoriteViewController.xib */,
+				6B3BB3861904FB8900E4622A /* HotSaleViewController.xib */,
+				6B3BB3871904FB8900E4622A /* ProductViewController.m */,
 			);
 			name = product;
 			sourceTree = "<group>";
@@ -1327,6 +1348,7 @@
 				7E8104F918F5A2F000C7882E /* blue_90.png in Resources */,
 				6BB93AAC18F552D900EA1F65 /* MyshopViewController.xib in Resources */,
 				C6BE22BF18FBB50D007DBEF8 /* TBMainViewController.xib in Resources */,
+				6B3BB38C1904FB8900E4622A /* HotSaleViewController.xib in Resources */,
 				C694831918FBA15C00D6D6B2 /* avatar_poto_defaul80.png in Resources */,
 				C6C0CD281901346600796228 /* guide1@2x.png in Resources */,
 				7E8104FD18F5A2F000C7882E /* ye90.png in Resources */,
@@ -1390,6 +1412,7 @@
 				C6B01C9918FCE1820045A59E /* README.markdown in Resources */,
 				C694831718FBA15C00D6D6B2 /* avatar_poto_defaul50.png in Resources */,
 				C694831518FBA15C00D6D6B2 /* avatar_poto_defaul140.png in Resources */,
+				6B3BB38B1904FB8900E4622A /* FavoriteViewController.xib in Resources */,
 				C694832518FBA15C00D6D6B2 /* pic_plank_among.png in Resources */,
 				C681014818F7EDC4008599BB /* pb_tabbar_background_os7@2x.png in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
@@ -1438,6 +1461,7 @@
 				C6B41D4818FE8A5C006901E7 /* ASIProgressDelegate.h in Sources */,
 				C6B41D4918FE8A5C006901E7 /* ASIWebPageRequest.h in Sources */,
 				C6B41D4A18FE8A5C006901E7 /* ASIWebPageRequest.m in Sources */,
+				6B3BB37B1904F92B00E4622A /* BasicMapAnnotation.m in Sources */,
 				C6B41D4B18FE8A5C006901E7 /* ASICloudFilesCDNRequest.h in Sources */,
 				C6B41D4C18FE8A5C006901E7 /* ASICloudFilesCDNRequest.m in Sources */,
 				C6B41D4D18FE8A5C006901E7 /* ASICloudFilesContainer.h in Sources */,
@@ -1447,6 +1471,7 @@
 				C6B41D5118FE8A5C006901E7 /* ASICloudFilesContainerXMLParserDelegate.h in Sources */,
 				C6B41D5218FE8A5C006901E7 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				C6B41D5318FE8A5C006901E7 /* ASICloudFilesObject.h in Sources */,
+				6B3BB37C1904F92B00E4622A /* CallOutAnnotationView.m in Sources */,
 				C6B41D5418FE8A5C006901E7 /* ASICloudFilesObject.m in Sources */,
 				C6B41D5518FE8A5C006901E7 /* ASICloudFilesObjectRequest.h in Sources */,
 				C6B41D5618FE8A5C006901E7 /* ASICloudFilesObjectRequest.m in Sources */,
@@ -1454,10 +1479,12 @@
 				C6B41D5818FE8A5C006901E7 /* ASICloudFilesRequest.m in Sources */,
 				C6B41D5918FE8A5C006901E7 /* ASINSXMLParserCompat.h in Sources */,
 				C6B41D5A18FE8A5C006901E7 /* ASIS3Bucket.h in Sources */,
+				6B3BB3881904FB8900E4622A /* RankViewController.m in Sources */,
 				C6B41D5B18FE8A5C006901E7 /* ASIS3Bucket.m in Sources */,
 				C6B41D5C18FE8A5C006901E7 /* ASIS3BucketObject.h in Sources */,
 				C6B41D5D18FE8A5C006901E7 /* ASIS3BucketObject.m in Sources */,
 				C6B41D5E18FE8A5C006901E7 /* ASIS3BucketRequest.h in Sources */,
+				6B3BB37D1904F92B00E4622A /* CalloutMapAnnotation.m in Sources */,
 				C6B41D5F18FE8A5C006901E7 /* ASIS3BucketRequest.m in Sources */,
 				C6B41D6018FE8A5C006901E7 /* ASIS3ObjectRequest.h in Sources */,
 				C6B41D6118FE8A5C006901E7 /* ASIS3ObjectRequest.m in Sources */,
@@ -1479,6 +1506,7 @@
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6B41CBC18FE2AC0006901E7 /* UserModel.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
+				6B3BB38D1904FB8900E4622A /* ProductViewController.m in Sources */,
 				C6B41CC918FE6A94006901E7 /* SVProgressHUD.m in Sources */,
 				C681014B18F7EDC4008599BB /* UIImage+Blur.m in Sources */,
 				C6B01C7F18FCE0430045A59E /* ErrorHelper.m in Sources */,
@@ -1486,7 +1514,6 @@
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				C6B01C9B18FCE1820045A59E /* CFilteringJSONSerializer.m in Sources */,
 				C6BE22BC18FBB50D007DBEF8 /* TBViewController.m in Sources */,
-				7ECB0FE418F60A570040145C /* ProductViewController.m in Sources */,
 				C6BE22C018FBB50D007DBEF8 /* PullingRefreshTableView.m in Sources */,
 				C6C0CD0619011B1B00796228 /* UIView+Gesture.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
@@ -1501,6 +1528,7 @@
 				C6B01CA218FCE1820045A59E /* CJSONSerializer.m in Sources */,
 				C6C0CCF719010E3400796228 /* PushServer.m in Sources */,
 				C6B01C9A18FCE1820045A59E /* CDataScanner.m in Sources */,
+				6B3BB3891904FB8900E4622A /* FavoriteViewController.m in Sources */,
 				C6B41CB518FE2868006901E7 /* ArchiveServer.m in Sources */,
 				C6B01CA118FCE1820045A59E /* CJSONScanner.m in Sources */,
 				C681014C18F7EDC4008599BB /* UIView+Screenshot.m in Sources */,
@@ -1509,9 +1537,9 @@
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				C6C0CD0319011AF700796228 /* UIView+Frame.m in Sources */,
+				6B3BB38A1904FB8900E4622A /* HotSaleViewController.m in Sources */,
 				6BADFCB218F6850800249ED8 /* JRGlowLabel.m in Sources */,
 				C6BE22BA18FBB50D007DBEF8 /* TTUITableViewZoomController.m in Sources */,
-				6B77D0F818F4E6D200D49E9F /* CallOutAnnotationView.m in Sources */,
 				C6B01C9F18FCE1820045A59E /* NSDictionary_JSONExtensions.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				C6BE22D718FBE106007DBEF8 /* PostTableViewCell.m in Sources */,
@@ -1521,11 +1549,9 @@
 				6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */,
 				6BADFCB518F6850800249ED8 /* PostBarViewController.m in Sources */,
 				C6B41CBB18FE2AC0006901E7 /* JRModel.m in Sources */,
-				6B77D0F718F4E6D200D49E9F /* BasicMapAnnotation.m in Sources */,
 				C681014218F7EDC4008599BB /* JRWebViewController.m in Sources */,
 				7E4478B918F43AA3009EF02D /* NearbyViewController.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,
-				6B77D0F918F4E6D200D49E9F /* CalloutMapAnnotation.m in Sources */,
 				C6B01BC118FCD3970045A59E /* JRRequestManager.m in Sources */,
 				C6AC988D18F2808900CCF79C /* MainViewController.m in Sources */,
 				C6BE22BE18FBB50D007DBEF8 /* TBMainViewController.m in Sources */,

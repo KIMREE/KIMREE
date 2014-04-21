@@ -1,28 +1,25 @@
 //
-//  SearchViewController.m
+//  FavoriteViewController.m
 //  KIMREE
 //
-//  Created by renchunyu on 14-4-9.
+//  Created by renchunyu on 14-4-15.
 //  Copyright (c) 2014年 renchunyu. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "FavoriteViewController.h"
 
-
-@interface SearchViewController ()
+@interface FavoriteViewController ()
 
 @end
 
-@implementation SearchViewController
+@implementation FavoriteViewController
 @synthesize list=_list;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
     }
     return self;
 }
@@ -31,10 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
-    NSArray *array = [[NSArray alloc] initWithObjects:@"河东小二店", @"中南旗舰店",
-                      @"江北翠花店", @"江南绿店", @"某某旗舰店", @"很好的店", @"有间店",
-                      @"店去哪儿了" , nil];
+    NSArray *array = [[NSArray alloc] initWithObjects:@"苹果", @"芒果",
+                      @"雪莲", @"榴莲", @"橘子", @"火龙果", @"柚子",
+                      @"菠萝" , nil];
     self.list = array;
 }
 
@@ -44,6 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -51,6 +48,7 @@
     self.list = nil;
     
 }
+
 #pragma mark -
 #pragma mark Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView
@@ -76,15 +74,13 @@
     cell.imageView.image = image;
     UIImage *highLighedImage = [UIImage imageNamed:@"youdao"];
     cell.imageView.highlightedImage = highLighedImage;
-    cell.detailTextLabel.text = @"查看详情";
+    cell.detailTextLabel.text = @"美女，要吃哪个";
 	return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    DisplayViewController *displayVC=[[DisplayViewController alloc] init];
-    [self.navigationController pushViewController:displayVC animated:YES];
-    
+    NSString *rowString = [self.list objectAtIndex:[indexPath row]];
+    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alter show];
 }
-
 
 @end

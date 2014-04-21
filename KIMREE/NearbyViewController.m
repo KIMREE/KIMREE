@@ -12,8 +12,8 @@
 #import "TestMapCell.h"
 
 
-@interface NearbyViewController ()
 
+@interface NearbyViewController ()<MapViewDelegate>
 @property (nonatomic,strong)MapView *mapView;
 @property (nonatomic,strong)NSArray *annotations;
 
@@ -39,10 +39,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-
-    
-    self.annotations = @[@{@"latitude":@"30.281843",
-                           @"longitude":@"120.102193",
+    self.annotations = @[@{@"latitude":@"22.5717781",
+                           @"longitude":@"113.87585609999996",
                            @"title":@"test-title-1",
                            @"subtitle":@"test-sub-title-11"},
                          @{@"latitude":@"30.290144",
@@ -55,23 +53,22 @@
                            @"subtitle":@"test-sub-title-33"},
                          @{@"latitude":@"30.425622",
                            @"longitude":@"120.299605",
-                           @"title":@"test-title-4",
-                           @"subtitle":@"test-sub-title-44"}
+                           @"title":@"东海坊店",
+                           @"subtitle":@"0755769394"}
                          ];
     
-
-	self.mapView = [[MapView alloc] init];
     
-
+    self.mapView = [[MapView alloc] initWithDelegate:self];
+    
+    
     [self.view addSubview:_mapView];
     [_mapView setFrame:self.view.bounds];
     [_mapView beginLoad];
     
-
+    UISearchBar *searchBar=[[UISearchBar alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 50)];
+    [self.view addSubview:searchBar];
     
 }
-
-
 
 
 - (void)didReceiveMemoryWarning
@@ -80,6 +77,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)MapViewCellClicked{
+    
+    self.navigationController.navigationBar.hidden = NO;
+    DisplayViewController  *displayView = [[DisplayViewController alloc] init] ;
+    [self.navigationController pushViewController:displayView animated:YES];
+    
+    
+    
+}
 
 #pragma mark -
 #pragma mark delegate
@@ -109,6 +116,10 @@
     TestMapCell  *cell = [[[NSBundle mainBundle] loadNibNamed:@"TestMapCell" owner:self options:nil] objectAtIndex:0];
     cell.title.text = item.title;
     cell.subtitle.text = item.subtitle;
+    
+    [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"mark_background.png"]]] ;
+    
+    cell.delegate=self;
     return cell;
 }
 
