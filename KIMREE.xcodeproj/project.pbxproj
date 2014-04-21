@@ -22,13 +22,18 @@
 		6B3BB39C1904FE1300E4622A /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3951904FE1300E4622A /* MemberViewController.m */; };
 		6B3BB39D1904FE1300E4622A /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3961904FE1300E4622A /* MemberViewController.xib */; };
 		6B3BB39E1904FE1300E4622A /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3981904FE1300E4622A /* SignInViewController.m */; };
+		6B3BB3A31904FE9B00E4622A /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3A11904FE9B00E4622A /* GameViewController.m */; };
+		6B3BB3A41904FE9B00E4622A /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3A21904FE9B00E4622A /* GameViewController.xib */; };
+		6B3BB3AB1904FF5700E4622A /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3A91904FF5700E4622A /* DisplayViewController.m */; };
+		6B3BB3AC1904FF5700E4622A /* DisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3AA1904FF5700E4622A /* DisplayViewController.xib */; };
+		6B3BB3B01904FF5F00E4622A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3BB3AE1904FF5F00E4622A /* SettingViewController.m */; };
+		6B3BB3B11904FF5F00E4622A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3BB3AF1904FF5F00E4622A /* SettingViewController.xib */; };
 		6B77D0E818F4E60200D49E9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E718F4E60200D49E9F /* MapKit.framework */; };
 		6B77D0EA18F4E60E00D49E9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */; };
 		6B77D0EF18F4E67200D49E9F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0EE18F4E67200D49E9F /* MapView.m */; };
 		6B77D0FF18F4E6F300D49E9F /* TestMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FB18F4E6F300D49E9F /* TestMapCell.m */; };
 		6B77D10018F4E6F300D49E9F /* TestMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */; };
 		6B77D10118F4E6F300D49E9F /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D0FE18F4E6F300D49E9F /* Item.m */; };
-		6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */; };
 		6B77D10518F4EAF000D49E9F /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10318F4EAF000D49E9F /* pin.png */; };
 		6B77D10918F535F200D49E9F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B77D10718F535F200D49E9F /* SearchViewController.m */; };
 		6B77D10A18F535F200D49E9F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B77D10818F535F200D49E9F /* SearchViewController.xib */; };
@@ -263,6 +268,15 @@
 		6B3BB3961904FE1300E4622A /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
 		6B3BB3971904FE1300E4622A /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		6B3BB3981904FE1300E4622A /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		6B3BB3A01904FE9B00E4622A /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		6B3BB3A11904FE9B00E4622A /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		6B3BB3A21904FE9B00E4622A /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		6B3BB3A81904FF5700E4622A /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		6B3BB3A91904FF5700E4622A /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		6B3BB3AA1904FF5700E4622A /* DisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayViewController.xib; sourceTree = "<group>"; };
+		6B3BB3AD1904FF5F00E4622A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		6B3BB3AE1904FF5F00E4622A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		6B3BB3AF1904FF5F00E4622A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		6B77D0E718F4E60200D49E9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6B77D0E918F4E60E00D49E9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6B77D0ED18F4E67200D49E9F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -272,7 +286,6 @@
 		6B77D0FC18F4E6F300D49E9F /* TestMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestMapCell.xib; sourceTree = "<group>"; };
 		6B77D0FD18F4E6F300D49E9F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		6B77D0FE18F4E6F300D49E9F /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MuddDetail.jpeg; sourceTree = "<group>"; };
 		6B77D10318F4EAF000D49E9F /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		6B77D10618F535F200D49E9F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		6B77D10718F535F200D49E9F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -596,6 +609,46 @@
 			name = member;
 			sourceTree = "<group>";
 		};
+		6B3BB39F1904FE7800E4622A /* game */ = {
+			isa = PBXGroup;
+			children = (
+				6B3BB3A01904FE9B00E4622A /* GameViewController.h */,
+				6B3BB3A11904FE9B00E4622A /* GameViewController.m */,
+				6B3BB3A21904FE9B00E4622A /* GameViewController.xib */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		6B3BB3A51904FEE800E4622A /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				6B3BB3AD1904FF5F00E4622A /* SettingViewController.h */,
+				6B3BB3AE1904FF5F00E4622A /* SettingViewController.m */,
+				6B3BB3AF1904FF5F00E4622A /* SettingViewController.xib */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		6B3BB3A61904FEF000E4622A /* shop information */ = {
+			isa = PBXGroup;
+			children = (
+				6B3BB3A81904FF5700E4622A /* DisplayViewController.h */,
+				6B3BB3A91904FF5700E4622A /* DisplayViewController.m */,
+				6B3BB3AA1904FF5700E4622A /* DisplayViewController.xib */,
+			);
+			name = "shop information";
+			sourceTree = "<group>";
+		};
+		6B3BB3A71904FF0E00E4622A /* favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6BB93AA818F552D900EA1F65 /* MyshopViewController.h */,
+				6BB93AA918F552D900EA1F65 /* MyshopViewController.m */,
+				6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */,
+			);
+			name = favorite;
+			sourceTree = "<group>";
+		};
 		6B77D0EC18F4E65200D49E9F /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +697,7 @@
 		7E44789E18F435E1009EF02D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B3BB39F1904FE7800E4622A /* game */,
 				6B3BB38E1904FDB400E4622A /* member */,
 				C6C0CCF319010D2E00796228 /* guide */,
 				C681015318F7EF51008599BB /* JRWebViewController */,
@@ -697,14 +751,14 @@
 		7E4478BB18F43AAE009EF02D /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				6B3BB3A71904FF0E00E4622A /* favorite */,
+				6B3BB3A61904FEF000E4622A /* shop information */,
+				6B3BB3A51904FEE800E4622A /* setting */,
 				6B909F1A18F7E17C002CDB30 /* TabBarController.h */,
 				6B909F1B18F7E17C002CDB30 /* TabBarController.m */,
 				7E4478B618F43AA3009EF02D /* NearbyViewController.h */,
 				7E4478B718F43AA3009EF02D /* NearbyViewController.m */,
 				7E4478B818F43AA3009EF02D /* NearbyViewController.xib */,
-				6BB93AA818F552D900EA1F65 /* MyshopViewController.h */,
-				6BB93AA918F552D900EA1F65 /* MyshopViewController.m */,
-				6BB93AAA18F552D900EA1F65 /* MyshopViewController.xib */,
 				6B77D10618F535F200D49E9F /* SearchViewController.h */,
 				6B77D10718F535F200D49E9F /* SearchViewController.m */,
 				6B77D10818F535F200D49E9F /* SearchViewController.xib */,
@@ -849,7 +903,6 @@
 				7E8104F618F5A2F000C7882E /* red_90.png */,
 				7E8104F718F5A2F000C7882E /* ye90.png */,
 				7E8104F818F5A2F000C7882E /* yellow_90.png */,
-				6B77D10218F4EAF000D49E9F /* MuddDetail.jpeg */,
 				7E4478A218F4370E009EF02D /* 01.jpg */,
 				6B77D10318F4EAF000D49E9F /* pin.png */,
 				7E4478A318F4370E009EF02D /* 02.jpg */,
@@ -1396,6 +1449,7 @@
 				C6C0CD2B1901346600796228 /* guide3-h@2x.png in Resources */,
 				C694831418FBA15C00D6D6B2 /* arrow_down@2x.png in Resources */,
 				C694832018FBA15C00D6D6B2 /* ico_people@2x.png in Resources */,
+				6B3BB3B11904FF5F00E4622A /* SettingViewController.xib in Resources */,
 				C694831118FBA15C00D6D6B2 /* arrow.png in Resources */,
 				7E4478AE18F4370E009EF02D /* 03.jpg in Resources */,
 				6BADFCB618F6850800249ED8 /* PostBarViewController.xib in Resources */,
@@ -1403,10 +1457,12 @@
 				C681014A18F7EDC4008599BB /* pb_tabbar_background@2x.png in Resources */,
 				C694831618FBA15C00D6D6B2 /* avatar_poto_defaul140@2x.png in Resources */,
 				C6C0CD2A1901346600796228 /* guide2@2x.png in Resources */,
+				6B3BB3A41904FE9B00E4622A /* GameViewController.xib in Resources */,
 				C681014918F7EDC4008599BB /* pb_tabbar_background.png in Resources */,
 				C694831018FBA15C00D6D6B2 /* pic_icon_fresh@2x.png in Resources */,
 				C6BE22C118FBB50D007DBEF8 /* TBCell.xib in Resources */,
 				7E4478BA18F43AA3009EF02D /* NearbyViewController.xib in Resources */,
+				6B3BB3AC1904FF5700E4622A /* DisplayViewController.xib in Resources */,
 				C694831D18FBA15C00D6D6B2 /* explore_tagbj_lv.png in Resources */,
 				C694831B18FBA15C00D6D6B2 /* drop_down_renovate.png in Resources */,
 				C694831F18FBA15C00D6D6B2 /* ico_people.png in Resources */,
@@ -1416,7 +1472,6 @@
 				6B3BB39D1904FE1300E4622A /* MemberViewController.xib in Resources */,
 				C681014318F7EDC4008599BB /* navigationbar_back.png in Resources */,
 				C6B41CC818FE6A94006901E7 /* SVProgressHUD.bundle in Resources */,
-				6B77D10418F4EAF000D49E9F /* MuddDetail.jpeg in Resources */,
 				7E8104FA18F5A2F000C7882E /* green_90.png in Resources */,
 				C694832B18FBA15C00D6D6B2 /* Thumbs.db in Resources */,
 				7E4478AC18F4370E009EF02D /* 01.jpg in Resources */,
@@ -1521,6 +1576,7 @@
 				C6B41D5C18FE8A5C006901E7 /* ASIS3BucketObject.h in Sources */,
 				C6B41D5D18FE8A5C006901E7 /* ASIS3BucketObject.m in Sources */,
 				C6B41D5E18FE8A5C006901E7 /* ASIS3BucketRequest.h in Sources */,
+				6B3BB3A31904FE9B00E4622A /* GameViewController.m in Sources */,
 				6B3BB37D1904F92B00E4622A /* CalloutMapAnnotation.m in Sources */,
 				C6B41D5F18FE8A5C006901E7 /* ASIS3BucketRequest.m in Sources */,
 				C6B41D6018FE8A5C006901E7 /* ASIS3ObjectRequest.h in Sources */,
@@ -1531,6 +1587,7 @@
 				C6B41D6418FE8A5C006901E7 /* ASIS3ServiceRequest.h in Sources */,
 				C6B41D6518FE8A5C006901E7 /* ASIS3ServiceRequest.m in Sources */,
 				C6B41CC318FE4CD3006901E7 /* JRModel.h in Sources */,
+				6B3BB3B01904FF5F00E4622A /* SettingViewController.m in Sources */,
 				6BB93AAB18F552D900EA1F65 /* MyshopViewController.m in Sources */,
 				C681014618F7EDC4008599BB /* JRWebViewProgressView.m in Sources */,
 				7ECB0FE818F60D180040145C /* KIMREEViewController.m in Sources */,
@@ -1562,6 +1619,7 @@
 				C6B01BC018FCD3970045A59E /* JRResponse.m in Sources */,
 				C6B01C7C18FCE0430045A59E /* CipherUtil.m in Sources */,
 				C6B41CC218FE2ED7006901E7 /* AppServer.m in Sources */,
+				6B3BB3AB1904FF5700E4622A /* DisplayViewController.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
 				C6B01CA218FCE1820045A59E /* CJSONSerializer.m in Sources */,
 				C6C0CCF719010E3400796228 /* PushServer.m in Sources */,

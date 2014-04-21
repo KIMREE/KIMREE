@@ -82,24 +82,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *rowString = [self.list objectAtIndex:[indexPath row]];
     
-//    if ([rowString isEqualToString:@"打飞机"]) {
-//        
-//        self.navigationController.navigationBar.hidden = YES;
-//        UIStoryboard *planestoryboard = [UIStoryboard storyboardWithName:@ "second" bundle: nil ];
-//        [self .navigationController pushViewController:planestoryboard.instantiateInitialViewController animated: YES ];
-//        
-//    }else if([rowString isEqualToString:@"2048"]){
-//        
-//        self.navigationController.navigationBar.hidden = NO;
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
-//       [self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
-//        
-//    }
+    if ([rowString isEqualToString:@"打飞机"]) {
+        
+        self.navigationController.navigationBar.hidden = YES;
+        UIStoryboard *planestoryboard = [UIStoryboard storyboardWithName:@ "second" bundle: nil ];
+        [self .navigationController pushViewController:planestoryboard.instantiateInitialViewController animated: YES ];
+        
+    }else if([rowString isEqualToString:@"2048"]){
+        
+        self.navigationController.navigationBar.hidden = NO;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@ "Main" bundle: nil ];
+       [self .navigationController pushViewController:storyboard.instantiateInitialViewController animated: YES ];
+        
+    }
     
     
     
-//    else
-    {
+    else{
     
    UIAlertView * alter = [[UIAlertView alloc] initWithTitle:@"选中的行信息" message:rowString delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alter show];
